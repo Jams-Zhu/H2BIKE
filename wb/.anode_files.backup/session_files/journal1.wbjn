@@ -1,0 +1,67 @@
+# encoding: utf-8
+# 2022 R1
+SetScriptVersion(Version="22.1.217")
+DesignModeler.CreateGeometrySystemWithActiveCAD(
+    FilePath=r"D:\Objects3D\fluent\fuelCell\01\scdoc\anode_01.scdoc",
+    PlugInName="SpaceClaim[2152]",
+    IsSCModelingMode=True)
+template1 = GetTemplate(TemplateName="Mesh")
+system1 = GetSystem(Name="Geometry")
+system2 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system1)
+template2 = GetTemplate(TemplateName="FLUENT")
+system3 = template2.CreateSystem(
+    Position="Right",
+    RelativeTo=system2)
+geometryComponent1 = system2.GetComponent(Name="Geometry")
+geometryComponent2 = system1.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system2,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system1)
+meshComponent1 = system2.GetComponent(Name="Mesh")
+meshComponent1.Update(AllDependencies=True)
+meshComponent1.Update(AllDependencies=True)
+mesh1 = system2.GetContainer(ComponentName="Mesh")
+mesh1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+setupComponent1 = system3.GetComponent(Name="Setup")
+meshComponent1.TransferData(TargetComponent=setupComponent1)
+setupComponent1.Update(AllDependencies=True)
+setup1 = system3.GetContainer(ComponentName="Setup")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command='(%py-exec "preferences.fixState()")')
+setup1.SendCommand(Command="(%py-exec \"preferences.setState({r'Appearance': None,r'GPUApp': None,r'General': None,r'Graphics': None,r'MatProApp': None,r'MeshingWorkflow': None,r'Navigation': None,r'PrjApp': None,r'Simulation': None,r'TurboWorkflow': None,})\")")
+setup1.SendCommand(Command='/file/set-tui-version "22.1"')
+fluentLauncherSettings1 = setup1.GetFluentLauncherSettings()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(EnvPath={}, RunParallel=True, NumberOfProcessorsMeshing=4, NumberOfProcessors=4))
+setup1.Edit()
+setup1.SendCommand(Command='(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)')
+setup1.SendCommand(Command='(%py-exec "preferences.fixState()")')
+setup1.SendCommand(Command="(%py-exec \"preferences.setState({r'Appearance': None,r'GPUApp': None,r'General': None,r'Graphics': None,r'MatProApp': None,r'MeshingWorkflow': None,r'Navigation': None,r'PrjApp': None,r'Simulation': None,r'TurboWorkflow': None,})\")")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Exit()
+setup1.SendCommand(Command="/file/set-tui-version \"22.1\"(cx-use-window-id 51)(cx-use-window-id 51)(cx-set-camera-relative '(-0.00586199 -0.054229 0.0526837) '(0 0 0) '(0.236614 0.196744 0.16282) 0 0)(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Solution|Calculation Activities\"))(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Cell Zone Conditions|Solid|fluent_region (solid, id=3)\"))(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Cell Zone Conditions|Solid|fluent_region (solid, id=3)\"))(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Cell Zone Conditions|Solid|fluent_region (solid, id=3)\"))(cx-use-window-id 51)(cx-use-window-id 51)(cxg-clear-all-selections (cx-active-window))(cxg-add-surfaces-to-selection '(wall-fluent_region) (cx-active-window))(cx-use-window-id 51)(cx-set-camera-relative '(-0.0193563 -0.216548 -0.010023) '(0 0 0) '(0.442489 -0.0865471 0.884859) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.000277836 0.0231712 0.00383773) '(0 0 0) '(-0.437599 0.126584 -0.753304) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.00299501 0.0159979 -0.00861206) '(0 0 0) '(-0.146031 -0.205531 -0.334018) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.00265815 -0.00397247 0.00146708) '(0 0 0) '(0.423872 0.138272 0.0588255) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.0151787 -0.00501496 0.0020004) '(0 0 0) '(0.0257744 0.0592288 0.13128) 0 0)(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Boundary Conditions|Wall\"))(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Boundary Conditions|Wall|wall-fluent_region (wall, id=1)\"))(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Boundary Conditions|Outlet|outlet (pressure-outlet, id=6)\"))(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Boundary Conditions|Internal|interior-fluent_region (interior, id=2)\"))(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Boundary Conditions|Internal|interior-fluent_region (interior, id=2)\"))(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Boundary Conditions|Internal|interior-fluent_region (interior, id=2)\"))(cx-gui-do cx-list-tree-right-click \"NavigationPane*Frame2*Table1*List_Tree2\" )")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "ToolBar*Mesh Display*frontfacestransparent")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "ToolBar*Mesh Display*fl_mesh_svg_graphics_toolbar")')
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*List1(Surfaces)\" '( 0 1))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*List1(Surfaces)\")(cx-gui-do cx-set-toggle-button2 \"Mesh Display*Table1*Frame1*Frame1*ToggleBox1(Options)*CheckButton4(Partitions)\" #t)(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame1*Frame1*ToggleBox1(Options)*CheckButton4(Partitions)\")(cx-gui-do cx-set-toggle-button2 \"Mesh Display*Table1*Frame1*Frame1*ToggleBox1(Options)*CheckButton4(Partitions)\" #f)(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame1*Frame1*ToggleBox1(Options)*CheckButton4(Partitions)\")(cx-gui-do cx-activate-item \"Mesh Display*PanelButtons*PushButton1(OK)\")(cxg-clear-all-selections (cx-active-window))(cxg-add-surfaces-to-selection '() (cx-active-window))")
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*List1(Surfaces)\" '( 0 1 2))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*List1(Surfaces)\")(cx-gui-do cx-activate-item \"Mesh Display*PanelButtons*PushButton1(OK)\")")
+setup1.SendCommand(Command="(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*List1(Surfaces)\" '( 0 2))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*List1(Surfaces)\")(cx-gui-do cx-activate-item \"Mesh Display*PanelButtons*PushButton1(OK)\")")
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-set-camera-relative '(0.680518 -0.555286 -1.12001) '(0 0 0) '(0.215863 0.0264992 0.273334) 0 0)(cx-use-window-id 51)(cx-use-window-id 51)(cx-set-camera-relative '(-0.00129315 0.052939 -0.00826634) '(0 0 0) '(-0.444553 0.015164 0.180159) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.161744 0.125865 0.00457062) '(0 0 0) '(-0.434608 -0.718711 0.638287) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.186811 -0.185352 0.0410007) '(0 0 0) '(0.42241 0.421745 -0.0361342) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.044922 0.0396799 -0.0472246) '(0 0 0) '(0.151285 0.193062 -0.221441) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.00502551 -0.0248529 -0.00884026) '(0 0 0) '(-0.118622 0.105416 -0.362268) 0 0)(cx-gui-do cx-set-list-selections \"Mesh Display*Table1*Frame3*List1(Surfaces)\" '( 0 1 2))(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame3*List1(Surfaces)\")(cx-gui-do cx-activate-item \"Mesh Display*PanelButtons*PushButton1(OK)\")")
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-use-window-id 51)(cx-set-camera-relative '(0.0174949 0.110284 0.0374363) '(0 0 0) '(0.104808 -0.178869 0.474618) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.705635 -0.34608 -0.00219351) '(0 0 0) '(0.101509 0.151632 -0.293189) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.245153 0.0565103 0.275931) '(0 0 0) '(-0.111457 -0.0381703 0.0970774) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(0.0113486 0.00561809 -0.0120665) '(0 0 0) '(0.0373155 0.0177467 -0.0380181) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.0022445 -0.00541686 -0.00337891) '(0 0 0) '(0.227402 0.0367924 -0.207455) 0 0)(cx-use-window-id 51)(cx-set-camera-relative '(-0.0274207 0.0173095 -0.0161262) '(0 0 0) '(-0.0686837 -0.00059247 0.0627194) 0 0)(cx-use-window-id 51)(cx-gui-do cx-set-toggle-button2 \"Mesh Display*Table1*Frame1*Frame1*ToggleBox1(Options)*CheckButton2(Edges)\" #t)(cx-gui-do cx-activate-item \"Mesh Display*Table1*Frame1*Frame1*ToggleBox1(Options)*CheckButton2(Edges)\")(cx-gui-do cx-activate-item \"Mesh Display*PanelButtons*PushButton1(OK)\")")
+setup1.SendCommand(Command='(cx-gui-do cx-set-toggle-button2 "Mesh Display*Table1*Frame1*Frame1*ToggleBox1(Options)*CheckButton2(Edges)" #f)(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame1*Frame1*ToggleBox1(Options)*CheckButton2(Edges)")(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton1(OK)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton2(Cancel)")')
+setup1.SendCommand(Command="(cx-use-window-id 51)(cx-use-window-id 51)(cx-set-camera-relative '(-0.0307853 0.0480265 0.0100925) '(0 0 0) '(-0.111014 -0.142036 0.34605) 0 0)(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=7)\"))(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Solution|Run Calculation\"))(cx-gui-do cx-set-list-tree-selections \"NavigationPane*Frame2*Table1*List_Tree2\" (list \"Solution|Run Calculation\"))")
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")')
+setup1.SendCommand(Command='(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))(cx-gui-do cx-set-integer-entry "Run Calculation*Table1*Table3(Parameters)*Table1*Table1*IntegerEntry1(Number of Iterations)" 50)(cx-gui-do cx-activate-item "Run Calculation*Table1*Table3(Parameters)*Table1*Table1*IntegerEntry1(Number of Iterations)")')
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "Run Calculation*Table1*Table6(Solution Advancement)*Table1*PushButton1(Calculate)")(cx-gui-do cx-activate-item "Question*OK")(cx-gui-do cx-activate-item "Error*OK")')
+geometry1.Edit(IsSpaceClaimGeometry=True)
+meshComponent1.Update(AllDependencies=True)
+setup1.SendCommand(Command="(cx-gui-do cx-activate-item \"Information*OK\")(cx-use-window-id 51)(cx-set-camera-relative '(0.0196583 -0.0326098 -0.0101699) '(0 0 0) '(-0.0673357 0.139642 -0.307294) 0 0)")
+setup1.SendCommand(Command='(cx-gui-do cx-activate-item "MenuBar*FileMenu*Close Fluent")')
+mesh1.Edit()
+meshComponent1.Update(AllDependencies=True)
+Save(Overwrite=True)
