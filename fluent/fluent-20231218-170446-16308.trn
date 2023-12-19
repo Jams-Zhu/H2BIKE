@@ -1,0 +1,293 @@
+Auto-Transcript Start Time:  17:04:46, 18 Dec 2023 中国标准时间 
+Current Directory: "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent"
+
+              Welcome to ANSYS Fluent 2022 R1
+
+              Copyright 1987-2022 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Nov 29 2021 12:14:46 EST  Build Id: 10213  
+ 
+Connected License Server List:	
+Host spawning Node 0 on machine "DESKTOP-6MJKVPJ" (win64).
+
+------------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                                  
+------------------------------------------------------------------------------------------
+n7    DESKTOP-6MJKVPJ  8/20  Windows-x64  2744   12th Gen Intel(R) Core(TM) i7-12700H    
+n6    DESKTOP-6MJKVPJ  7/20  Windows-x64  18704  12th Gen Intel(R) Core(TM) i7-12700H    
+n5    DESKTOP-6MJKVPJ  6/20  Windows-x64  2164   12th Gen Intel(R) Core(TM) i7-12700H    
+n4    DESKTOP-6MJKVPJ  5/20  Windows-x64  17816  12th Gen Intel(R) Core(TM) i7-12700H    
+n3    DESKTOP-6MJKVPJ  4/20  Windows-x64  2672   12th Gen Intel(R) Core(TM) i7-12700H    
+n2    DESKTOP-6MJKVPJ  3/20  Windows-x64  5096   12th Gen Intel(R) Core(TM) i7-12700H    
+n1    DESKTOP-6MJKVPJ  2/20  Windows-x64  14388  12th Gen Intel(R) Core(TM) i7-12700H    
+n0*   DESKTOP-6MJKVPJ  1/20  Windows-x64  5568   12th Gen Intel(R) Core(TM) i7-12700H    
+host  DESKTOP-6MJKVPJ        Windows-x64  13488  12th Gen Intel(R) Core(TM) i7-12700H    
+
+MPI Option Selected: intel
+Selected system interconnect: default
+------------------------------------------------------------------------------------------
+
+Cleanup script file is D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cleanup-fluent-DESKTOP-6MJKVPJ-13488.bat
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+
+Meshing> (cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)
+(cx-gui-do cx-activate-item "Ribbon*Frame1*Frame2(Task Page)*Table1*Table3(Solution)*PushButton1(Switch to Solution)")
+(cx-gui-do cx-activate-item "Question*OK")
+No volume mesh in TGrid to transfer(newline)
+
+
+> (cx-gui-do cx-activate-item "MenuBar*ReadSubMenu*Case & Data...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "cathod.cas.h5") "CFF Case Files (*.cas.h5 )")
+Fast-loading "E:\Ansys\Ansys.Products.2022.R1.Win64\Program Files\ANSYS Inc\v221\fluent\fluent22.1.0\\addons\afd\lib\hdfio.bin"
+Done.
+Note: Rank = 0: Process affinity not being set (6).
+Note: Rank = 1: Process affinity not being set (6).
+Note: Rank = 2: Process affinity not being set (6).
+Note: Rank = 3: Process affinity not being set (6).
+Note: Rank = 4: Process affinity not being set (6).
+Note: Rank = 5: Process affinity not being set (6).
+Note: Rank = 6: Process affinity not being set (6).
+Note: Rank = 7: Process affinity not being set (6).
+
+Reading from DESKTOP-6MJKVPJ:"D:/Objects3D/fluent/fuelCell/H2BIKE/fluent/cathod.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+     3767067 cells,     1 cell zone  ...
+        3767067 polyhedra cells,  zone id: 21797
+    17637273 faces,     9 face zones ...
+       17117558 polygonal interior faces,  zone id: 21796
+         211716 polygonal wall faces,  zone id: 47
+          20672 polygonal wall faces,  zone id: 48
+          15760 polygonal wall faces,  zone id: 49
+           9842 polygonal wall faces,  zone id: 43
+         245899 polygonal wall faces,  zone id: 46
+           4373 polygonal wall faces,  zone id: 50
+           5713 polygonal pressure-outlet faces,  zone id: 45
+           5740 polygonal velocity-inlet faces,  zone id: 44
+    10980185 nodes,     1 node zone  ...
+  Done.
+
+
+Building...
+     mesh
+	distributing mesh
+		parts........,
+		faces........,
+		nodes........,
+		cells........,
+        bandwidth reduction using Reverse Cuthill-McKee: 509243/27830 = 18.2983
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	interior--fluid_region-region
+	boi-wall-fluid_region-region
+	boi_cur_outer-wall-fluid_region-region
+	boi_cur_inner
+	fluid_region-region:1
+	wall
+	boi_cur_otherr
+	outlet
+	inlet
+	fluid_region-region
+     parallel,
+Done.
+
+Reading from DESKTOP-6MJKVPJ:"D:/Objects3D/fluent/fuelCell/H2BIKE/fluent/cathod.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+Done.
+(cx-gui-do cx-activate-item "ToolBar*Mesh Display*fl_mesh_svg_graphics_toolbar")
+(cx-gui-do cx-set-toggle-button2 "Mesh Display*Table1*Frame1*Frame1*ToggleBox1(Options)*CheckButton2(Edges)" #t)
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame1*Frame1*ToggleBox1(Options)*CheckButton2(Edges)")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00605498 0.252903 -0.0912428) '(0 0 0) '(0.00165696 -0.230123 -0.63819) 0 0)
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-set-integer-entry "Run Calculation*Table1*Table3(Parameters)*Table1*Table1*IntegerEntry1(Number of Iterations)" 10)
+(cx-gui-do cx-activate-item "Run Calculation*Table1*Table3(Parameters)*Table1*Table1*IntegerEntry1(Number of Iterations)")
+(cx-gui-do cx-activate-item "Run Calculation*Table1*Table6(Solution Advancement)*Table1*PushButton1(Calculate)")
+
+(cx-gui-do cx-activate-item "Question*OK")
+Creating new file D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\.\\report-def-0-rfile_4_1.out
+Creating new file D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\.\\report-def-1-rfile_4_1.out
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00306902 0.0216447 -0.0267297) '(0 0 0) '(-0.00338659 -0.305322 -0.247353) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00465667 -0.0485438 0.0367111) '(0 0 0) '(-0.00360086 0.513613 0.677786) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0013573 0.0388469 -0.0167748) '(0 0 0) '(0.0157417 -0.157608 -0.363713) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00543918 -0.00821828 0.0028822) '(0 0 0) '(0.0607807 0.156504 0.370755) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00213241 -0.0015558 -0.000566808) '(0 0 0) '(0.0422735 0.0122433 0.109025) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00350227 -0.00105741 -0.00209742) '(0 0 0) '(0.0130898 -3.21865e-05 0.0186866) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00303086 0.00289021 -0.00345156) '(0 0 0) '(-0.178791 -0.0172511 -0.156027) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00425821 0.00524678 0.00260441) '(0 0 0) '(-0.181175 -0.0673113 -0.127382) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00162429 0.00410225 -0.00181019) '(0 0 0) '(-0.156376 -0.110092 -0.109055) 0 0)
+        Stabilizing pressure coupled to enhance linear solver robustness.
+     1  1.0000e+00  2.6384e-03  9.4519e-04  1.5076e-03  0:06:54    9
+
+ Reversed flow on 2 faces (0.0% area) of pressure-outlet 45.
+     2  7.1268e-01  2.2480e-03  6.1974e-04  9.1573e-04  0:05:18    8
+        Stabilizing pressure coupled to enhance linear solver robustness.
+
+ Reversed flow on 1406 faces (0.2% area) of pressure-outlet 45.
+     3  5.5588e-01  2.0425e-03  5.0361e-04  6.7120e-04  0:05:00    7
+
+ Reversed flow on 4559 faces (6.2% area) of pressure-outlet 45.
+     4  4.8034e-01  1.9285e-03  4.3391e-04  5.7722e-04  0:04:06    6
+        Stabilizing pressure coupled to enhance linear solver robustness.
+
+ Reversed flow on 5134 faces (12.6% area) of pressure-outlet 45.
+     5  4.9209e-01  1.7337e-03  3.8858e-04  5.0499e-04  0:03:56    5
+        Stabilizing pressure coupled to enhance linear solver robustness.
+
+ Reversed flow on 5321 faces (19.0% area) of pressure-outlet 45.
+     6  4.9650e-01  1.5364e-03  3.8713e-04  4.7925e-04  0:03:22    4
+
+ Reversed flow on 5384 faces (24.5% area) of pressure-outlet 45.
+     7  5.0385e-01  1.3697e-03  3.6361e-04  4.5225e-04  0:02:09    3
+
+ Reversed flow on 5428 faces (30.6% area) of pressure-outlet 45.
+     8  4.9174e-01  1.2070e-03  3.4334e-04  4.3375e-04  0:01:15    2
+        Stabilizing pressure coupled to enhance linear solver robustness.
+
+ Reversed flow on 5459 faces (36.2% area) of pressure-outlet 45.
+     9  4.7298e-01  1.0828e-03  3.1793e-04  4.1691e-04  0:00:46    1
+
+ Reversed flow on 5482 faces (42.0% area) of pressure-outlet 45.
+    10  4.5963e-01  9.9970e-04  3.0369e-04  4.0907e-04  0:00:00    0
+
+Calculation complete.
+(cx-gui-do cx-activate-item "Information*OK")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 1))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0 1))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0 1 2))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0 1 2 3))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0 1 2 3 4))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0 1 2 3 4 7))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0526139 -0.0259303 0.0527093) '(0 0 0) '(0.282466 0.136051 0.115675) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00676018 0.041335 -0.0236935) '(0 0 0) '(-0.0625919 -0.166197 -0.272083) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00853512 -0.0706674 0.0372339) '(0 0 0) '(0.0765843 0.193013 0.348874) 0 0)
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet"))
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 1)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 2)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 3)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 4)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 5)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 6)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 7)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 8)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Initialization"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Initialization"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Initialization"))
+(cx-gui-do cx-activate-item "Solution Initialization*Table1*Frame12*PushButton2(Initialize)")
+(cx-gui-do cx-activate-item "Question*OK")
+
+Initialize using the hybrid initialization method.
+
+Checking case topology... 
+-This case has both inlets & outlets 
+-Pressure information is not available at the boundaries.
+ Case will be initialized with constant pressure
+
+	iter		scalar-0
+
+	1		1.000000e+00
+	2		2.511691e-05
+	3		6.265526e-06
+	4		3.937383e-06
+	5		2.198614e-06
+	6		2.140790e-06
+	7		9.882214e-07
+	8		9.676532e-07
+	9		4.864777e-07
+	10		8.165967e-07
+
+Hybrid initialization is done.
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-set-integer-entry "Run Calculation*Table1*Table3(Parameters)*Table1*Table1*IntegerEntry1(Number of Iterations)" 100)
+(cx-gui-do cx-activate-item "Run Calculation*Table1*Table3(Parameters)*Table1*Table1*IntegerEntry1(Number of Iterations)")
+(cx-gui-do cx-activate-item "Run Calculation*Table1*Table6(Solution Advancement)*Table1*PushButton1(Calculate)")
+
+(cx-gui-do cx-activate-item "Question*OK")
+Creating new file D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\.\\report-def-0-rfile_5_1.out
+Creating new file D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\.\\report-def-1-rfile_5_1.out
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+        Stabilizing pressure coupled to enhance linear solver robustness.
+     1  1.0000e+00  2.6384e-03  9.4519e-04  1.5076e-03  1:05:06   99
+
+ Reversed flow on 2 faces (0.0% area) of pressure-outlet 45.
+     2  7.1268e-01  2.2480e-03  6.1974e-04  9.1573e-04  0:56:27   98
+        Stabilizing pressure coupled to enhance linear solver robustness.
+
+ Reversed flow on 1406 faces (0.2% area) of pressure-outlet 45.
+     3  5.5588e-01  2.0425e-03  5.0361e-04  6.7120e-04  1:02:29   97
+
+ Reversed flow on 4559 faces (6.2% area) of pressure-outlet 45.
+     4  4.8034e-01  1.9285e-03  4.3391e-04  5.7722e-04  1:00:59   96
+        Stabilizing pressure coupled to enhance linear solver robustness.
+
+ Reversed flow on 5134 faces (12.6% area) of pressure-outlet 45.
+     5  4.9209e-01  1.7337e-03  3.8858e-04  5.0499e-04  1:11:05   95
+Done.
+(cx-gui-do cx-activate-item "MenuBar*FileMenu*Preferences...")
+(cx-gui-do cx-activate-item "Preferences*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "Ribbon*Frame1*Frame5(User-Defined)*Table1*Table3(Field Functions)*PushButton1(Custom)")
+(cx-gui-do cx-activate-item "Custom Field Function Calculator*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "MenuBar*FileMenu*Preferences...")
+(cx-gui-do cx-activate-item "Preferences*PanelButtons*PushButton2(Cancel)")
+/exit y
+(cx-gui-do cx-activate-item "Question*OK")
+Auto-Transcript Stop Time:  17:27:31, 18 Dec 2023 中国标准时间 
+Total Transcript Time: 22 Minute 45 Second.

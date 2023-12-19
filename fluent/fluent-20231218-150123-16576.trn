@@ -1,0 +1,1400 @@
+Auto-Transcript Start Time:  15:01:23, 18 Dec 2023 中国标准时间 
+Current Directory: "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent"
+
+              Welcome to ANSYS Fluent 2022 R1
+
+              Copyright 1987-2022 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Nov 29 2021 12:14:46 EST  Build Id: 10213  
+ 
+Connected License Server List:	
+Host spawning Node 0 on machine "DESKTOP-6MJKVPJ" (win64).
+
+------------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                                  
+------------------------------------------------------------------------------------------
+n7    DESKTOP-6MJKVPJ  8/20  Windows-x64  10460  12th Gen Intel(R) Core(TM) i7-12700H    
+n6    DESKTOP-6MJKVPJ  7/20  Windows-x64  17884  12th Gen Intel(R) Core(TM) i7-12700H    
+n5    DESKTOP-6MJKVPJ  6/20  Windows-x64  19592  12th Gen Intel(R) Core(TM) i7-12700H    
+n4    DESKTOP-6MJKVPJ  5/20  Windows-x64  13268  12th Gen Intel(R) Core(TM) i7-12700H    
+n3    DESKTOP-6MJKVPJ  4/20  Windows-x64  4468   12th Gen Intel(R) Core(TM) i7-12700H    
+n2    DESKTOP-6MJKVPJ  3/20  Windows-x64  3736   12th Gen Intel(R) Core(TM) i7-12700H    
+n1    DESKTOP-6MJKVPJ  2/20  Windows-x64  21216  12th Gen Intel(R) Core(TM) i7-12700H    
+n0*   DESKTOP-6MJKVPJ  1/20  Windows-x64  22620  12th Gen Intel(R) Core(TM) i7-12700H    
+host  DESKTOP-6MJKVPJ        Windows-x64  1592   12th Gen Intel(R) Core(TM) i7-12700H    
+
+MPI Option Selected: intel
+Selected system interconnect: default
+------------------------------------------------------------------------------------------
+
+Cleanup script file is D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cleanup-fluent-DESKTOP-6MJKVPJ-1592.bat
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+
+Meshing> 
+Importing one geom object per program-controlled and one zone per body ...
+    E:\\Ansys\\Ansys.Products.2022.R1.Win64\\Program Files\\ANSYS Inc\\v221\\commonfiles\\CPython\\3_7\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by MelonJam on DESKTOP-6MJKVPJ winx64 on Mon Dec 18 15:01:47 2023
+    using Python 3.7.11 (remotes/origin/b0b4eda9448d622fbb214539623a7f129f39e1f4-dirty:b0b4eda, Oct 18 20) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build Nov 30 2021 12:29:41 including TGLib build Nov 12 2019 13:13:16
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576/out170288290716576.tgf'
+    converting file 'cathod.scdoc' (1 of 1) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576'
+    importing data ...
+    importing meshing model from PartMgr from file 'D:/Objects3D/fluent/fuelCell/H2BIKE/fluent/cathod.scdoc' ...
+    setting enclosure and symmetry processing to False
+    setting transfer named selections to True
+    setting named selection prefixes to ''
+    setting mixed import resolution type to 'SolidAndSurface'
+    setting target application to 'FluentMeshing'
+    attaching to assembly ...
+    attaching to assembly done in 16.531 [s]
+    Warning: ?????????
+    processing assembly 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cathod.scdoc' with ID 1 and reference key '<?xml version="1.0" encoding="utf-16"?>
+    <IdTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Table>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3986" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10000</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4055" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10001</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4124" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10002</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4193" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10003</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4262" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10004</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4331" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10005</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4400" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10006</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4469" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10007</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4538" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10008</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4607" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10009</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4689" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10010</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+      </Table>
+    </IdTable>'
+    length unit = [m]
+    processing part '??????1' with ID 3
+    processing part '??????1' with ID 5
+    processing part '??????1' with ID 7
+    processing part '??????1' with ID 9
+    processing part '??????1' with ID 11
+    processing part '??????1' with ID 13
+    processing part '??????1' with ID 15
+    processing part '??????1' with ID 17
+    processing part '??????1' with ID 19
+    processing part '??????1' with ID 21
+    processing part '??????1' with ID 23
+    processing named selection 'inlet'
+    processing named selection 'outlet'
+    processing named selection 'wall'
+    processing named selection 'boi'
+    processing named selection 'boi_cur_outer'
+    processing data ...
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+    detecting feature edges, feature angle = 40 [deg] ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Collection: 5
+                    Component : 12
+                    Body      : 11
+                    Shell     : 11
+                    Face      : 633
+                    Loop      : 673
+                    Edge      : 1953
+                    Vertex    : 1302
+                    Surface   : 633
+                    Curve     : 1953
+                Tessellation summary:
+                    Face facets  : 10624
+                    Edge segments: 5905
+                Bounding box:
+                    (-75.75000000000001, 0, -23.25) x (75.75, 4, 23.25)
+                Assembly component hierarchy:
+                    'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cathod.scdoc'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                NamedCollections:
+                    'inlet'
+                    'outlet'
+                    'wall'
+                    'boi'
+                    'boi_cur_outer'
+    
+    
+    exporting FLTG data to file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576\\out170288290716576.tgf' ...
+    writing face-based mesh file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576\\out170288290716576.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 11
+        Object region: 27
+        Zone         : 39
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 16.776 [s]
+
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576/out170288290716576.tgf"...
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576/out170288290716576.tgf"...
+nodes: 10508
+edges: 5905
+faces: 10624
+cells: 0
+reading 10508 storage data (id 1, type 41, double precision binary).
+generating pointers...done.
+extracting boundary entities...
+ 10508 boundary nodes.
+ 10624 boundary faces.
+ 17 boundary face zones.
+done.
+analyzing boundary connectivity...done.
+
+---------------- Import of cathod, consisting of 11 parts/objects, complete. 
+ 
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-28.3971 25.395 -24.701) '(0 0 0) '(-0.0347958 -0.314383 -0.248174) 0 0)
+(cx-use-window-id 51)
+
+Importing one geom object per program-controlled and one zone per body ...
+    E:\\Ansys\\Ansys.Products.2022.R1.Win64\\Program Files\\ANSYS Inc\\v221\\commonfiles\\CPython\\3_7\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by MelonJam on DESKTOP-6MJKVPJ winx64 on Mon Dec 18 15:14:22 2023
+    using Python 3.7.11 (remotes/origin/b0b4eda9448d622fbb214539623a7f129f39e1f4-dirty:b0b4eda, Oct 18 20) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build Nov 30 2021 12:29:41 including TGLib build Nov 12 2019 13:13:16
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576/out170288366216576.tgf'
+    converting file 'cathod.scdoc' (1 of 1) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576'
+    importing data ...
+    importing meshing model from PartMgr from file 'D:/Objects3D/fluent/fuelCell/H2BIKE/fluent/cathod.scdoc' ...
+    setting enclosure and symmetry processing to False
+    setting transfer named selections to True
+    setting named selection prefixes to ''
+    setting mixed import resolution type to 'SolidAndSurface'
+    setting target application to 'FluentMeshing'
+    attaching to assembly ...
+    attaching to assembly done in 5.293 [s]
+    Warning: ?????????
+    processing assembly 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cathod.scdoc' with ID 1 and reference key '<?xml version="1.0" encoding="utf-16"?>
+    <IdTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Table>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3986" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10000</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4055" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10001</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4124" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10002</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4193" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10003</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4262" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10004</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4331" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10005</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4400" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10006</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4469" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10007</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4538" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10008</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4607" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10009</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4689" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10010</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+      </Table>
+    </IdTable>'
+    length unit = [m]
+    processing part '??????1' with ID 3
+    processing part '??????1' with ID 5
+    processing part '??????1' with ID 7
+    processing part '??????1' with ID 9
+    processing part '??????1' with ID 11
+    processing part '??????1' with ID 13
+    processing part '??????1' with ID 15
+    processing part '??????1' with ID 17
+    processing part '??????1' with ID 19
+    processing part '??????1' with ID 21
+    processing part '??????1' with ID 23
+    processing named selection 'inlet'
+    processing named selection 'outlet'
+    processing named selection 'wall'
+    processing named selection 'boi'
+    processing named selection 'boi_cur_outer'
+    processing named selection 'boi_cur_inner'
+    processing named selection 'boi_cur_otherr'
+    processing data ...
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+    detecting feature edges, feature angle = 40 [deg] ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Collection: 7
+                    Component : 12
+                    Body      : 11
+                    Shell     : 11
+                    Face      : 634
+                    Loop      : 674
+                    Edge      : 1956
+                    Vertex    : 1304
+                    Surface   : 634
+                    Curve     : 1956
+                Tessellation summary:
+                    Face facets  : 10660
+                    Edge segments: 5924
+                Bounding box:
+                    (-75.75000000000001, 0, -23.25) x (75.75, 4, 23.25)
+                Assembly component hierarchy:
+                    'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cathod.scdoc'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                NamedCollections:
+                    'inlet'
+                    'outlet'
+                    'wall'
+                    'boi'
+                    'boi_cur_outer'
+                    'boi_cur_inner'
+                    'boi_cur_otherr'
+    
+    
+    exporting FLTG data to file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576\\out170288366216576.tgf' ...
+    writing face-based mesh file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576\\out170288366216576.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 11
+        Object region: 29
+        Zone         : 44
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 5.558 [s]
+
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576/out170288366216576.tgf"...
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576/out170288366216576.tgf"...
+nodes: 10544
+edges: 5924
+faces: 10660
+cells: 0
+reading 10544 storage data (id 1, type 41, double precision binary).
+generating pointers...done.
+extracting boundary entities...
+ 10544 boundary nodes.
+ 10660 boundary faces.
+ 19 boundary face zones.
+done.
+analyzing boundary connectivity...done.
+
+---------------- Import of cathod, consisting of 11 parts/objects, complete. 
+ 
+
+---------------- A local size of 0.14794922 was added to facesize_1
+---- Warning--- The string 'boi' was detected in one of the selected zone names ( origin-boi:wall:--1-region_10 ). Did you intend to create a Body Of Influence?
+---- Warning--- The string 'boi' was detected in one of the selected zone names ( origin-boi:wall:--1-region_09 ). Did you intend to create a Body Of Influence?
+---- Warning--- The string 'boi' was detected in one of the selected zone names ( origin-boi_cur_inner ). Did you intend to create a Body Of Influence?
+---- Warning--- The string 'boi' was detected in one of the selected zone names ( origin-boi_cur_otherr ). Did you intend to create a Body Of Influence?
+---- Warning--- The string 'boi' was detected in one of the selected zone names ( origin-boi_cur_outer:wall:--1-region_10 ). Did you intend to create a Body Of Influence?
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576\TaskObject3.msh.h5" ...
+writing 1 node zones
+writing 25 edge zones 
+writing 19 face zones 
+done.
+---------------- The Global Max size was adjusted to 4 
+    processing size functions/scoped sizing to create Size Field...
+
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576\cathod.sf"...
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576\cathod.sf"...
+Done.
+
+
+Importing one mesh object per program-controlled and one zone per body ...
+    E:\\Ansys\\Ansys.Products.2022.R1.Win64\\Program Files\\ANSYS Inc\\v221\\commonfiles\\CPython\\3_7\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by MelonJam on DESKTOP-6MJKVPJ winx64 on Mon Dec 18 15:15:00 2023
+    using Python 3.7.11 (remotes/origin/b0b4eda9448d622fbb214539623a7f129f39e1f4-dirty:b0b4eda, Oct 18 20) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build Nov 30 2021 12:29:41 including TGLib build Nov 12 2019 13:13:16
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576/out170288370016576.tgf'
+    converting file 'cathod.scdoc.pmdb' (1 of 1) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576'
+    importing data ...
+    importing meshing model from PartMgr from file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576\\\\cathod.scdoc.pmdb' ...
+    setting enclosure and symmetry processing to False
+    setting transfer named selections to True
+    setting named selection prefixes to ''
+    setting mixed import resolution type to 'SolidAndSurface'
+    setting target application to 'FluentMeshing'
+    initializing part manager from file ...
+    processing assembly 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cathod.scdoc' with ID 1 and reference key '<?xml version="1.0" encoding="utf-16"?>
+    <IdTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Table>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3986" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10000</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4055" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10001</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4124" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10002</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4193" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10003</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4262" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10004</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4331" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10005</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4400" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10006</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4469" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10007</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4538" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10008</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4607" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10009</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4689" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10010</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+      </Table>
+    </IdTable>'
+    length unit = [m]
+    processing part '??????1' with ID 3
+    processing part '??????1' with ID 5
+    processing part '??????1' with ID 7
+    processing part '??????1' with ID 9
+    processing part '??????1' with ID 11
+    processing part '??????1' with ID 13
+    processing part '??????1' with ID 15
+    processing part '??????1' with ID 17
+    processing part '??????1' with ID 19
+    processing part '??????1' with ID 21
+    processing part '??????1' with ID 23
+    processing named selection 'inlet'
+    processing named selection 'outlet'
+    processing named selection 'wall'
+    processing named selection 'boi'
+    processing named selection 'boi_cur_outer'
+    processing named selection 'boi_cur_inner'
+    processing named selection 'boi_cur_otherr'
+    processing data ...
+    loading size function background grid from file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576\\\\cathod.sf' ...
+    reading size function background grid file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576\\\\cathod.sf' ...
+     Read 1108598 vertices
+    initializing size function background grid done in 0.631 [s]
+    tessellating 634 faces done in 17.837 [s]
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+    detecting feature edges, feature angle = 40 [deg] ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Collection: 7
+                    Component : 12
+                    Body      : 11
+                    Shell     : 11
+                    Face      : 634
+                    Loop      : 674
+                    Edge      : 1956
+                    Vertex    : 1304
+                    Surface   : 634
+                    Curve     : 1956
+                Tessellation summary:
+                    Face facets  : 1038222
+                    Edge segments: 91594
+                Bounding box:
+                    (-75.75, 0, -23.25) x (75.75, 4, 23.25)
+                Assembly component hierarchy:
+                    'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cathod.scdoc'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                NamedCollections:
+                    'inlet'
+                    'outlet'
+                    'wall'
+                    'boi'
+                    'boi_cur_outer'
+                    'boi_cur_inner'
+                    'boi_cur_otherr'
+    
+    
+    exporting FLTG data to file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576\\out170288370016576.tgf' ...
+    writing face-based mesh file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576\\out170288370016576.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 11
+        Object region: 29
+        Zone         : 44
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 19.934 [s]
+
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576/out170288370016576.tgf"...
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576/out170288370016576.tgf"...
+nodes: 609995
+edges: 91594
+faces: 1038222
+cells: 0
+reading 609995 storage data (id 1, type 41, double precision binary).
+appending mesh...
+done.
+generating pointers...done.
+extracting boundary entities...
+ 620539 boundary nodes.
+ 1048882 boundary faces.
+ 38 boundary face zones.
+done.
+
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576\\cathod.sf"...
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576\\cathod.sf"...
+ Read 1108598 vertices
+12177 faces marked.
+
+---------------- After surface meshing, 11 objects/parts have been detected. The Share Topology task should be added in order to proceed.
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.861191 7.1013 -12.2409) '(0 0 0) '(-0.0904369 -0.135281 -0.0695624) 0 0)
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576\TaskObject3.msh.h5" ...
+3D mesh
+nodes: 10544
+edges: 5924
+faces: 10660
+cells: 0
+reading 1 node zones
+reading 25 edge zones
+reading 19 face zones
+generating pointers...done.
+extracting boundary entities...
+ 10544 boundary nodes.
+ 10660 boundary faces.
+ 19 boundary face zones.
+done.
+analyzing boundary connectivity...done.
+Deleting facesize_1
+
+---------------- A local size of 0.05 was added to facesize_1
+---- Warning--- The string 'boi' was detected in one of the selected zone names ( origin-boi:wall:--1-region_10 ). Did you intend to create a Body Of Influence?
+---- Warning--- The string 'boi' was detected in one of the selected zone names ( origin-boi:wall:--1-region_09 ). Did you intend to create a Body Of Influence?
+---- Warning--- The string 'boi' was detected in one of the selected zone names ( origin-boi_cur_inner ). Did you intend to create a Body Of Influence?
+---- Warning--- The string 'boi' was detected in one of the selected zone names ( origin-boi_cur_otherr ). Did you intend to create a Body Of Influence?
+---- Warning--- The string 'boi' was detected in one of the selected zone names ( origin-boi_cur_outer:wall:--1-region_10 ). Did you intend to create a Body Of Influence?
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576\TaskObject3.msh.h5" ...
+writing 1 node zones
+writing 25 edge zones 
+writing 19 face zones 
+done.
+---------------- The Global Max size was adjusted to 4 
+    processing size functions/scoped sizing to create Size Field...
+
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576\cathod.sf"...
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576\cathod.sf"...
+Done.
+
+
+Importing one mesh object per program-controlled and one zone per body ...
+    E:\\Ansys\\Ansys.Products.2022.R1.Win64\\Program Files\\ANSYS Inc\\v221\\commonfiles\\CPython\\3_7\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by MelonJam on DESKTOP-6MJKVPJ winx64 on Mon Dec 18 15:16:50 2023
+    using Python 3.7.11 (remotes/origin/b0b4eda9448d622fbb214539623a7f129f39e1f4-dirty:b0b4eda, Oct 18 20) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build Nov 30 2021 12:29:41 including TGLib build Nov 12 2019 13:13:16
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576/out170288381016576.tgf'
+    converting file 'cathod.scdoc.pmdb' (1 of 1) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576'
+    importing data ...
+    importing meshing model from PartMgr from file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576\\\\cathod.scdoc.pmdb' ...
+    setting enclosure and symmetry processing to False
+    setting transfer named selections to True
+    setting named selection prefixes to ''
+    setting mixed import resolution type to 'SolidAndSurface'
+    setting target application to 'FluentMeshing'
+    initializing part manager from file ...
+    processing assembly 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cathod.scdoc' with ID 1 and reference key '<?xml version="1.0" encoding="utf-16"?>
+    <IdTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Table>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3986" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10000</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4055" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10001</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4124" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10002</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4193" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10003</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4262" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10004</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4331" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10005</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4400" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10006</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4469" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10007</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4538" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10008</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4607" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10009</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <ExplodedBodyText>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:4689" /&gt;&lt;/SnippetV1&gt;</ExplodedBodyText>
+          <Id>10010</Id>
+          <IsExploded>true</IsExploded>
+        </Entry>
+      </Table>
+    </IdTable>'
+    length unit = [m]
+    processing part '??????1' with ID 3
+    processing part '??????1' with ID 5
+    processing part '??????1' with ID 7
+    processing part '??????1' with ID 9
+    processing part '??????1' with ID 11
+    processing part '??????1' with ID 13
+    processing part '??????1' with ID 15
+    processing part '??????1' with ID 17
+    processing part '??????1' with ID 19
+    processing part '??????1' with ID 21
+    processing part '??????1' with ID 23
+    processing named selection 'inlet'
+    processing named selection 'outlet'
+    processing named selection 'wall'
+    processing named selection 'boi'
+    processing named selection 'boi_cur_outer'
+    processing named selection 'boi_cur_inner'
+    processing named selection 'boi_cur_otherr'
+    processing data ...
+    loading size function background grid from file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576\\\\cathod.sf' ...
+    reading size function background grid file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576\\\\cathod.sf' ...
+     Read 611097 vertices
+    initializing size function background grid done in 0.286 [s]
+    tessellating 634 faces done in 10.729 [s]
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+    detecting feature edges, feature angle = 40 [deg] ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Collection: 7
+                    Component : 12
+                    Body      : 11
+                    Shell     : 11
+                    Face      : 634
+                    Loop      : 674
+                    Edge      : 1956
+                    Vertex    : 1304
+                    Surface   : 634
+                    Curve     : 1956
+                Tessellation summary:
+                    Face facets  : 992452
+                    Edge segments: 63355
+                Bounding box:
+                    (-75.75, 0, -23.25) x (75.75, 4, 23.25)
+                Assembly component hierarchy:
+                    'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cathod.scdoc'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                      '??????1'
+                NamedCollections:
+                    'inlet'
+                    'outlet'
+                    'wall'
+                    'boi'
+                    'boi_cur_outer'
+                    'boi_cur_inner'
+                    'boi_cur_otherr'
+    
+    
+    exporting FLTG data to file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576\\out170288381016576.tgf' ...
+    writing face-based mesh file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576\\out170288381016576.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 11
+        Object region: 29
+        Zone         : 44
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 12.333 [s]
+
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576/out170288381016576.tgf"...
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576/out170288381016576.tgf"...
+nodes: 558871
+edges: 63355
+faces: 992452
+cells: 0
+reading 558871 storage data (id 1, type 41, double precision binary).
+appending mesh...
+done.
+generating pointers...done.
+extracting boundary entities...
+ 569415 boundary nodes.
+ 1003112 boundary faces.
+ 38 boundary face zones.
+done.
+
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576\\cathod.sf"...
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576\\cathod.sf"...
+ Read 611097 vertices
+88916 faces marked.
+
+---------------- After surface meshing, 11 objects/parts have been detected. The Share Topology task should be added in order to proceed.
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-9.27742 8.68344 -5.11697) '(0 0 0) '(-0.0675943 -0.114276 -0.071305) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(3.37941 -17.2497 10.203) '(0 0 0) '(0.475268 0.397863 0.471272) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-1.32067 11.0456 -3.21841) '(0 0 0) '(-0.171161 -0.0978004 -0.265099) 0 0)
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576\TaskObject5.msh.h5" ...
+writing 2 node zones
+writing 50 edge zones 
+writing 38 face zones 
+done.36 pair(s) found.
+Joining...
+ wall and wall.2 
+ boi-wall---1-region_09 and wall.2 
+ boi-wall---1-region_10 and wall.2 
+ wall.1 and wall.2 
+ No overlap boundary found. 
+ wall and wall.7 
+ boi-wall---1-region_09 and wall.7 
+ boi-wall---1-region_10 and wall.7 
+ wall.1 and wall.7 
+ No overlap boundary found. 
+ wall and wall.3 
+ boi-wall---1-region_09 and wall.3 
+ boi-wall---1-region_10 and wall.3 
+ wall.1 and wall.3 
+ No overlap boundary found. 
+ wall and wall.6 
+ boi-wall---1-region_09 and wall.6 
+ boi-wall---1-region_10 and wall.6 
+ wall.1 and wall.6 
+ No overlap boundary found. 
+ wall and wall.5 
+ boi-wall---1-region_09 and wall.5 
+ boi-wall---1-region_10 and wall.5 
+ wall.1 and wall.5 
+ No overlap boundary found. 
+ wall and wall.8 
+ boi-wall---1-region_09 and wall.8 
+ boi-wall---1-region_10 and wall.8 
+ wall.1 and wall.8 
+ No overlap boundary found. 
+ wall and wall.4 
+ boi-wall---1-region_09 and wall.4 
+ boi-wall---1-region_10 and wall.4 
+ wall.1 and wall.4 
+ No overlap boundary found. 
+ wall and wall.9 
+ boi-wall---1-region_09 and wall.9 
+ boi-wall---1-region_10 and wall.9 
+ wall.1 and wall.9 
+ No overlap boundary found. 
+ wall.10 and wall 
+ boi-wall---1-region_09 and wall.10 
+ boi-wall---1-region_10 and wall.10 
+ wall.1 and wall.10 
+ No overlap boundary found. 
+ Warning: Remeshing may alter the final dihedral angle.
+Done.
+0 pair(s) found.
+
+    computing regions...done
+0 faces marked.
+Deleting import_curvature_0
+Deleting import_proximity_0
+    processing size functions/scoped sizing to create Size Field...
+
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576\cathod.sf"...
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576\cathod.sf"...
+Done.
+
+
+remeshing...
+
+
+------------------------- --------------------- -------------------- ---------------- ----------
+                     name skewed-cells (> 0.80)    averaged-skewness maximum-skewness face count
+------------------------- --------------------- -------------------- ---------------- ----------
+            --1-region_01                     0          0.020191756       0.45192626       7320
+            --1-region_02                     0          0.020609375       0.50062675       7328
+            --1-region_03                     0          0.020548351       0.44779121       7346
+            --1-region_04                     0          0.019995192       0.47040996       7322
+          --1-region_04:1                     0          0.021137467       0.45513739       7356
+            --1-region_05                     0          0.020069074       0.45400951       7316
+            --1-region_06                     0          0.020200155       0.47323006       7340
+            --1-region_07                     0           0.01991125       0.46268497       8022
+            --1-region_08                     0          0.020499577       0.44779451       8046
+        zone--1-region_09                     0          0.013857192       0.49929072     114504
+        zone--1-region_10                     0          0.031417543       0.60922918     813286
+
+------------------------- --------------------- -------------------- ---------------- ----------
+                     name skewed-cells (> 0.80)    averaged-skewness maximum-skewness face count
+------------------------- --------------------- -------------------- ---------------- ----------
+                   cathod                     0          0.029502058       0.60922918     954051
+
+
+---------------- Surface Quality improvement of cathod complete in :  0.05 minutes. The final maximum surface skewness is  0.61. 
+
+
+---------------- Velocity-inlet zone type was automatically assigned to zones containing the string 'inlet'.
+
+---------------- Pressure-outlet zone type was automatically assigned to zones containing the string 'outlet'.
+
+---------------- Fluid-Fluid boundaries were changed to type 'internal'
+
+---------------- Some Fluid-Fluid boundaries were changed back to type 'wall' as their names contains 'wall' 
+
+---------------- After Surface mesh, the model consists of 10 fluid/solid regions and 1 voids.
+
+---------------- Share Topology of cathod complete in  1.45 minutes with a maximum skewness of  0.61. 
+
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-3.65937 5.19821 -7.15263) '(0 0 0) '(-0.156167 -0.285355 -0.125757) 0 0)
+
+---------------- Boundary Conditions Updated
+
+---------------- Regions Updated
+
+Created Scoped Prism: smooth-transition_1
+
+---------------- Inflation control added to cathod
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.72298 -0.41636 -2.80637) '(0 0 0) '(-0.0930771 -0.178017 0.00993538) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.877735 0.99576 2.99015) '(0 0 0) '(0.0328149 0.0625377 -0.011026) 0 0)
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576\TaskObject11.msh.h5" ...
+writing 67 node zones
+writing 87 edge zones 
+writing 56 face zones 
+done.
+    updating regions...
+    done.
+checking object "cathod"...
+    skipping validating regions of mesh object "cathod"...done.
+auto meshing object cathod...
+
+processing scoped prisms...
+    starting orientation...done.
+    setting prism growth...done.
+done.
+Identifying Topology...
+
+Generating Prisms...
+
+Generating initial mesh...
+.
+
+
+Refining mesh...
+
+Create polyhedra ...
+.
+
+.
+
+.
+
+.
+
+.
+
+
+Merging Domains...
+done.
+
+Quality Measure has been changed to Orthogonal Quality.---- Warning--- The Cell zone '--1-region_08' was not identified for body-label cell merging with wall. The name might have changed in Create or Update Region tasks.
+---- Warning--- The Cell zone '--1-region_07' was not identified for body-label cell merging with wall. The name might have changed in Create or Update Region tasks.
+---- Warning--- The Cell zone '--1-region_06' was not identified for body-label cell merging with wall. The name might have changed in Create or Update Region tasks.
+---- Warning--- The Cell zone '--1-region_05' was not identified for body-label cell merging with wall. The name might have changed in Create or Update Region tasks.
+---- Warning--- The Cell zone '--1-region_04' was not identified for body-label cell merging with wall. The name might have changed in Create or Update Region tasks.
+---- Warning--- The Cell zone '--1-region_03' was not identified for body-label cell merging with wall. The name might have changed in Create or Update Region tasks.
+---- Warning--- The Cell zone '--1-region_02' was not identified for body-label cell merging with wall. The name might have changed in Create or Update Region tasks.
+---- Warning--- The Cell zone '--1-region_01' was not identified for body-label cell merging with wall. The name might have changed in Create or Update Region tasks.
+---- Warning--- Body label merge failed for 'wall'. This is usually happening if multiple body labels are associated with bodies of the same name. This is currently not supported. Either 1. Change all the body names in SCDM/DM so that they are unique, or 2. Use Cell Zones option in the Manage Zones task to manually merge the cell zones, or 3. Change the Volume Mesh - Advanced Options 'Merge Body Label Bodies? to 'no'. 
+
+                     name       id cells (quality < 0.10)  minimum quality cell count
+------------------------- -------- ---------------------- ---------------- ----------
+           s--1-region_03    56839                      0       0.38046737      28839
+           s--1-region_02    56836                      0       0.39907366      28842
+           s--1-region_07    56833                      0       0.38305773      31594
+           s--1-region_01    56830                      0       0.39421058      28832
+           s--1-region_08    56827                      0       0.37916207      31724
+           s--1-region_05    56824                      0       0.37694001      28765
+           s--1-region_06    56821                      0       0.36177506      28883
+                    fluid    56818                      0       0.38545257      28966
+           s--1-region_04    56815                      0       0.40355828      28774
+        zone--1-region_09    56812                      0       0.20050255     473166
+        zone--1-region_10    56809                      7      0.075702206    3374966
+
+                     name       id cells (quality < 0.10)  minimum quality cell count
+------------------------- -------- ---------------------- ---------------- ----------
+          Overall Summary     none                      7      0.075702206    4113351
+
+[Quality Measure : Orthogonal Quality]
+
+---------------- 4113351 cells were created in :  2.80 minutes
+
+---------------- The mesh has a minimum Orthogonal Quality of:  0.08 
+
+---------------- The volume meshing of cathod is complete.
+
+(cx-use-window-id 51)
+(cx-set-camera-relative '(3.72626 -3.63422 -8.86268) '(0 0 0) '(-0.0221313 -0.0384568 0.0081259) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(163.674 -148.938 448.934) '(0 0 0) '(0.356325 0.445486 0.0312586) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-78.189 -174.935 262.503) '(0 0 0) '(0.279915 0.222095 0.248965) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-28.4863 -8.75863 22.2923) '(0 0 0) '(0.0282087 0.0191525 0.0497755) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-39.9249 -15.9687 10.9995) '(0 0 0) '(0.000771314 0.0397673 0.211384) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-10.6482 -2.39929 -2.94489) '(0 0 0) '(-0.016629 0.00101852 0.0421129) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(5.41826 2.76536 10.4975) '(0 0 0) '(0.000838846 -0.00543654 -0.0751673) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-1.50716 18.8044 -7.68234) '(0 0 0) '(-0.0106717 -0.206365 -0.502914) 0 0)
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576\TaskObject11.msh.h5" ...
+3D mesh
+nodes: 1110220
+edges: 146208
+faces: 964711
+cells: 0
+reading 67 node zones
+reading 87 edge zones
+reading 56 face zones
+generating pointers...done.
+extracting boundary entities...
+ 1110220 boundary nodes.
+ 964711 boundary faces.
+ 56 boundary face zones.
+done.
+analyzing boundary connectivity...done.
+
+Importing one geom object per program-controlled and one zone per body ...
+    E:\\Ansys\\Ansys.Products.2022.R1.Win64\\Program Files\\ANSYS Inc\\v221\\commonfiles\\CPython\\3_7\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by MelonJam on DESKTOP-6MJKVPJ winx64 on Mon Dec 18 15:29:30 2023
+    using Python 3.7.11 (remotes/origin/b0b4eda9448d622fbb214539623a7f129f39e1f4-dirty:b0b4eda, Oct 18 20) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build Nov 30 2021 12:29:41 including TGLib build Nov 12 2019 13:13:16
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576/out170288457016576.tgf'
+    converting file 'cathod.scdoc' (1 of 1) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576'
+    importing data ...
+    importing meshing model from PartMgr from file 'D:/Objects3D/fluent/fuelCell/H2BIKE/fluent/cathod.scdoc' ...
+    setting enclosure and symmetry processing to False
+    setting transfer named selections to True
+    setting named selection prefixes to ''
+    setting mixed import resolution type to 'SolidAndSurface'
+    setting target application to 'FluentMeshing'
+    attaching to assembly ...
+    attaching to assembly done in 4.79 [s]
+    Warning: ?????????
+    processing assembly 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cathod.scdoc' with ID 1 and reference key '<?xml version="1.0" encoding="utf-16"?>
+    <IdTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Table>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <Id>10000</Id>
+          <IsExploded>false</IsExploded>
+        </Entry>
+      </Table>
+    </IdTable>'
+    length unit = [m]
+    processing part 'fluid_region' with ID 3
+    processing named selection 'inlet'
+    processing named selection 'outlet'
+    processing named selection 'wall'
+    processing named selection 'boi'
+    processing named selection 'boi_cur_outer'
+    processing named selection 'boi_cur_inner'
+    processing named selection 'boi_cur_otherr'
+    processing data ...
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+    detecting feature edges, feature angle = 40 [deg] ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Collection: 7
+                    Component : 2
+                    Body      : 1
+                    Shell     : 1
+                    Face      : 604
+                    Loop      : 652
+                    Edge      : 1950
+                    Vertex    : 1300
+                    Surface   : 604
+                    Curve     : 1950
+                Tessellation summary:
+                    Face facets  : 10724
+                    Edge segments: 5918
+                Bounding box:
+                    (-75.75000000000001, 0, -23.25) x (75.75, 4, 23.25)
+                Assembly component hierarchy:
+                    'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cathod.scdoc'
+                      'fluid_region'
+                NamedCollections:
+                    'inlet'
+                    'outlet'
+                    'wall'
+                    'boi'
+                    'boi_cur_outer'
+                    'boi_cur_inner'
+                    'boi_cur_otherr'
+    
+    
+    exporting FLTG data to file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576\\out170288457016576.tgf' ...
+    writing face-based mesh file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576\\out170288457016576.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 1
+        Object region: 8
+        Zone         : 23
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 5.019 [s]
+
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576/out170288457016576.tgf"...
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576/out170288457016576.tgf"...
+nodes: 10536
+edges: 5918
+faces: 10724
+cells: 0
+reading 10536 storage data (id 1, type 41, double precision binary).
+generating pointers...done.
+extracting boundary entities...
+ 10536 boundary nodes.
+ 10724 boundary faces.
+ 8 boundary face zones.
+done.
+analyzing boundary connectivity...done.
+
+---------------- Import of cathod, consisting of one single part/object , complete. 
+ 
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-37.185 12.2614 8.69583) '(0 0 0) '(0.119606 -0.0983133 -0.196187) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(16.6985 -60.2755 34.2464) '(0 0 0) '(0.251018 0.367638 0.523412) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-7.71529 24.803 -12.5325) '(0 0 0) '(-0.199421 -0.316424 -0.502719) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(3.59175 -1.2952 -0.374129) '(0 0 0) '(0.0290709 0.0624967 0.0524668) 0 0)
+(cx-use-window-id 51)
+zone not found.
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+zone not found.
+
+Importing one geom object per program-controlled and one zone per body ...
+    E:\\Ansys\\Ansys.Products.2022.R1.Win64\\Program Files\\ANSYS Inc\\v221\\commonfiles\\CPython\\3_7\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by MelonJam on DESKTOP-6MJKVPJ winx64 on Mon Dec 18 15:30:35 2023
+    using Python 3.7.11 (remotes/origin/b0b4eda9448d622fbb214539623a7f129f39e1f4-dirty:b0b4eda, Oct 18 20) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build Nov 30 2021 12:29:41 including TGLib build Nov 12 2019 13:13:16
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576/out170288463516576.tgf'
+    converting file 'cathod.scdoc' (1 of 1) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576'
+    importing data ...
+    importing meshing model from PartMgr from file 'D:/Objects3D/fluent/fuelCell/H2BIKE/fluent/cathod.scdoc' ...
+    setting enclosure and symmetry processing to False
+    setting transfer named selections to True
+    setting named selection prefixes to ''
+    setting mixed import resolution type to 'SolidAndSurface'
+    setting target application to 'FluentMeshing'
+    attaching to assembly ...
+    attaching to assembly done in 4.775 [s]
+    Warning: ?????????
+    processing assembly 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cathod.scdoc' with ID 1 and reference key '<?xml version="1.0" encoding="utf-16"?>
+    <IdTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Table>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <Id>10000</Id>
+          <IsExploded>false</IsExploded>
+        </Entry>
+      </Table>
+    </IdTable>'
+    length unit = [m]
+    processing part 'fluid_region' with ID 3
+    processing named selection 'inlet'
+    processing named selection 'outlet'
+    processing named selection 'wall'
+    processing named selection 'boi'
+    processing named selection 'boi_cur_outer'
+    processing named selection 'boi_cur_inner'
+    processing named selection 'boi_cur_otherr'
+    processing data ...
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+    detecting feature edges, feature angle = 40 [deg] ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Collection: 7
+                    Component : 2
+                    Body      : 1
+                    Shell     : 1
+                    Face      : 604
+                    Loop      : 652
+                    Edge      : 1950
+                    Vertex    : 1300
+                    Surface   : 604
+                    Curve     : 1950
+                Tessellation summary:
+                    Face facets  : 10724
+                    Edge segments: 5918
+                Bounding box:
+                    (-75.75000000000001, 0, -23.25) x (75.75, 4, 23.25)
+                Assembly component hierarchy:
+                    'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cathod.scdoc'
+                      'fluid_region'
+                NamedCollections:
+                    'inlet'
+                    'outlet'
+                    'wall'
+                    'boi'
+                    'boi_cur_outer'
+                    'boi_cur_inner'
+                    'boi_cur_otherr'
+    
+    
+    exporting FLTG data to file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576\\out170288463516576.tgf' ...
+    writing face-based mesh file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_16576\\out170288463516576.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 1
+        Object region: 8
+        Zone         : 23
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 4.996 [s]
+
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576/out170288463516576.tgf"...
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_16576/out170288463516576.tgf"...
+nodes: 10536
+edges: 5918
+faces: 10724
+cells: 0
+reading 10536 storage data (id 1, type 41, double precision binary).
+generating pointers...done.
+extracting boundary entities...
+ 10536 boundary nodes.
+ 10724 boundary faces.
+ 8 boundary face zones.
+done.
+analyzing boundary connectivity...done.
+
+---------------- Import of cathod, consisting of one single part/object , complete. 
+ 
+(cx-use-window-id 51)
+zone id: 5, name: origin-wall, type: geometry, count: 5920
+(cx-gui-do cx-activate-item "ToolBar*Mesh Display*fl_mesh_svg_graphics_toolbar")
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 1)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 2)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 3)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 4)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 5)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 2)
+(cx-gui-do cx-set-list-selections "Display Grid*Frame1*Frame3(Faces)*Table1*Frame3*List1(Face Zones)" '( 4))
+(cx-gui-do cx-activate-item "Display Grid*Frame1*Frame3(Faces)*Table1*Frame3*List1(Face Zones)")
+(cx-gui-do cx-activate-item "Display Grid*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+zone not found.
+(cx-gui-do cx-activate-item "Display Grid*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "ToolBar*Mesh Display*fl_mesh_svg_graphics_toolbar")
+(cx-gui-do cx-set-list-selections "Display Grid*Frame1*Frame3(Faces)*Table1*Frame3*List1(Face Zones)" '( 4 7))
+(cx-gui-do cx-activate-item "Display Grid*Frame1*Frame3(Faces)*Table1*Frame3*List1(Face Zones)")
+(cx-gui-do cx-set-list-selections "Display Grid*Frame1*Frame3(Faces)*Table1*Frame3*List1(Face Zones)" '( 0 1 2 3 4 5 6 7))
+(cx-gui-do cx-activate-item "Display Grid*Frame1*Frame3(Faces)*Table1*Frame3*List1(Face Zones)")
+(cx-gui-do cx-activate-item "Display Grid*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+zone not found.
+(cx-gui-do cx-set-list-selections "Display Grid*Frame1*Frame3(Faces)*Table1*Frame3*List2(Face Zone Groups)" '( 0))
+(cx-gui-do cx-activate-item "Display Grid*Frame1*Frame3(Faces)*Table1*Frame3*List2(Face Zone Groups)")
+(cx-gui-do cx-set-list-selections "Display Grid*Frame1*Frame3(Faces)*Table1*Frame3*List2(Face Zone Groups)" '())
+(cx-gui-do cx-activate-item "Display Grid*Frame1*Frame3(Faces)*Table1*Frame3*List2(Face Zone Groups)")
+(cx-gui-do cx-activate-item "Display Grid*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-5.21851 -33.8847 27.8253) '(0 0 0) '(0.381585 0.256551 0.260506) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-7.21775 18.6878 -10.916) '(0 0 0) '(-0.240877 -0.375181 -0.484814) 0 0)
+(cx-use-window-id 51)
+(cx-gui-do cx-activate-item "MenuBar*ReadSubMenu*Mesh...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "cathod.scdoc") "All Files (*)")
+(cx-gui-do cx-activate-item "Question*OK")
+Reading "D:/Objects3D/fluent/fuelCell/H2BIKE/fluent/cathod.scdoc"...
+
+Error at host: reading file
+
+Error: reading file
+Error Object: #f
+(cx-gui-do cx-activate-item "Error*OK")
+
+Error: Error reading "D:/Objects3D/fluent/fuelCell/H2BIKE/fluent/cathod.scdoc".
+Error Object: #f
+(cx-gui-do cx-activate-item "Error*OK")
+
+Error: Error occurred while reading.
+Error Object: #f
+(cx-gui-do cx-activate-item "Error*OK")
+(cx-gui-do cx-activate-item "ToolBar*Mesh Display*fl_mesh_svg_graphics_toolbar")
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-item "Display Grid*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+(cx-gui-do cx-activate-item "MenuBar*ReadSubMenu*Mesh...")
+/exit y
+Auto-Transcript Stop Time:  15:33:57, 18 Dec 2023 中国标准时间 
+Total Transcript Time: 32 Minute 34 Second.

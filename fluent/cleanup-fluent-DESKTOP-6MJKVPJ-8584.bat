@@ -1,0 +1,16 @@
+echo off
+set LOCALHOST=%COMPUTERNAME%
+set KILL_CMD="E:\Ansys\Ansys.Products.2022.R1.Win64\Program Files\ANSYS Inc\v221\fluent/ntbin/win64/winkill.exe"
+
+"E:\Ansys\Ansys.Products.2022.R1.Win64\Program Files\ANSYS Inc\v221\fluent\ntbin\win64\tell.exe" DESKTOP-6MJKVPJ 56408 CLEANUP_EXITING
+if /i "%LOCALHOST%"=="DESKTOP-6MJKVPJ" (%KILL_CMD% 17776) 
+if /i "%LOCALHOST%"=="DESKTOP-6MJKVPJ" (%KILL_CMD% 6876) 
+if /i "%LOCALHOST%"=="DESKTOP-6MJKVPJ" (%KILL_CMD% 5284) 
+if /i "%LOCALHOST%"=="DESKTOP-6MJKVPJ" (%KILL_CMD% 19716) 
+if /i "%LOCALHOST%"=="DESKTOP-6MJKVPJ" (%KILL_CMD% 14268) 
+if /i "%LOCALHOST%"=="DESKTOP-6MJKVPJ" (%KILL_CMD% 1928) 
+if /i "%LOCALHOST%"=="DESKTOP-6MJKVPJ" (%KILL_CMD% 1316) 
+if /i "%LOCALHOST%"=="DESKTOP-6MJKVPJ" (%KILL_CMD% 10108) 
+if /i "%LOCALHOST%"=="DESKTOP-6MJKVPJ" (%KILL_CMD% 8584) 
+if /i "%LOCALHOST%"=="DESKTOP-6MJKVPJ" (%KILL_CMD% 13136)
+del "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\cleanup-fluent-DESKTOP-6MJKVPJ-8584.bat"

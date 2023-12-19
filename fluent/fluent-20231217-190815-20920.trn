@@ -1,0 +1,626 @@
+Auto-Transcript Start Time:  19:08:15, 17 Dec 2023 中国标准时间 
+Current Directory: "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent"
+
+              Welcome to ANSYS Fluent 2022 R1
+
+              Copyright 1987-2022 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Nov 29 2021 12:14:46 EST  Build Id: 10213  
+ 
+Connected License Server List:	
+Host spawning Node 0 on machine "DESKTOP-6MJKVPJ" (win64).
+
+------------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                                  
+------------------------------------------------------------------------------------------
+n7    DESKTOP-6MJKVPJ  8/20  Windows-x64  18672  12th Gen Intel(R) Core(TM) i7-12700H    
+n6    DESKTOP-6MJKVPJ  7/20  Windows-x64  10320  12th Gen Intel(R) Core(TM) i7-12700H    
+n5    DESKTOP-6MJKVPJ  6/20  Windows-x64  11424  12th Gen Intel(R) Core(TM) i7-12700H    
+n4    DESKTOP-6MJKVPJ  5/20  Windows-x64  22568  12th Gen Intel(R) Core(TM) i7-12700H    
+n3    DESKTOP-6MJKVPJ  4/20  Windows-x64  15556  12th Gen Intel(R) Core(TM) i7-12700H    
+n2    DESKTOP-6MJKVPJ  3/20  Windows-x64  10292  12th Gen Intel(R) Core(TM) i7-12700H    
+n1    DESKTOP-6MJKVPJ  2/20  Windows-x64  20868  12th Gen Intel(R) Core(TM) i7-12700H    
+n0*   DESKTOP-6MJKVPJ  1/20  Windows-x64  1164   12th Gen Intel(R) Core(TM) i7-12700H    
+host  DESKTOP-6MJKVPJ        Windows-x64  20636  12th Gen Intel(R) Core(TM) i7-12700H    
+
+MPI Option Selected: intel
+Selected system interconnect: default
+------------------------------------------------------------------------------------------
+
+Cleanup script file is D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cleanup-fluent-DESKTOP-6MJKVPJ-20636.bat
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+
+Meshing> (cx-gui-do cx-activate-item "Ribbon*Frame1*Frame2(Task Page)*Table1*Table3(Solution)*PushButton1(Switch to Solution)")
+(cx-gui-do cx-activate-item "Question*Cancel")
+(cx-gui-do cx-activate-item "MenuBar*ReadSubMenu*Case...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "anode.cas.h5") "CFF Case Files (*.cas.h5 *.msh.h5 )")
+Reading "D:/Objects3D/fluent/fuelCell/H2BIKE/fluent/anode.cas.h5" ...
+Reading "D:/Objects3D/fluent/fuelCell/H2BIKE/fluent/anode.cas.h5" ...
+
+
+3D mesh
+nodes: 447278
+edges: 0
+faces: 1067987
+cells: 302867
+reading 1 node zones
+reading 0 edge zones
+reading 4 face zones
+reading 1 cell zones
+generating pointers...done.
+extracting boundary entities...
+ moved 111499 nodes from interior zone to zone 94.
+ 111499 boundary nodes.
+ 83600 boundary faces.
+ 3 boundary face zones.
+done.
+generating cells...done.
+
+Warning: Curvature data for any of the zones will not be scaled. 
+Mesh is now scaled back from meters.
+analyzing boundary connectivity...done.
+(cx-use-window-id 51)
+selected 1 zone(s).
+zone id: 14, name: fluent_region:1, type: wall, count: 82595
+(cx-use-window-id 51)
+zone not found.
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+zone not found.
+(cx-gui-do cx-activate-item "MenuBar*FileMenu*Preferences...")
+(cx-gui-do cx-activate-item "Warning*Cancel")
+(cx-gui-do cx-activate-item "Warning*Cancel")
+(cx-gui-do cx-activate-item "Warning*OK")
+(cx-gui-do cx-activate-item "Warning*OK")
+(cx-gui-do cx-activate-item "Warning*OK")
+(cx-gui-do cx-activate-item "Warning*OK")
+(cx-gui-do cx-activate-item "Preferences*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+zone not found.
+(cx-gui-do cx-activate-item "Ribbon*Frame1*Frame2(Task Page)*Table1*Table3(Solution)*PushButton1(Switch to Solution)")
+(cx-gui-do cx-activate-item "Question*OK")
+
+
+deleting exterior entities...done.
+Note: Rank = 0: Process affinity not being set (6).
+Note: Rank = 1: Process affinity not being set (6).
+Note: Rank = 2: Process affinity not being set (6).
+Note: Rank = 3: Process affinity not being set (6).
+Note: Rank = 4: Process affinity not being set (6).
+Note: Rank = 5: Process affinity not being set (6).
+Note: Rank = 6: Process affinity not being set (6).
+Note: Rank = 7: Process affinity not being set (6).
+
+Transferring mesh
+	creating threads... done
+	transferring nodes... done
+	transferring cells... done
+	transferring faces... done
+	post mesh transfer operations... done
+done
+
+Building...
+     mesh
+	auto partitioning mesh by Metis (fast),
+	distributing mesh
+		parts........,
+		faces........,
+		nodes........,
+		cells........,
+        bandwidth reduction using Reverse Cuthill-McKee: 37040/783 = 47.3052
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	interior--fluent_region
+	inlet
+	outlet
+	fluent_region:1
+	fluent_region
+     surfaces,
+     parallel,
+Done.
+Mesh is now scaled to meters.
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)
+(newline)
+
+
+> (cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-gui-do cx-activate-item "ToolBar*Mesh Display*fl_mesh_svg_graphics_toolbar")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 0 2))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 0))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '())
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-toggle-button2 "Mesh Display*Table1*Frame1*Frame1*ToggleBox1(Options)*CheckButton2(Edges)" #t)
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame1*Frame1*ToggleBox1(Options)*CheckButton2(Edges)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 0))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 0 1))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 0 1 2))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+(cxg-clear-all-selections (cx-active-window))
+(cxg-add-surfaces-to-selection '(fluent_region:1) (cx-active-window))
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0110374 -0.0256517 -0.0303625) '(0 0 0) '(-0.320668 0.940041 -0.883811) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00212431 -0.015885 -0.0204342) '(0 0 0) '(0.18382 0.0490966 -0.062461) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0142756 0.0744467 0.0234685) '(0 0 0) '(-0.134212 -0.165767 0.444865) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0334447 -0.0380458 -0.00382756) '(0 0 0) '(0.0975089 0.143672 -0.312257) 0 0)
+(cx-use-window-id 51)
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Mesh"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|FFT"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Discrete Phase|Histogram"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Discrete Phase|Histogram"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Discrete Phase|Histogram"))
+(cx-gui-do cx-activate-item "Trajectory Sample Histograms*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Simulation Reports|Report Outline"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Mesh"))
+(cx-gui-do cx-activate-item "MenuBar*ReadSubMenu*Case & Data...")
+(cx-gui-do cx-activate-item "Question*OK")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "anode.cas.h5") "CFF Case Files (*.cas.h5 )")
+Fast-loading "E:\Ansys\Ansys.Products.2022.R1.Win64\Program Files\ANSYS Inc\v221\fluent\fluent22.1.0\\addons\afd\lib\hdfio.bin"
+Done.
+Note: Rank = 0: Process affinity not being set (6).
+Note: Rank = 1: Process affinity not being set (6).
+Note: Rank = 2: Process affinity not being set (6).
+Note: Rank = 3: Process affinity not being set (6).
+Note: Rank = 4: Process affinity not being set (6).
+Note: Rank = 5: Process affinity not being set (6).
+Note: Rank = 6: Process affinity not being set (6).
+Note: Rank = 7: Process affinity not being set (6).
+
+       Clearing partially read grid.
+
+Reading from DESKTOP-6MJKVPJ:"D:/Objects3D/fluent/fuelCell/H2BIKE/fluent/anode.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+      302867 cells,     1 cell zone  ...
+         302867 polyhedra cells,  zone id: 93
+     1067987 faces,     4 face zones ...
+            506 polygonal pressure-outlet faces,  zone id: 15
+            499 polygonal velocity-inlet faces,  zone id: 16
+          82595 polygonal wall faces,  zone id: 14
+         984387 polygonal interior faces,  zone id: 92
+      447278 nodes,     1 node zone  ...
+  Done.
+
+
+Building...
+     mesh
+	distributing mesh
+		parts........,
+		faces........,
+		nodes........,
+		cells........,
+        bandwidth reduction using Reverse Cuthill-McKee: 35510/778 = 45.6427
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	outlet
+	inlet
+	fluent_region:1
+	interior--fluent_region
+	fluent_region
+     parallel,
+Done.
+(cxg-clear-all-selections (cx-active-window))
+(cxg-add-surfaces-to-selection '() (cx-active-window))
+
+Reading from DESKTOP-6MJKVPJ:"D:/Objects3D/fluent/fuelCell/H2BIKE/fluent/anode.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+Done.
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|XY Plot"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|XY Plot"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|XY Plot"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|Histogram"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|Histogram"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|Histogram"))
+(cx-gui-do cx-activate-item "Histogram*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "Solution XY Plot*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "ToolBar*Mesh Display*fl_mesh_svg_graphics_toolbar")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 1 2))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 0 1 2))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0276025 0.106584 -0.0156052) '(0 0 0) '(0.0108112 -0.0369003 -0.26893) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00841537 0.0264653 -0.0124768) '(0 0 0) '(0.0311904 -0.105886 -0.244317) 0 0)
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-activate-item "Run Calculation*Table1*Table6(Solution Advancement)*Table1*PushButton1(Calculate)")
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity  report-def  report-def     time/iter
+     2  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  1.1267e-10  3.4960e-12  0:00:00  150
+!    2 solution is converged
+
+ Reversed flow on 276 faces (53.6% area) of pressure-outlet 15.
+     3  0.0000e+00  2.0054e-07  1.8820e-05  2.0002e-07 -2.6565e-02  1.6679e-12  0:02:29  149
+!    3 solution is converged
+
+Calculation complete.
+(cx-gui-do cx-activate-item "Information*OK")
+(cx-use-window-id 1)
+(cx-use-window-id 1)
+(cx-use-window-id 1)
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Fluxes"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Fluxes"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Fluxes"))
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List1(Boundaries)" '( 0))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List1(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List1(Boundaries)" '( 0 2))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List1(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List1(Boundaries)" '( 0 1 2))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List1(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List1(Boundaries)" '( 0 1))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List1(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*Table2*Table2*List1(Boundaries)" '( 0 1 2))
+(cx-gui-do cx-activate-item "Flux Reports*Table2*Table2*List1(Boundaries)")
+(cx-gui-do cx-activate-item "Flux Reports*PanelButtons*PushButton1(OK)")
+
+                  Mass Flow Rate               [kg/s]
+-------------------------------- --------------------
+                 fluent_region:1                   -0
+                           inlet        0.00011083661
+                          outlet        2.3302048e-11
+                ---------------- --------------------
+                             Net        0.00011083664
+(cx-gui-do cx-activate-item "Flux Reports*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=16)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=16)"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=16)"))
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 1)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 2)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 3)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 4)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 5)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 6)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 7)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 8)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-set-expression-entry "Velocity Inlet*Frame2*Frame2*Frame1(Momentum)*Table1*Table8*ExpressionEntry1(Velocity Magnitude)" '("0.5" . 0))
+(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 1))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 1 2))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 1))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0 1))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 1))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0 1))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0 1 2))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0163967 0.129158 -0.148398) '(0 0 0) '(0.057766 -0.471954 -0.404156) 0 0)
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0105297 -0.0119615 0.01852) '(0 0 0) '(0.068449 0.565883 0.658471) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0165643 0.0103094 -0.00267557) '(0 0 0) '(0.165613 -0.0360872 0.0325351) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0176588 0.0157624 -0.02998) '(0 0 0) '(0.147009 -0.0599784 0.0322887) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-gui-do cx-activate-item "Table1*PushButton1(icon_close)")
+(cx-gui-do cx-activate-item "Ribbon*Frame1*Frame3(Domain)*Table1*Table3(Surface)*PushButton1(Create)")
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuCreate*Plane...")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.000855088 0.0200234 -0.0247888) '(0 0 0) '(-0.0101143 -0.0316287 -0.122747) 0 0)
+(cx-gui-do cx-activate-item "Plane Surface*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Plane Surface*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Plane Surface*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Plane Surface*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "ToolBar*Mesh Display*fl_mesh_svg_graphics_toolbar")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 0 1 2 4))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 0 1 2 4 5))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 0 1 2 4))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 0 1 2 4 5))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 0 1 2 4))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 0 1 2 3 4))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "ToolBar*Mesh Display*fl_mesh_svg_graphics_toolbar")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 0 1 2))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 0 1 2 4))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 1 2 4))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 2 4))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 4))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '())
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 4))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*Table2(Display State)*PushButton3(New Surface)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 4 5))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 4))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 4 5))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Mesh"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Mesh"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Mesh"))
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours|contour-1"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours|contour-1"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours|contour-1"))
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0 2))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '())
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 3))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0029881 -0.00447499 -0.00352337) '(0 0 0) '(-0.323095 0.163737 0.25586) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00544277 0.00820275 -0.00068405) '(0 0 0) '(0.701423 -0.468049 -0.0372822) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0122129 -0.0271257 0.00285162) '(0 0 0) '(-1.01632 0.466586 0.0776236) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.000431478 0.0277617 -0.00988115) '(0 0 0) '(0.411589 -0.0171378 -0.0262847) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0215222 0.0463045 -0.00558276) '(0 0 0) '(0.336543 -0.155328 0.011428) 0 0)
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "ToolBar*Mesh Display*frontfacestransparent")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Table1*DropDownList1(Contours of)" '( 2))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Table1*DropDownList1(Contours of)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 1))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0 1))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '())
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.264819 0.141876 0.2399) '(0 0 0) '(-0.229169 -0.300283 -0.747581) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0402472 -0.102571 0.0890719) '(0 0 0) '(-0.362166 0.465408 0.576387) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.150925 -0.0636745 -0.271405) '(0 0 0) '(-0.0156785 -8.18968e-05 0.000984773) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0270202 0.061414 -0.0970045) '(0 0 0) '(0.255853 -0.012266 0.0870188) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.10002 0.154283 -0.0302429) '(0 0 0) '(0.422147 -0.226535 0.286951) 0 0)
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Pathlines"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Vectors"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Vectors"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Vectors"))
+(cx-gui-do cx-set-list-selections "Vectors*Table1*Table3*Frame6*List2(Surfaces)" '( 0))
+(cx-gui-do cx-activate-item "Vectors*Table1*Table3*Frame6*List2(Surfaces)")
+(cx-gui-do cx-activate-item "Vectors*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+(cxg-clear-all-selections (cx-active-window))
+(cxg-add-surfaces-to-selection '(fluent_region:1) (cx-active-window))
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0 0 0) '(0 0 0) '(0 0 0) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0 0 0) '(0 0 0) '(0 0 0) 0 0)
+(cx-gui-do cx-set-integer-entry "Vectors*Table1*Frame2*Frame3*IntegerEntry2(Skip)" 2)
+(cx-gui-do cx-activate-item "Vectors*Table1*Frame2*Frame3*IntegerEntry2(Skip)")
+(cx-gui-do cx-set-real-entry-list "Vectors*Table1*Frame2*Frame3*RealEntry1(Scale)" '( 0.5))
+(cx-gui-do cx-activate-item "Vectors*PanelButtons*PushButton1(OK)")
+(cxg-clear-all-selections (cx-active-window))
+(cxg-add-surfaces-to-selection '() (cx-active-window))
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0212043 -0.094765 -0.0589068) '(0 0 0) '(-0.206306 0.155338 -0.139274) 0 0)
+(cx-gui-do cx-activate-item "ToolBar*Mesh Display*fl_mesh_svg_graphics_toolbar")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 0 1 2))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00973092 0.065022 0.0425526) '(0 0 0) '(0.162408 -0.118283 0.136677) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00298049 -0.012382 -0.0134405) '(0 0 0) '(-0.16882 0.108603 -0.0115447) 0 0)
+(cx-gui-do cx-set-list-selections "Vectors*Table1*Table3*Frame6*List2(Surfaces)" '())
+(cx-gui-do cx-activate-item "Vectors*Table1*Table3*Frame6*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Vectors*Table1*Table3*Frame6*List2(Surfaces)" '( 0))
+(cx-gui-do cx-activate-item "Vectors*Table1*Table3*Frame6*List2(Surfaces)")
+(cx-gui-do cx-activate-item "Vectors*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Vectors*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "ToolBar*Mesh Display*fl_mesh_svg_graphics_toolbar")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Pathlines"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Pathlines"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Pathlines"))
+(cx-gui-do cx-set-list-selections "Pathlines*Frame4*List3(Release from Surfaces)" '( 1))
+(cx-gui-do cx-activate-item "Pathlines*Frame4*List3(Release from Surfaces)")
+(cx-gui-do cx-activate-item "Pathlines*PanelButtons*PushButton1(OK)")
+
+number tracked = 499, escaped = 9, incomplete = 490
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0094023 0.00387303 0.0152979) '(0 0 0) '(-0.00592279 -0.0166122 0.0868682) 0 0)
+(cx-gui-do cx-set-list-selections "Pathlines*Frame4*List3(Release from Surfaces)" '( 1 2))
+(cx-gui-do cx-activate-item "Pathlines*Frame4*List3(Release from Surfaces)")
+(cx-gui-do cx-set-list-selections "Pathlines*Frame4*List3(Release from Surfaces)" '( 1))
+(cx-gui-do cx-activate-item "Pathlines*Frame4*List3(Release from Surfaces)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0112254 0.00761528 -0.0101413) '(0 0 0) '(0.0654436 -0.0439467 0.0264122) 0 0)
+(cx-gui-do cx-set-toggle-button2 "Pathlines*Frame2*ButtonBox4(Pulse Mode)*Continuous" #t)
+(cx-gui-do cx-activate-item "Pathlines*Frame2*ButtonBox4(Pulse Mode)*Continuous")
+(cx-gui-do cx-set-toggle-button2 "Pathlines*Frame2*ButtonBox4(Pulse Mode)*Single" #t)
+(cx-gui-do cx-activate-item "Pathlines*Frame2*ButtonBox4(Pulse Mode)*Single")
+(cx-gui-do cx-set-toggle-button2 "Pathlines*Frame2*ToggleBox1(Options)*CheckButton5(Draw Mesh)" #t)
+(cx-gui-do cx-activate-item "Pathlines*Frame2*ToggleBox1(Options)*CheckButton5(Draw Mesh)")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "Pathlines*PanelButtons*PushButton1(OK)")
+
+number tracked = 499, escaped = 9, incomplete = 490
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00950558 -0.00796854 0.00802315) '(0 0 0) '(-0.106901 0.0726992 -0.0636428) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-2.32533e-05 -0.00140657 -0.00157311) '(0 0 0) '(-0.0571955 0.0190892 0.0163379) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0401455 0.00860076 -0.0138655) '(0 0 0) '(0.0297504 -0.255574 0.436228) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.000391953 0.0125382 0.0164149) '(0 0 0) '(-0.334419 -0.260703 0.259749) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0111947 -0.0142092 -0.033655) '(0 0 0) '(-0.0483362 0.395558 -0.31048) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00160161 0.000404518 0.000284392) '(0 0 0) '(-0.013123 -0.00893569 0.0110362) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00921615 -0.0103793 -0.00441356) '(0 0 0) '(0.0753589 0.153614 -0.278978) 0 0)
+(cx-gui-do cx-set-list-selections "Pathlines*Frame4*List3(Release from Surfaces)" '( 0 1))
+(cx-gui-do cx-activate-item "Pathlines*Frame4*List3(Release from Surfaces)")
+(cx-gui-do cx-set-list-selections "Pathlines*Frame4*List3(Release from Surfaces)" '( 1))
+(cx-gui-do cx-activate-item "Pathlines*Frame4*List3(Release from Surfaces)")
+(cx-gui-do cx-set-list-selections "Pathlines*Frame4*List3(Release from Surfaces)" '( 0 1))
+(cx-gui-do cx-activate-item "Pathlines*Frame4*List3(Release from Surfaces)")
+(cx-gui-do cx-activate-item "Pathlines*PanelButtons*PushButton1(OK)")
+
+ The fluent process could not be started.
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 0 PID 1164 RUNNING AT DESKTOP-6MJKVPJ
+=   EXIT STATUS: -1 (ffffffff)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 1 PID 20868 RUNNING AT DESKTOP-6MJKVPJ
+=   EXIT STATUS: -1 (ffffffff)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 10292 RUNNING AT DESKTOP-6MJKVPJ
+=   EXIT STATUS: -1 (ffffffff)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 15556 RUNNING AT DESKTOP-6MJKVPJ
+=   EXIT STATUS: -1 (ffffffff)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 4 PID 22568 RUNNING AT DESKTOP-6MJKVPJ
+=   EXIT STATUS: -1 (ffffffff)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 5 PID 11424 RUNNING AT DESKTOP-6MJKVPJ
+=   EXIT STATUS: -1 (ffffffff)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 6 PID 10320 RUNNING AT DESKTOP-6MJKVPJ
+=   EXIT STATUS: -1 (ffffffff)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 7 PID 18672 RUNNING AT DESKTOP-6MJKVPJ
+=   EXIT STATUS: -1073741819 (c0000005)
+===================================================================================
+(cx-gui-do cx-activate-item "Pathlines*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Pathlines*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "ToolBar*Mesh Display*fl_mesh_svg_graphics_toolbar")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton2(Cancel)")
+/exit y
+Auto-Transcript Stop Time:  19:42:51, 17 Dec 2023 中国标准时间 
+Total Transcript Time: 34 Minute 36 Second.

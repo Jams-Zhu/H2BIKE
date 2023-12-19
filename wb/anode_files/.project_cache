@@ -1,4 +1,5 @@
-﻿dp0/FLU/Fluent/SYS-Setup-Output.cas.h5
+﻿dp0/FLU/Fluent/01-anode.cas.h5
+dp0/FLU/Fluent/SYS.1-Setup-Output.cas.h5
 dp0/FLU/Fluent/SYS.set
 dp0/Geom/DM/Geom.9.1_currasfmesh.uns
 dp0/Geom/DM/Geom.scdoc
@@ -9,14 +10,11 @@ dp0/SYS/MECH/Geometry/unstruct_mesh.acmo
 dp0/SYS/MECH/Geometry/unstruct_mesh.pmdb
 dp0/SYS/MECH/Geometry/unstruct_mesh.uns
 dp0/SYS/MECH/SYS.1.msh
-dp0/SYS/MECH/SYS.msh
 dp0/act.dat
 dp0/designPoint.wbdp
-progress_files/dp0/FLU/Fluent/report.xml
-progress_files/dp0/FLU/Fluent/Solution.trn
 session_files/journal1.wbjn
+session_files/journal1_crashed.wbjn
 dp0/
-dpall/
 progress_files/
 session_files/
 dp0/FLU/
@@ -30,9 +28,5 @@ dp0/global/MECH/SYS/
 dp0/global/MECH/SYS/AssembledModel/
 dp0/SYS/MECH/
 dp0/SYS/MECH/Geometry/
-dpall/global/
-dpall/global/ACT/
-dpall/global/ACT/extensions/
 progress_files/dp0/
 progress_files/dp0/FLU/
-progress_files/dp0/FLU/Fluent/

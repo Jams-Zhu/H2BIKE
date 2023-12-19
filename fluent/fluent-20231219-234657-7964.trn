@@ -1,0 +1,1270 @@
+Auto-Transcript Start Time:  23:46:57, 19 Dec 2023 中国标准时间 
+Current Directory: "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent"
+
+              Welcome to ANSYS Fluent 2022 R1
+
+              Copyright 1987-2022 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Nov 29 2021 12:14:46 EST  Build Id: 10213  
+ 
+Connected License Server List:	
+Host spawning Node 0 on machine "DESKTOP-6MJKVPJ" (win64).
+
+------------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                                  
+------------------------------------------------------------------------------------------
+n7    DESKTOP-6MJKVPJ  8/20  Windows-x64  11628  12th Gen Intel(R) Core(TM) i7-12700H    
+n6    DESKTOP-6MJKVPJ  7/20  Windows-x64  11564  12th Gen Intel(R) Core(TM) i7-12700H    
+n5    DESKTOP-6MJKVPJ  6/20  Windows-x64  19316  12th Gen Intel(R) Core(TM) i7-12700H    
+n4    DESKTOP-6MJKVPJ  5/20  Windows-x64  9180   12th Gen Intel(R) Core(TM) i7-12700H    
+n3    DESKTOP-6MJKVPJ  4/20  Windows-x64  3016   12th Gen Intel(R) Core(TM) i7-12700H    
+n2    DESKTOP-6MJKVPJ  3/20  Windows-x64  14672  12th Gen Intel(R) Core(TM) i7-12700H    
+n1    DESKTOP-6MJKVPJ  2/20  Windows-x64  10156  12th Gen Intel(R) Core(TM) i7-12700H    
+n0*   DESKTOP-6MJKVPJ  1/20  Windows-x64  17780  12th Gen Intel(R) Core(TM) i7-12700H    
+host  DESKTOP-6MJKVPJ        Windows-x64  18664  12th Gen Intel(R) Core(TM) i7-12700H    
+
+MPI Option Selected: intel
+Selected system interconnect: default
+------------------------------------------------------------------------------------------
+
+Cleanup script file is D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cleanup-fluent-DESKTOP-6MJKVPJ-18664.bat
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+
+Meshing> 
+Importing one geom object per program-controlled and one zone per body ...
+    E:\\Ansys\\Ansys.Products.2022.R1.Win64\\Program Files\\ANSYS Inc\\v221\\commonfiles\\CPython\\3_7\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by MelonJam on DESKTOP-6MJKVPJ winx64 on Tue Dec 19 23:47:10 2023
+    using Python 3.7.11 (remotes/origin/b0b4eda9448d622fbb214539623a7f129f39e1f4-dirty:b0b4eda, Oct 18 20) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build Nov 30 2021 12:29:41 including TGLib build Nov 12 2019 13:13:16
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_7964/out17030008307964.tgf'
+    converting file 'cathod.scdoc' (1 of 1) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_7964'
+    importing data ...
+    importing meshing model from PartMgr from file 'D:/Objects3D/fluent/fuelCell/H2BIKE/fluent/cathod.scdoc' ...
+    setting enclosure and symmetry processing to False
+    setting transfer named selections to True
+    setting named selection prefixes to ''
+    setting mixed import resolution type to 'SolidAndSurface'
+    setting target application to 'FluentMeshing'
+    attaching to assembly ...
+    attaching to assembly done in 5.072 [s]
+    Warning: ?????????
+    processing assembly 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cathod.scdoc' with ID 1 and reference key '<?xml version="1.0" encoding="utf-16"?>
+    <IdTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Table>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <Id>10000</Id>
+          <IsExploded>false</IsExploded>
+        </Entry>
+      </Table>
+    </IdTable>'
+    length unit = [m]
+    processing part 'fluid_region' with ID 3
+    processing named selection 'inlet'
+    processing named selection 'outlet'
+    processing named selection 'boi_cur_outer'
+    processing named selection 'boi_cur_inner'
+    processing named selection 'boi_cur_in_out'
+    processing data ...
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+    detecting feature edges, feature angle = 40 [deg] ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Collection: 5
+                    Component : 2
+                    Body      : 1
+                    Shell     : 1
+                    Face      : 621
+                    Loop      : 669
+                    Edge      : 2001
+                    Vertex    : 1334
+                    Surface   : 621
+                    Curve     : 2001
+                Tessellation summary:
+                    Face facets  : 12068
+                    Edge segments: 6607
+                Bounding box:
+                    (-75.75000000000001, 0, -23.25) x (75.75, 4, 23.25)
+                Assembly component hierarchy:
+                    'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cathod.scdoc'
+                      'fluid_region'
+                NamedCollections:
+                    'inlet'
+                    'outlet'
+                    'boi_cur_outer'
+                    'boi_cur_inner'
+                    'boi_cur_in_out'
+    
+    
+    exporting FLTG data to file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_7964\\out17030008307964.tgf' ...
+    writing face-based mesh file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_7964\\out17030008307964.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 1
+        Object region: 6
+        Zone         : 13
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 5.300 [s]
+
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_7964/out17030008307964.tgf"...
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_7964/out17030008307964.tgf"...
+nodes: 11879
+edges: 6560
+faces: 12068
+cells: 0
+reading 11879 storage data (id 1, type 41, double precision binary).
+generating pointers...done.
+extracting boundary entities...
+ 11879 boundary nodes.
+ 12068 boundary faces.
+ 6 boundary face zones.
+done.
+
+preparing mesh for display...done.
+analyzing boundary connectivity...done.
+
+---------------- Import of cathod, consisting of one single part/object , complete. 
+ 
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-43.8425 30.505 -46.4447) '(0 0 0) '(-0.205614 -0.600736 -0.200568) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(70.5927 -86.5797 155.803) '(0 0 0) '(0.242016 0.733019 0.416836) 0 0)
+
+---------------- A local size of 0.14794922 was added to facesize_1
+---- Warning--- The string 'boi' was detected in one of the selected zone names ( origin-boi_cur_in_out ). Did you intend to create a Body Of Influence?
+---- Warning--- The string 'boi' was detected in one of the selected zone names ( origin-boi_cur_inner ). Did you intend to create a Body Of Influence?
+---- Warning--- The string 'boi' was detected in one of the selected zone names ( origin-boi_cur_outer ). Did you intend to create a Body Of Influence?
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_7964\TaskObject3.msh.h5" ...
+writing 1 node zones
+writing 7 edge zones 
+writing 6 face zones 
+done.    processing size functions/scoped sizing to create Size Field...
+
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_7964\cathod.sf"...
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_7964\cathod.sf"...
+Done.
+
+
+Importing one mesh object per program-controlled and one zone per body ...
+    E:\\Ansys\\Ansys.Products.2022.R1.Win64\\Program Files\\ANSYS Inc\\v221\\commonfiles\\CPython\\3_7\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by MelonJam on DESKTOP-6MJKVPJ winx64 on Tue Dec 19 23:47:38 2023
+    using Python 3.7.11 (remotes/origin/b0b4eda9448d622fbb214539623a7f129f39e1f4-dirty:b0b4eda, Oct 18 20) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build Nov 30 2021 12:29:41 including TGLib build Nov 12 2019 13:13:16
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_7964/out17030008577964.tgf'
+    converting file 'cathod.scdoc.pmdb' (1 of 1) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_7964'
+    importing data ...
+    importing meshing model from PartMgr from file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_7964\\\\cathod.scdoc.pmdb' ...
+    setting enclosure and symmetry processing to False
+    setting transfer named selections to True
+    setting named selection prefixes to ''
+    setting mixed import resolution type to 'SolidAndSurface'
+    setting target application to 'FluentMeshing'
+    initializing part manager from file ...
+    processing assembly 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cathod.scdoc' with ID 1 and reference key '<?xml version="1.0" encoding="utf-16"?>
+    <IdTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Table>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3983" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="ee081486-b71e-45ee-8b17-979c281f2922:3979" /&gt;&lt;/SnippetV1&gt;</Text>
+          <Id>10000</Id>
+          <IsExploded>false</IsExploded>
+        </Entry>
+      </Table>
+    </IdTable>'
+    length unit = [m]
+    processing part 'fluid_region' with ID 3
+    processing named selection 'inlet'
+    processing named selection 'outlet'
+    processing named selection 'boi_cur_outer'
+    processing named selection 'boi_cur_inner'
+    processing named selection 'boi_cur_in_out'
+    processing data ...
+    loading size function background grid from file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_7964\\\\cathod.sf' ...
+    reading size function background grid file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_7964\\\\cathod.sf' ...
+     Read 352580 vertices
+    initializing size function background grid done in 0.172 [s]
+    tessellating 621 faces done in 5.923 [s]
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+    detecting feature edges, feature angle = 40 [deg] ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Collection: 5
+                    Component : 2
+                    Body      : 1
+                    Shell     : 1
+                    Face      : 621
+                    Loop      : 669
+                    Edge      : 2001
+                    Vertex    : 1334
+                    Surface   : 621
+                    Curve     : 2001
+                Tessellation summary:
+                    Face facets  : 440062
+                    Edge segments: 62821
+                Bounding box:
+                    (-75.75, 0, -23.25) x (75.75, 4, 23.25)
+                Assembly component hierarchy:
+                    'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cathod.scdoc'
+                      'fluid_region'
+                NamedCollections:
+                    'inlet'
+                    'outlet'
+                    'boi_cur_outer'
+                    'boi_cur_inner'
+                    'boi_cur_in_out'
+    
+    
+    exporting FLTG data to file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_7964\\out17030008577964.tgf' ...
+    writing face-based mesh file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_7964\\out17030008577964.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 1
+        Object region: 6
+        Zone         : 13
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 6.942 [s]
+
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_7964/out17030008577964.tgf"...
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_7964/out17030008577964.tgf"...
+nodes: 281509
+edges: 62193
+faces: 440062
+cells: 0
+reading 281509 storage data (id 1, type 41, double precision binary).
+appending mesh...
+done.
+generating pointers...done.
+extracting boundary entities...
+ 293388 boundary nodes.
+ 452130 boundary faces.
+ 12 boundary face zones.
+done.
+
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_7964\\cathod.sf"...
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_7964\\cathod.sf"...
+ Read 352580 vertices
+0 faces marked.
+
+    computing regions...done
+Deleting import_curvature_0
+Deleting import_proximity_0
+    processing size functions/scoped sizing to create Size Field...
+
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_7964\cathod.sf"...
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_7964\cathod.sf"...
+Done.
+
+
+remeshing...
+
+
+------------------------- --------------------- -------------------- ---------------- ----------
+                     name skewed-cells (> 0.80)    averaged-skewness maximum-skewness face count
+------------------------- --------------------- -------------------- ---------------- ----------
+      fluid_region-region                   132          0.061024302       0.84363277     245820
+
+------------------------- --------------------- -------------------- ---------------- ----------
+                     name skewed-cells (> 0.80)    averaged-skewness maximum-skewness face count
+------------------------- --------------------- -------------------- ---------------- ----------
+      fluid_region-region                   132          0.061024302       0.84363277     245820
+
+
+---------------- After Surface mesh, the model consists of 1 fluid/solid regions and 0 voids.
+
+---------------- Surface Meshing of cathod complete in  0.45 minutes, with a maximum skewness of  0.84. 
+
+---- Warning--- To improve the quality, insert the 'Improve Surface Mesh' task
+
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-7.91591 14.7422 -8.06196) '(0 0 0) '(-0.0842398 -0.145095 -0.182993) 0 0)
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_7964\TaskObject5.msh.h5" ...
+writing 3 node zones
+writing 14 edge zones 
+writing 12 face zones 
+done.---- Warning--- The model only have one object. Share Topology might not be needed
+0 pair(s) found.
+
+    computing regions...done
+0 faces marked.
+Deleting import_curvature_0
+Deleting import_proximity_0
+    processing size functions/scoped sizing to create Size Field...
+
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_7964\fluid_region-region.sf"...
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_7964\fluid_region-region.sf"...
+Done.
+
+
+remeshing...
+
+
+------------------------- --------------------- -------------------- ---------------- ----------
+                     name skewed-cells (> 0.80)    averaged-skewness maximum-skewness face count
+------------------------- --------------------- -------------------- ---------------- ----------
+      fluid_region-region                     0          0.059708212       0.57687369     246278
+
+------------------------- --------------------- -------------------- ---------------- ----------
+                     name skewed-cells (> 0.80)    averaged-skewness maximum-skewness face count
+------------------------- --------------------- -------------------- ---------------- ----------
+      fluid_region-region                     0          0.059708212       0.57687369     246278
+
+
+---------------- Surface Quality improvement of fluid_region-region complete in :  0.02 minutes. The final maximum surface skewness is  0.58. 
+
+
+---------------- Velocity-inlet zone type was automatically assigned to zones containing the string 'inlet'.
+
+---------------- Pressure-outlet zone type was automatically assigned to zones containing the string 'outlet'.
+
+---------------- After Surface mesh, the model consists of 1 fluid/solid regions and 0 voids.
+
+---------------- Share Topology of fluid_region-region complete in  0.28 minutes with a maximum skewness of  0.58. 
+
+
+---------------- Boundary Conditions Updated
+
+---------------- Regions Updated
+
+Created Scoped Prism: smooth-transition_1
+
+---------------- Inflation control added to fluid_region-region
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_7964\TaskObject11.msh.h5" ...
+writing 10 node zones
+writing 20 edge zones 
+writing 12 face zones 
+done.
+    updating regions...
+    done.
+checking object "fluid_region-region"...
+    skipping validating regions of mesh object "fluid_region-region"...done.
+auto meshing object fluid_region-region...
+
+processing scoped prisms...
+    starting orientation...done.
+    setting prism growth...done.
+done.
+Identifying Topology...
+
+Generating Prisms...
+
+Generating initial mesh...
+.
+
+
+Refining mesh...
+
+Create polyhedra ...
+.
+
+.
+
+.
+
+.
+
+.
+
+
+Merging Domains...
+done.
+
+Quality Measure has been changed to Orthogonal Quality.
+                     name       id cells (quality < 0.10)  minimum quality cell count
+------------------------- -------- ---------------------- ---------------- ----------
+      fluid_region-region    32767                      8      0.075600319    1013575
+
+                     name       id cells (quality < 0.10)  minimum quality cell count
+------------------------- -------- ---------------------- ---------------- ----------
+          Overall Summary     none                      8      0.075600319    1013575
+
+[Quality Measure : Orthogonal Quality]
+
+---------------- 1013575 cells were created in :  0.65 minutes
+
+---------------- The mesh has a minimum Orthogonal Quality of:  0.08 
+
+---------------- The volume meshing of fluid_region-region is complete.
+
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-64.7241 39.273 -63.0316) '(0 0 0) '(-0.195856 -0.672098 -0.217328) 0 0)
+(cx-gui-do cx-activate-item "Ribbon*Frame1*Frame2(Task Page)*Table1*Table3(Solution)*PushButton1(Switch to Solution)")
+(cx-gui-do cx-activate-item "Question*OK")
+
+Inhomogeneous process distribution on multiple machines.
+Or processes per machine not an exact multiple of GPGPU's per machine.
+Or not enough GPGPU's per machine.
+GPGPU computing disabled.
+
+
+unused zone boundary-node-17 removed
+unused zone boundary-node-17121 removed
+unused zone boundary-node-17123 removed
+unused zone boundary-node-17125 removed
+unused zone boundary-node-17127 removed
+unused zone boundary-node-17129 removed
+unused zone boundary-node-17131 removed
+unused zone boundary-node-32737 removed
+Note: Rank = 0: Process affinity not being set (6).
+Note: Rank = 1: Process affinity not being set (6).
+Note: Rank = 2: Process affinity not being set (6).
+Note: Rank = 3: Process affinity not being set (6).
+Note: Rank = 4: Process affinity not being set (6).
+Note: Rank = 5: Process affinity not being set (6).
+Note: Rank = 6: Process affinity not being set (6).
+Note: Rank = 7: Process affinity not being set (6).
+
+Transferring mesh
+	creating threads... done
+	transferring nodes... done
+	transferring cells... done
+	transferring faces... done
+	post mesh transfer operations... done
+done
+
+Building...
+     mesh
+	auto partitioning mesh by Metis (fast),
+	distributing mesh
+		parts........,
+		faces........,
+		nodes........,
+		cells........,
+        bandwidth reduction using Reverse Cuthill-McKee: 131368/3861 = 34.0243
+     materials,
+     interface,
+     domains,
+     zones,
+	interior--fluid_region-region
+	boi_cur_outer
+	boi_cur_in_out
+	boi_cur_inner
+	s1
+	outlet
+	inlet
+	fluid_region-region
+     surfaces,
+     parallel,
+Done.
+Mesh is now scaled to meters.
+
+Preparing mesh for display...
+Done.
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)
+(newline)
+
+
+> (cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Viscous (SST k-omega)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Viscous (SST k-omega)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Viscous (SST k-omega)"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Viscous (SST k-omega)"))
+(cx-gui-do cx-set-toggle-button2 "Viscous Model*Table1*ToggleBox1(Model)*Laminar" #t)
+(cx-gui-do cx-activate-item "Viscous Model*Table1*ToggleBox1(Model)*Laminar")
+(cx-gui-do cx-activate-item "Viscous Model*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Viscous (Laminar)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Species (Off)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Species (Off)"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Species (Off)"))
+(cx-gui-do cx-activate-tab-index "Species Model*Table2*Frame3" 0)
+(cx-gui-do cx-activate-tab-index "Species Model*Table2*Frame3" 1)
+(cx-gui-do cx-activate-tab-index "Species Model*Table2*Frame3" 0)
+(cx-gui-do cx-activate-tab-index "Species Model*Table2*Frame3" 2)
+(cx-gui-do cx-activate-tab-index "Species Model*Table2*Frame3" 0)
+(cx-gui-do cx-activate-tab-index "Species Model*Table2*Frame4(PDF Table Creation)" 0)
+(cx-gui-do cx-activate-tab-index "Species Model*Table2*Frame4(PDF Table Creation)" 1)
+(cx-gui-do cx-activate-tab-index "Species Model*Table2*Frame4(PDF Table Creation)" 0)
+(cx-gui-do cx-activate-tab-index "Species Model*Table2*Frame4(PDF Table Creation)" 2)
+(cx-gui-do cx-activate-tab-index "Species Model*Table2*Frame4(PDF Table Creation)" 0)
+(cx-gui-do cx-activate-tab-index "Species Model*Table2*Frame4(PDF Table Creation)" 3)
+(cx-gui-do cx-activate-tab-index "Species Model*Table2*Frame4(PDF Table Creation)" 0)
+(cx-gui-do cx-activate-tab-index "Species Model*Table2*Frame4(PDF Table Creation)" 4)
+(cx-gui-do cx-activate-tab-index "Species Model*Table2*Frame4(PDF Table Creation)" 0)
+(cx-gui-do cx-activate-tab-index "Species Model*Table2*Frame4(PDF Table Creation)" 5)
+(cx-gui-do cx-activate-tab-index "Species Model*Table2*Frame4(PDF Table Creation)" 0)
+(cx-gui-do cx-activate-tab-index "Species Model*Table2*Frame4(PDF Table Creation)" 6)
+(cx-gui-do cx-activate-tab-index "Species Model*Table2*Frame4(PDF Table Creation)" 0)
+(cx-gui-do cx-set-toggle-button2 "Species Model*Table1*ToggleBox1(Model)*Species Transport" #t)
+(cx-gui-do cx-activate-item "Species Model*Table1*ToggleBox1(Model)*Species Transport")
+(cx-gui-do cx-activate-item "Species Model*PanelButtons*PushButton1(OK)")
+
+Adjusting the following setting:
+Density explicit underrelaxation factor: from:     1   to:  0.25
+
+Note: Enabling energy equation as required by material density method.
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Species (Species Transport)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Materials|Mixture|mixture-template"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Materials|Mixture|mixture-template"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Materials|Mixture|mixture-template"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Materials|Mixture|mixture-template"))
+(cx-gui-do cx-activate-item "Create/Edit Materials*PanelButtons*PushButton1(Close)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet"))
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 1)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 2)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 3)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 4)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 5)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 6)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 7)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 8)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-enable-apply-button "Velocity Inlet")
+(cx-gui-do cx-set-expression-entry "Velocity Inlet*Frame2*Frame2*Frame1(Momentum)*Table1*Table8*ExpressionEntry1(Velocity Magnitude)" '("22" . 0))
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 3)
+(cx-gui-do cx-set-expression-entry "Velocity Inlet*Frame2*Frame2*Frame4(Species)*Table1*Table2(Species Mass Fractions)*Table1*ExpressionEntry1(h2o)" '("0.02" . 0))
+(cx-gui-do cx-set-expression-entry "Velocity Inlet*Frame2*Frame2*Frame4(Species)*Table1*Table2(Species Mass Fractions)*Table2*ExpressionEntry1(o2)" '("0.21" . 0))
+(cx-gui-do cx-set-toggle-button2 "Velocity Inlet*Frame2*Frame2*Frame4(Species)*Table1*CheckButton1(Specify Species in Mole Fractions)" #t)
+(cx-gui-do cx-activate-item "Velocity Inlet*Frame2*Frame2*Frame4(Species)*Table1*CheckButton1(Specify Species in Mole Fractions)")
+(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-enable-apply-button "Velocity Inlet")
+(cx-gui-do cx-set-expression-entry "Velocity Inlet*Frame2*Frame2*Frame4(Species)*Table1*Table2(Species Mass Fractions)*Table2*ExpressionEntry1(o2)" '("0.21" . 0))
+(cx-gui-do cx-set-expression-entry "Velocity Inlet*Frame2*Frame2*Frame4(Species)*Table1*Table2(Species Mass Fractions)*Table1*ExpressionEntry1(h2o)" '("0.022" . 0))
+(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions"))
+(cx-gui-do cx-activate-item "Report Definitions*Table1*ButtonBox3*PushButton1(New)")
+(cx-gui-do cx-activate-item "MenuBar*Surface ReportSubMenu*Area-Weighted Average...")
+(cx-gui-do cx-set-list-selections "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)" '( 3))
+(cx-gui-do cx-activate-item "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)" '())
+(cx-gui-do cx-activate-item "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)" '( 5))
+(cx-gui-do cx-activate-item "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)" '())
+(cx-gui-do cx-activate-item "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)" '( 0))
+(cx-gui-do cx-activate-item "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)" '())
+(cx-gui-do cx-activate-item "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)" '( 4))
+(cx-gui-do cx-activate-item "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)")
+(cx-gui-do cx-activate-item "Surface Report Definition*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Report Definitions*PanelButtons*PushButton1(Close)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Initialization"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Initialization"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Initialization"))
+(cx-gui-do cx-activate-item "Solution Initialization*Table1*Frame12*PushButton2(Initialize)")
+
+Initialize using the hybrid initialization method.
+
+Checking case topology... 
+-This case has both inlets & outlets 
+-Pressure information is not available at the boundaries.
+ Case will be initialized with constant pressure
+
+	iter		scalar-0
+
+	1		1.000000e+00
+	2		4.008978e-05
+	3		1.075396e-05
+	4		6.670665e-06
+	5		3.827125e-06
+	6		2.067741e-06
+	7		1.610846e-06
+	8		1.204929e-06
+	9		9.170669e-07
+	10		9.818073e-07
+
+Hybrid initialization is done.
+
+Note: Settings to improve the robustness of pathline and
+      particle tracking have been automatically enabled.
+
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-set-integer-entry "Run Calculation*Table1*Table3(Parameters)*Table1*Table1*IntegerEntry1(Number of Iterations)" 100)
+(cx-gui-do cx-activate-item "Run Calculation*Table1*Table3(Parameters)*Table1*Table1*IntegerEntry1(Number of Iterations)")
+(cx-gui-do cx-activate-item "Run Calculation*Table1*Table6(Solution Advancement)*Table1*PushButton1(Calculate)")
+
+(cx-gui-do cx-activate-item "Question*OK")
+Creating new file D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\.\\report-def-0-rfile_12_1.out
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy         h2o          o2     time/iter
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0313573 0.0208291 -0.0375045) '(0 0 0) '(-0.221234 -0.67821 -0.192091) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0317409 -0.0292743 0.0589504) '(0 0 0) '(0.159204 0.680271 0.266405) 0 0)
+        Stabilizing pressure coupled to enhance linear solver robustness.
+     1  1.0000e+00  2.2750e-03  7.9976e-04  1.4165e-03  1.6433e-07  1.1843e-04  2.0079e-03  0:19:48   99
+(cx-use-window-id 2)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0410741 -0.00903689 0.0186888) '(0 0 0) '(0.359818 0.0787092 -0.156012) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00646514 -0.0101785 0.00505297) '(0 0 0) '(0.016758 0.145322 0.273867) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00586289 0.0552889 -0.0388502) '(0 0 0) '(-0.0609499 -0.315799 -0.439242) 0 0)
+        Stabilizing pressure coupled to enhance linear solver robustness.
+     2  9.5160e-01  1.9782e-03  6.2692e-04  9.1008e-04  1.3833e-07  5.7622e-04  5.7622e-04  0:20:15   98
+        Stabilizing pressure coupled to enhance linear solver robustness.
+     3  8.3540e-01  1.7610e-03  4.4532e-04  6.2265e-04  1.9372e-07  1.0220e-03  1.0220e-03  0:20:14   97
+        Stabilizing pressure coupled to enhance linear solver robustness.
+     4  7.6708e-01  1.6726e-03  3.4867e-04  4.8445e-04  2.0086e-07  8.0475e-04  8.0475e-04  0:20:50   96
+Done.
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=26)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=26)"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet|inlet (velocity-inlet, id=26)"))
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-enable-apply-button "Velocity Inlet")
+(cx-gui-do cx-set-expression-entry "Velocity Inlet*Frame2*Frame2*Frame1(Momentum)*Table1*Table8*ExpressionEntry1(Velocity Magnitude)" '("0.88" . 0))
+(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "Run Calculation*Table1*Table6(Solution Advancement)*Table1*PushButton1(Calculate)")
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy         h2o          o2     time/iter
+     4  7.6708e-01  1.6726e-03  3.4867e-04  4.8445e-04  2.0086e-07  8.0475e-04  8.0475e-04  0:21:42  100
+        Stabilizing pressure coupled to enhance linear solver robustness.
+
+ Reversed flow on 140 faces (2.2% area) of pressure-outlet 27.
+     5  7.2936e-01  1.5384e-03  3.2525e-04  4.1377e-04  1.0543e-07  4.2940e-04  4.2940e-04  0:20:49   99
+        Stabilizing pressure coupled to enhance linear solver robustness.
+
+ Reversed flow on 240 faces (5.1% area) of pressure-outlet 27.
+     6  7.7655e-01  1.3616e-03  3.0150e-04  3.7411e-04  9.3240e-08  6.3930e-04  6.3930e-04  0:22:41   98
+
+ Reversed flow on 349 faces (11.6% area) of pressure-outlet 27.
+     7  1.0990e+00  2.7825e-03  8.7989e-04  1.0815e-03  1.2255e-07  9.2519e-04  9.2519e-04  0:18:56   97
+
+ Reversed flow on 380 faces (14.6% area) of pressure-outlet 27.
+     8  1.0306e+00  2.3538e-03  6.8277e-04  8.4782e-04  1.4144e-07  8.5361e-04  8.5361e-04  0:15:57   96
+
+ Reversed flow on 435 faces (19.5% area) of pressure-outlet 27.
+     9  1.0789e+00  3.0572e-03  8.3805e-04  1.0711e-03  1.8711e-07  1.1584e-03  1.1584e-03  0:13:54   95
+
+ Reversed flow on 463 faces (23.5% area) of pressure-outlet 27.
+    10  1.1828e+00  4.6035e-03  1.2856e-03  1.6900e-03  2.7243e-07  1.6526e-03  1.6526e-03  0:11:56   94
+
+ Reversed flow on 498 faces (28.5% area) of pressure-outlet 27.
+    11  1.4077e+00  8.9395e-03  2.6067e-03  3.4377e-03  4.4503e-07  2.8186e-03  2.8186e-03  0:10:23   93
+
+ Reversed flow on 537 faces (35.3% area) of pressure-outlet 27.
+    12  1.7016e+00  2.2461e-02  7.0161e-03  9.1232e-03  4.8269e-07  7.8577e-03  7.8577e-03  0:09:26   92
+
+ Reversed flow on 573 faces (43.5% area) of pressure-outlet 27.
+    13  1.4433e+00  1.4222e-02  4.9934e-03  6.0500e-03  5.2499e-07  2.8345e-02  2.8345e-02  0:08:23   91
+
+ Reversed flow on 591 faces (48.9% area) of pressure-outlet 27.
+    14  1.0870e+00  5.9764e-03  1.9339e-03  2.2351e-03  4.0166e-07  7.9742e-02  7.9742e-02  0:07:32   90
+
+ Reversed flow on 605 faces (53.4% area) of pressure-outlet 27.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy         h2o          o2     time/iter
+    15  8.5364e-01  3.7609e-03  1.0562e-03  1.2374e-03  2.5881e-07  1.0870e-01  1.0870e-01  0:07:09   89
+
+ Reversed flow on 619 faces (55.3% area) of pressure-outlet 27.
+    16  7.1069e-01  2.7322e-03  6.8762e-04  8.3617e-04  1.5801e-07  1.0858e-01  1.0858e-01  0:06:49   88
+
+ Reversed flow on 624 faces (57.4% area) of pressure-outlet 27.
+    17  6.1615e-01  2.1011e-03  5.2677e-04  6.4669e-04  1.0754e-07  8.5762e-02  8.5762e-02  0:06:16   87
+
+ Reversed flow on 630 faces (58.1% area) of pressure-outlet 27.
+    18  5.5286e-01  1.7013e-03  4.2474e-04  5.3270e-04  8.0603e-08  7.2268e-02  7.2268e-02  0:06:23   86
+
+ Reversed flow on 629 faces (58.1% area) of pressure-outlet 27.
+    19  5.0363e-01  1.4230e-03  3.8864e-04  4.7964e-04  6.5912e-08  5.0066e-02  5.0066e-02  0:06:28   85
+
+ Reversed flow on 630 faces (60.3% area) of pressure-outlet 27.
+    20  4.6724e-01  1.2633e-03  3.8510e-04  4.7340e-04  5.7251e-08  3.5345e-02  3.5345e-02  0:06:31   84
+
+ Reversed flow on 625 faces (60.3% area) of pressure-outlet 27.
+    21  4.4733e-01  1.2220e-03  4.0231e-04  5.0127e-04  5.1857e-08  3.0578e-02  3.0578e-02  0:06:15   83
+
+ Reversed flow on 623 faces (61.0% area) of pressure-outlet 27.
+    22  4.2767e-01  1.1779e-03  4.0128e-04  5.0536e-04  4.8958e-08  2.8597e-02  2.8597e-02  0:06:02   82
+
+ Reversed flow on 621 faces (61.0% area) of pressure-outlet 27.
+    23  4.2218e-01  1.2285e-03  4.2333e-04  5.4199e-04  4.7826e-08  3.3734e-02  3.3734e-02  0:05:35   81
+
+ Reversed flow on 622 faces (64.3% area) of pressure-outlet 27.
+    24  4.1728e-01  1.2951e-03  4.5218e-04  5.7552e-04  4.8790e-08  3.1654e-02  3.1654e-02  0:05:29   80
+
+ Reversed flow on 617 faces (64.2% area) of pressure-outlet 27.
+    25  4.3126e-01  1.5314e-03  5.3227e-04  6.7975e-04  5.1366e-08  2.8844e-02  2.8844e-02  0:05:07   79
+
+ Reversed flow on 613 faces (64.1% area) of pressure-outlet 27.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy         h2o          o2     time/iter
+    26  4.5850e-01  1.8650e-03  6.4735e-04  8.2726e-04  5.6085e-08  2.5534e-02  2.5534e-02  0:05:05   78
+
+ Reversed flow on 608 faces (65.8% area) of pressure-outlet 27.
+    27  4.9203e-01  2.2726e-03  8.0052e-04  1.0108e-03  6.4602e-08  2.1571e-02  2.1571e-02  0:04:47   77
+
+ Reversed flow on 603 faces (65.3% area) of pressure-outlet 27.
+    28  5.3344e-01  2.8868e-03  1.0463e-03  1.3022e-03  8.0785e-08  1.7389e-02  1.7389e-02  0:04:47   76
+
+ Reversed flow on 597 faces (65.5% area) of pressure-outlet 27.
+    29  5.8853e-01  3.9832e-03  1.5057e-03  1.8424e-03  1.1503e-07  1.2341e-02  1.2341e-02  0:04:32   75
+
+ Reversed flow on 584 faces (64.7% area) of pressure-outlet 27.
+    30  6.6490e-01  6.1078e-03  2.4137e-03  2.9174e-03  1.8817e-07  8.3340e-03  8.3340e-03  0:04:19   74
+
+ Reversed flow on 555 faces (63.8% area) of pressure-outlet 27.
+    31  7.5060e-01  1.0564e-02  4.3434e-03  5.2104e-03  4.3124e-07  5.2797e-03  5.2797e-03  0:04:23   73
+
+ Reversed flow on 510 faces (62.2% area) of pressure-outlet 27.
+    32  7.4020e-01  1.3085e-02  5.4370e-03  6.5238e-03  5.7201e-07  3.7375e-03  3.7375e-03  0:04:11   72
+
+ Reversed flow on 198 faces (39.9% area) of pressure-outlet 27.
+    33  6.3796e-01  8.4607e-03  3.3451e-03  3.9138e-03  5.9189e-07  3.1773e-03  3.1773e-03  0:04:00   71
+
+ Reversed flow on 178 faces (34.8% area) of pressure-outlet 27.
+    34  5.1425e-01  5.2566e-03  1.9327e-03  2.1880e-03  4.2432e-07  1.9667e-03  1.9667e-03  0:03:52   70
+
+ Reversed flow on 170 faces (27.4% area) of pressure-outlet 27.
+    35  4.1257e-01  3.6696e-03  1.2301e-03  1.3983e-03  2.8059e-07  1.3012e-03  1.3012e-03  0:03:44   69
+
+ Reversed flow on 237 faces (26.0% area) of pressure-outlet 27.
+    36  3.3940e-01  2.7645e-03  8.5994e-04  1.0009e-03  2.0710e-07  1.0158e-03  1.0158e-03  0:03:51   68
+
+ Reversed flow on 362 faces (27.3% area) of pressure-outlet 27.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy         h2o          o2     time/iter
+    37  2.9001e-01  2.1926e-03  6.5528e-04  7.8158e-04  1.6969e-07  8.8697e-04  8.8697e-04  0:03:42   67
+
+ Reversed flow on 409 faces (25.4% area) of pressure-outlet 27.
+    38  2.5480e-01  1.7901e-03  5.4278e-04  6.4792e-04  1.4238e-07  7.4578e-04  7.4578e-04  0:03:35   66
+
+ Reversed flow on 449 faces (25.7% area) of pressure-outlet 27.
+    39  2.2908e-01  1.5140e-03  4.6583e-04  5.5865e-04  1.2202e-07  5.9619e-04  5.9619e-04  0:03:41   65
+
+ Reversed flow on 482 faces (26.2% area) of pressure-outlet 27.
+    40  2.0875e-01  1.3110e-03  4.1874e-04  4.9742e-04  1.0966e-07  5.0074e-04  5.0074e-04  0:03:33   64
+
+ Reversed flow on 498 faces (28.9% area) of pressure-outlet 27.
+    41  1.9156e-01  1.1597e-03  3.8327e-04  4.5316e-04  1.0031e-07  4.4976e-04  4.4976e-04  0:03:25   63
+
+ Reversed flow on 521 faces (34.4% area) of pressure-outlet 27.
+    42  1.7710e-01  1.0452e-03  3.5875e-04  4.2219e-04  9.6553e-08  4.7146e-04  4.7146e-04  0:03:31   62
+
+ Reversed flow on 535 faces (37.6% area) of pressure-outlet 27.
+    43  1.6587e-01  9.9236e-04  3.5353e-04  4.1293e-04  9.5375e-08  4.9208e-04  4.9208e-04  0:03:35   61
+
+ Reversed flow on 553 faces (43.0% area) of pressure-outlet 27.
+    44  1.5479e-01  9.1977e-04  3.3854e-04  3.9372e-04  9.3939e-08  5.0591e-04  5.0591e-04  0:03:25   60
+
+ Reversed flow on 564 faces (45.5% area) of pressure-outlet 27.
+    45  1.4809e-01  8.9254e-04  3.3546e-04  3.9022e-04  9.2335e-08  5.2027e-04  5.2027e-04  0:03:17   59
+
+ Reversed flow on 578 faces (52.0% area) of pressure-outlet 27.
+    46  1.4328e-01  8.6871e-04  3.2969e-04  3.8492e-04  9.0500e-08  5.1485e-04  5.1485e-04  0:03:21   58
+
+ Reversed flow on 590 faces (55.9% area) of pressure-outlet 27.
+    47  1.4112e-01  8.6959e-04  3.2926e-04  3.8910e-04  8.7912e-08  4.9735e-04  4.9735e-04  0:03:12   57
+
+ Reversed flow on 597 faces (60.0% area) of pressure-outlet 27.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy         h2o          o2     time/iter
+    48  1.3835e-01  8.4922e-04  3.2245e-04  3.8546e-04  8.4406e-08  4.7052e-04  4.7052e-04  0:03:05   56
+
+ Reversed flow on 604 faces (63.9% area) of pressure-outlet 27.
+    49  1.3641e-01  8.5380e-04  3.2156e-04  3.9046e-04  8.0122e-08  4.5248e-04  4.5248e-04  0:03:09   55
+
+ Reversed flow on 607 faces (65.9% area) of pressure-outlet 27.
+    50  1.3668e-01  8.9450e-04  3.3110e-04  4.0712e-04  7.8017e-08  4.4918e-04  4.4918e-04  0:03:01   54
+
+ Reversed flow on 611 faces (66.9% area) of pressure-outlet 27.
+    51  1.3601e-01  8.9993e-04  3.3202e-04  4.1002e-04  7.3930e-08  4.4408e-04  4.4408e-04  0:03:05   53
+
+ Reversed flow on 617 faces (67.7% area) of pressure-outlet 27.
+    52  1.3434e-01  9.0170e-04  3.3234e-04  4.1342e-04  7.1716e-08  4.5538e-04  4.5538e-04  0:02:56   52
+
+ Reversed flow on 622 faces (70.6% area) of pressure-outlet 27.
+    53  1.3311e-01  9.2286e-04  3.3572e-04  4.2544e-04  7.1297e-08  4.7616e-04  4.7616e-04  0:02:49   51
+
+ Reversed flow on 625 faces (72.4% area) of pressure-outlet 27.
+    54  1.3188e-01  9.5353e-04  3.4189e-04  4.4054e-04  7.0836e-08  4.9882e-04  4.9882e-04  0:02:52   50
+
+ Reversed flow on 629 faces (73.4% area) of pressure-outlet 27.
+    55  1.3001e-01  9.8257e-04  3.4833e-04  4.5486e-04  7.0886e-08  5.1480e-04  5.1480e-04  0:02:45   49
+
+ Reversed flow on 629 faces (73.6% area) of pressure-outlet 27.
+    56  1.2647e-01  9.9409e-04  3.5344e-04  4.6123e-04  7.1799e-08  5.2538e-04  5.2538e-04  0:02:38   48
+
+ Reversed flow on 630 faces (74.9% area) of pressure-outlet 27.
+    57  1.2308e-01  1.0180e-03  3.6330e-04  4.7080e-04  7.2664e-08  5.3833e-04  5.3833e-04  0:02:41   47
+
+ Reversed flow on 626 faces (75.3% area) of pressure-outlet 27.
+    58  1.1920e-01  1.0342e-03  3.7108e-04  4.7404e-04  7.1682e-08  5.5157e-04  5.5157e-04  0:02:34   46
+
+ Reversed flow on 627 faces (75.5% area) of pressure-outlet 27.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy         h2o          o2     time/iter
+    59  1.1642e-01  1.0657e-03  3.8061e-04  4.8229e-04  7.2241e-08  5.5367e-04  5.5367e-04  0:02:27   45
+
+ Reversed flow on 629 faces (76.3% area) of pressure-outlet 27.
+    60  1.1475e-01  1.0983e-03  3.9145e-04  4.9167e-04  7.3484e-08  5.7313e-04  5.7313e-04  0:02:30   44
+
+ Reversed flow on 629 faces (76.3% area) of pressure-outlet 27.
+    61  1.1241e-01  1.1180e-03  4.0069e-04  4.9727e-04  7.2619e-08  5.7152e-04  5.7152e-04  0:02:23   43
+
+ Reversed flow on 632 faces (76.4% area) of pressure-outlet 27.
+    62  1.0988e-01  1.1390e-03  4.1447e-04  5.0624e-04  7.2192e-08  5.6276e-04  5.6276e-04  0:02:26   42
+
+ Reversed flow on 634 faces (77.3% area) of pressure-outlet 27.
+    63  1.0638e-01  1.1440e-03  4.2647e-04  5.1236e-04  7.4489e-08  5.6526e-04  5.6526e-04  0:02:18   41
+
+ Reversed flow on 636 faces (77.8% area) of pressure-outlet 27.
+    64  1.0280e-01  1.1548e-03  4.3920e-04  5.2262e-04  7.3823e-08  5.6398e-04  5.6398e-04  0:02:12   40
+
+ Reversed flow on 637 faces (77.8% area) of pressure-outlet 27.
+    65  9.8301e-02  1.1376e-03  4.4125e-04  5.2174e-04  7.4079e-08  5.6118e-04  5.6118e-04  0:02:14   39
+
+ Reversed flow on 637 faces (78.1% area) of pressure-outlet 27.
+    66  9.3723e-02  1.1331e-03  4.4146e-04  5.2316e-04  7.2991e-08  5.4319e-04  5.4319e-04  0:02:07   38
+
+ Reversed flow on 635 faces (77.6% area) of pressure-outlet 27.
+    67  8.9101e-02  1.1194e-03  4.3525e-04  5.1997e-04  7.3083e-08  5.3133e-04  5.3133e-04  0:02:01   37
+
+ Reversed flow on 634 faces (77.6% area) of pressure-outlet 27.
+    68  8.4137e-02  1.0908e-03  4.2763e-04  5.1127e-04  7.3463e-08  5.1825e-04  5.1825e-04  0:02:03   36
+
+ Reversed flow on 636 faces (78.9% area) of pressure-outlet 27.
+    69  7.8755e-02  1.0620e-03  4.2631e-04  5.0457e-04  7.1350e-08  4.8702e-04  4.8702e-04  0:01:57   35
+
+ Reversed flow on 638 faces (80.5% area) of pressure-outlet 27.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy         h2o          o2     time/iter
+    70  7.3536e-02  1.0199e-03  4.2898e-04  4.9435e-04  6.7756e-08  4.3620e-04  4.3620e-04  0:01:51   34
+
+ Reversed flow on 634 faces (79.1% area) of pressure-outlet 27.
+    71  6.8109e-02  9.7235e-04  4.2472e-04  4.8203e-04  6.2685e-08  3.9256e-04  3.9256e-04  0:01:53   33
+
+ Reversed flow on 630 faces (78.3% area) of pressure-outlet 27.
+    72  6.2765e-02  9.3099e-04  4.1026e-04  4.6744e-04  5.7825e-08  3.5571e-04  3.5571e-04  0:01:47   32
+
+ Reversed flow on 628 faces (76.9% area) of pressure-outlet 27.
+    73  5.7808e-02  9.0096e-04  3.9157e-04  4.5316e-04  5.2826e-08  3.1631e-04  3.1631e-04  0:01:41   31
+
+ Reversed flow on 626 faces (75.9% area) of pressure-outlet 27.
+    74  5.3589e-02  8.6316e-04  3.8063e-04  4.3714e-04  4.8498e-08  2.8568e-04  2.8568e-04  0:01:36   30
+
+ Reversed flow on 626 faces (77.0% area) of pressure-outlet 27.
+    75  4.9648e-02  8.1236e-04  3.8203e-04  4.2056e-04  4.3991e-08  2.7091e-04  2.7091e-04  0:01:38   29
+
+ Reversed flow on 621 faces (75.4% area) of pressure-outlet 27.
+    76  4.5932e-02  7.6736e-04  3.7915e-04  4.0620e-04  4.0583e-08  2.5964e-04  2.5964e-04  0:01:32   28
+
+ Reversed flow on 621 faces (73.3% area) of pressure-outlet 27.
+    77  4.2491e-02  7.3335e-04  3.6499e-04  3.9219e-04  3.7801e-08  2.5630e-04  2.5630e-04  0:01:27   27
+
+ Reversed flow on 614 faces (72.0% area) of pressure-outlet 27.
+    78  3.9481e-02  7.0714e-04  3.4993e-04  3.7866e-04  3.6195e-08  2.5562e-04  2.5562e-04  0:01:28   26
+
+ Reversed flow on 604 faces (69.6% area) of pressure-outlet 27.
+    79  3.6841e-02  6.7983e-04  3.4516e-04  3.6498e-04  3.5663e-08  2.5313e-04  2.5313e-04  0:01:23   25
+
+ Reversed flow on 604 faces (68.7% area) of pressure-outlet 27.
+    80  3.4615e-02  6.4929e-04  3.3968e-04  3.5070e-04  3.6043e-08  2.5430e-04  2.5430e-04  0:01:18   24
+
+ Reversed flow on 604 faces (67.2% area) of pressure-outlet 27.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy         h2o          o2     time/iter
+    81  3.2582e-02  6.2291e-04  3.2630e-04  3.3684e-04  3.7345e-08  2.6288e-04  2.6288e-04  0:01:18   23
+
+ Reversed flow on 602 faces (65.4% area) of pressure-outlet 27.
+    82  3.0582e-02  5.8936e-04  3.1192e-04  3.2283e-04  3.7302e-08  2.5804e-04  2.5804e-04  0:01:13   22
+
+ Reversed flow on 597 faces (61.8% area) of pressure-outlet 27.
+    83  2.8628e-02  5.5306e-04  3.0657e-04  3.0776e-04  3.6023e-08  2.4090e-04  2.4090e-04  0:01:08   21
+
+ Reversed flow on 597 faces (60.5% area) of pressure-outlet 27.
+    84  2.6753e-02  5.2308e-04  2.9896e-04  2.9361e-04  3.4402e-08  2.2248e-04  2.2248e-04  0:01:04   20
+
+ Reversed flow on 594 faces (59.0% area) of pressure-outlet 27.
+    85  2.5050e-02  5.0131e-04  2.8607e-04  2.8103e-04  3.2198e-08  2.0849e-04  2.0849e-04  0:01:04   19
+
+ Reversed flow on 589 faces (56.4% area) of pressure-outlet 27.
+    86  2.3617e-02  4.8226e-04  2.7056e-04  2.6845e-04  3.0537e-08  1.9864e-04  1.9864e-04  0:00:59   18
+
+ Reversed flow on 584 faces (56.2% area) of pressure-outlet 27.
+    87  2.2493e-02  4.5946e-04  2.5617e-04  2.5592e-04  2.9411e-08  1.9532e-04  1.9532e-04  0:00:55   17
+
+ Reversed flow on 589 faces (59.0% area) of pressure-outlet 27.
+    88  2.1404e-02  4.3298e-04  2.4471e-04  2.4324e-04  2.8989e-08  1.9597e-04  1.9597e-04  0:00:51   16
+
+ Reversed flow on 587 faces (59.4% area) of pressure-outlet 27.
+    89  2.0308e-02  4.0807e-04  2.3416e-04  2.3069e-04  2.8770e-08  1.9752e-04  1.9752e-04  0:00:50   15
+
+ Reversed flow on 586 faces (58.0% area) of pressure-outlet 27.
+    90  1.9264e-02  3.8744e-04  2.2449e-04  2.1896e-04  2.8352e-08  1.9538e-04  1.9538e-04  0:00:46   14
+
+ Reversed flow on 588 faces (59.5% area) of pressure-outlet 27.
+    91  1.8292e-02  3.7079e-04  2.1564e-04  2.0843e-04  2.7775e-08  1.9358e-04  1.9358e-04  0:00:42   13
+
+ Reversed flow on 590 faces (62.0% area) of pressure-outlet 27.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy         h2o          o2     time/iter
+    92  1.7459e-02  3.5766e-04  2.0851e-04  1.9918e-04  2.6930e-08  1.8749e-04  1.8749e-04  0:00:38   12
+
+ Reversed flow on 588 faces (61.7% area) of pressure-outlet 27.
+    93  1.6745e-02  3.4678e-04  2.0118e-04  1.9151e-04  2.6034e-08  1.8219e-04  1.8219e-04  0:00:37   11
+
+ Reversed flow on 587 faces (62.7% area) of pressure-outlet 27.
+    94  1.6191e-02  3.3547e-04  1.9488e-04  1.8399e-04  2.5754e-08  1.8178e-04  1.8178e-04  0:00:33   10
+
+ Reversed flow on 586 faces (61.7% area) of pressure-outlet 27.
+    95  1.5693e-02  3.2267e-04  1.8885e-04  1.7621e-04  2.5866e-08  1.8492e-04  1.8492e-04  0:00:29    9
+
+ Reversed flow on 586 faces (61.6% area) of pressure-outlet 27.
+    96  1.5257e-02  3.0868e-04  1.8241e-04  1.6862e-04  2.5987e-08  1.8705e-04  1.8705e-04  0:00:27    8
+
+ Reversed flow on 588 faces (62.4% area) of pressure-outlet 27.
+    97  1.4807e-02  2.9354e-04  1.7720e-04  1.6134e-04  2.5721e-08  1.8918e-04  1.8918e-04  0:00:23    7
+
+ Reversed flow on 589 faces (63.0% area) of pressure-outlet 27.
+    98  1.4246e-02  2.7996e-04  1.7176e-04  1.5468e-04  2.5629e-08  1.8995e-04  1.8995e-04  0:00:19    6
+
+ Reversed flow on 594 faces (65.9% area) of pressure-outlet 27.
+    99  1.3623e-02  2.7109e-04  1.6545e-04  1.4821e-04  2.5360e-08  1.9049e-04  1.9049e-04  0:00:16    5
+
+ Reversed flow on 590 faces (64.9% area) of pressure-outlet 27.
+   100  1.3052e-02  2.6614e-04  1.5939e-04  1.4210e-04  2.4655e-08  1.8914e-04  1.8914e-04  0:00:13    4
+
+ Reversed flow on 594 faces (67.2% area) of pressure-outlet 27.
+   101  1.2620e-02  2.6145e-04  1.5358e-04  1.3620e-04  2.4127e-08  1.8568e-04  1.8568e-04  0:00:10    3
+
+ Reversed flow on 596 faces (68.8% area) of pressure-outlet 27.
+   102  1.2285e-02  2.5488e-04  1.4725e-04  1.2987e-04  2.3867e-08  1.7911e-04  1.7911e-04  0:00:06    2
+
+ Reversed flow on 598 faces (69.0% area) of pressure-outlet 27.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy         h2o          o2     time/iter
+   103  1.1939e-02  2.4602e-04  1.4050e-04  1.2322e-04  2.3414e-08  1.7646e-04  1.7646e-04  0:00:03    1
+
+ Reversed flow on 603 faces (72.6% area) of pressure-outlet 27.
+   104  1.1553e-02  2.3382e-04  1.3501e-04  1.1736e-04  2.3073e-08  1.7314e-04  1.7314e-04  0:00:00    0
+
+Calculation complete.
+(cx-gui-do cx-activate-item "Information*OK")
+(cx-use-window-id 1)
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0 1))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0 1 2))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0 1 2 3))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0 1 2 3 5))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0 1 2 5))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00375384 0.0268951 -0.0501163) '(0 0 0) '(-0.0215268 -0.314187 -0.167418) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.000673518 0.00111317 -0.00627725) '(0 0 0) '(-0.0103917 -0.260509 -0.0450574) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.217409 -0.0825747 -0.00278766) '(0 0 0) '(0.547826 0.244543 0.0403744) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00308463 -0.146639 0.205319) '(0 0 0) '(-0.0746573 0.67959 0.753981) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0414519 0.162628 -0.117378) '(0 0 0) '(0.440776 -0.346162 -0.293912) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.032499 0.0211436 -0.0202232) '(0 0 0) '(0.138535 -0.290611 -0.0810529) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0198782 0.00350592 -0.0044952) '(0 0 0) '(0.0383354 -0.280256 -0.0407116) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0457359 -0.0587742 0.0536299) '(0 0 0) '(-0.525701 0.904574 0.664175) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0695501 -0.0440656 0.014297) '(0 0 0) '(-0.0698587 -0.0497109 0.283498) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00836208 -0.0044847 -0.00707732) '(0 0 0) '(0.0590042 -0.0698625 0.10963) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00268628 -0.00151698 0.000343784) '(0 0 0) '(0.0531085 -0.0730463 0.0816746) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0136646 0.000366766 0.00248364) '(0 0 0) '(0.00685582 -0.060219 0.070419) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.010506 0.0360091 -0.00129778) '(0 0 0) '(0.247546 0.0822766 -0.841279) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00681351 0.0016143 -0.0074267) '(0 0 0) '(-0.0199239 0.0187984 0.0170643) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.000101693 0.00356804 -0.00613803) '(0 0 0) '(0.10873 -0.10778 -0.0598982) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00361868 0.00261686 -0.00263683) '(0 0 0) '(0.215594 -0.362963 -0.0632183) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00817782 0.00150982 0.00103518) '(0 0 0) '(0.0500904 -0.273111 -0.0230597) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00602858 -0.00049117 -0.00142402) '(0 0 0) '(-0.023631 -0.256131 -0.0118915) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0284969 -0.00490782 0.00891212) '(0 0 0) '(-0.0923913 0.703401 0.0921519) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0293002 -0.0277039 0.0105529) '(0 0 0) '(-0.232162 0.287032 0.108995) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.000633344 0.00446793 -0.0098196) '(0 0 0) '(0.0648741 -0.0575819 -0.0222587) 0 0)
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Pathlines"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Pathlines"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Pathlines"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Pathlines"))
+(cx-gui-do cx-set-list-selections "Pathlines*Frame4*List3(Release from Surfaces)" '( 3))
+(cx-gui-do cx-activate-item "Pathlines*Frame4*List3(Release from Surfaces)")
+(cx-gui-do cx-activate-item "Pathlines*PanelButtons*PushButton1(OK)")
+
+number tracked = 849, incomplete = 849
+(cx-gui-do cx-activate-item "Pathlines*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0556658 0.0244913 -0.00621745) '(0 0 0) '(0.298053 -0.718164 -0.128704) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0118631 -0.00333136 0.00328223) '(0 0 0) '(-0.113367 0.474713 0.0722455) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0177784 -0.000551768 -0.00156042) '(0 0 0) '(0.101251 -0.372249 -0.0865547) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00159004 0.00016615 -0.000836677) '(0 0 0) '(0.00188887 -0.0990942 -0.0159041) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00836941 0.000232559 0.00241764) '(0 0 0) '(-0.0819854 0.424712 0.0862572) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00915959 0.00411133 -0.00370322) '(0 0 0) '(0.0498086 -0.141771 -0.0340103) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0237565 0.00539454 -0.0110986) '(0 0 0) '(0.0356498 -0.22734 -0.0338413) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0135283 -0.00309185 -0.00468874) '(0 0 0) '(-0.0687436 0.314846 0.0367526) 0 0)
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Vectors"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Vectors"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Vectors"))
+(cx-gui-do cx-set-real-entry-list "Vectors*Table1*Frame2*Frame3*RealEntry1(Scale)" '( 0.8))
+(cx-gui-do cx-set-list-selections "Vectors*Table1*Table3*Frame6*List2(Surfaces)" '( 3))
+(cx-gui-do cx-activate-item "Vectors*Table1*Table3*Frame6*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Vectors*Table1*Table3*Frame6*List2(Surfaces)" '())
+(cx-gui-do cx-activate-item "Vectors*Table1*Table3*Frame6*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Vectors*Table1*Table3*Frame6*List2(Surfaces)" '( 2))
+(cx-gui-do cx-activate-item "Vectors*Table1*Table3*Frame6*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Vectors*Table1*Table3*Frame6*List2(Surfaces)" '( 1 2))
+(cx-gui-do cx-activate-item "Vectors*Table1*Table3*Frame6*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Vectors*Table1*Table3*Frame6*List2(Surfaces)" '( 0 1 2))
+(cx-gui-do cx-activate-item "Vectors*Table1*Table3*Frame6*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Vectors*Table1*Table3*Frame6*List2(Surfaces)" '( 0 1 2 3))
+(cx-gui-do cx-activate-item "Vectors*Table1*Table3*Frame6*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Vectors*Table1*Table3*Frame6*List2(Surfaces)" '( 0 1 2 3 4))
+(cx-gui-do cx-activate-item "Vectors*Table1*Table3*Frame6*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Vectors*Table1*Table3*Frame6*List2(Surfaces)" '( 0 1 2 3 4 5))
+(cx-gui-do cx-activate-item "Vectors*Table1*Table3*Frame6*List2(Surfaces)")
+(cx-gui-do cx-activate-item "Vectors*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00506073 -0.00518644 0.00128327) '(0 0 0) '(-0.508463 0.506378 0.0365787) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00116315 0.00243336 -0.00199187) '(0 0 0) '(0.149139 -0.0531139 0.104601) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00248087 0.00281282 0.00103441) '(0 0 0) '(0.22849 -0.198444 -0.0231327) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00331707 -0.00408092 0.00134187) '(0 0 0) '(-0.237513 0.206853 0.0427386) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0044409 0.00527021 -0.000608846) '(0 0 0) '(0.229298 -0.198778 -0.0479463) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00121322 -0.00139997 -3.33066e-05) '(0 0 0) '(-0.231318 0.198549 0.0379981) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-1.99378e-05 4.83207e-05 -0.000389942) '(0 0 0) '(0.0100763 -0.00517297 0.00608408) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00197453 -0.00594097 -0.000281416) '(0 0 0) '(-0.441997 0.148924 0.0791215) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00053348 0.00232774 -0.000228526) '(0 0 0) '(0.295333 -0.0691231 -0.0149623) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00116546 0.00187037 0.000179557) '(0 0 0) '(0.288104 -0.178027 -0.0160727) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.000379086 -0.000472246 0.000137471) '(0 0 0) '(-0.0514761 0.0433372 0.0125008) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00676744 0.00592142 8.66449e-05) '(0 0 0) '(0.250752 -0.285979 -0.0284401) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00663254 0.00201995 0.000167901) '(0 0 0) '(0.130427 -0.426498 -0.0426466) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00524843 -0.0014397 -0.000441956) '(0 0 0) '(-0.107273 0.382975 0.0323398) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0127169 0.00245123 -0.00153264) '(0 0 0) '(0.107583 -0.566072 -0.0126327) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00204467 -0.000311268 4.75628e-05) '(0 0 0) '(-0.0752645 0.49459 -0.00189255) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00150246 0.0003314 1.46767e-05) '(0 0 0) '(0.0801688 -0.362055 0.00173587) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00013325 -2.21608e-05 0.000541607) '(0 0 0) '(-3.57628e-05 -0.0106217 -0.0025709) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00946713 -0.00117831 -0.00203604) '(0 0 0) '(-0.0395312 -0.289949 -0.0155718) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00941777 -0.0016894 0.000293234) '(0 0 0) '(-0.151808 0.864332 0.0588971) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00418227 -0.00638286 -0.000670644) '(0 0 0) '(-0.584705 0.38295 0.070356) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0014951 0.00190934 -0.00174201) '(0 0 0) '(0.314628 -0.223353 0.389548) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00103243 0.00144061 0.002278) '(0 0 0) '(0.239057 -0.30737 0.0674778) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00187811 -0.000319351 0.00122657) '(0 0 0) '(0.104936 -0.265884 -0.00730321) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00249823 -1.13733e-05 0.00199481) '(0 0 0) '(0.0395087 -0.252752 -0.0519469) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00377547 9.45311e-05 -0.00356494) '(0 0 0) '(-0.0400603 0.256407 0.0515486) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00118401 0.000112755 0.00084571) '(0 0 0) '(0.0277101 -0.146643 -0.0194432) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00224568 -7.6713e-05 0.000441893) '(0 0 0) '(0.000673234 -0.224858 -0.0434284) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00743937 -0.0013315 -0.00294255) '(0 0 0) '(-0.150498 0.652996 0.0808771) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00316814 0.00905353 0.00282534) '(0 0 0) '(0.138439 -0.365968 -0.0236413) 0 0)
+(cx-gui-do cx-activate-item "Vectors*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours|contour-1"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours|contour-1"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours|contour-1"))
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+(cxg-clear-all-selections (cx-active-window))
+(cxg-add-surfaces-to-selection '(s1) (cx-active-window))
+(cx-use-window-id 51)
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+(cxg-clear-all-selections (cx-active-window))
+(cxg-add-surfaces-to-selection '(s1) (cx-active-window))
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cxg-clear-all-selections (cx-active-window))
+(cxg-add-surfaces-to-selection '(s1) (cx-active-window))
+(cx-use-window-id 51)
+(cxg-clear-all-selections (cx-active-window))
+(cxg-add-surfaces-to-selection '(s1) (cx-active-window))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours|contour-1"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours|contour-1"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours|contour-1"))
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton1(OK)")
+(cxg-clear-all-selections (cx-active-window))
+(cxg-add-surfaces-to-selection '() (cx-active-window))
+(cx-use-window-id 51)
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.000555575 0.00130922 -0.0215419) '(0 0 0) '(-0.0175638 0.0652521 0.0154113) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00414634 0.000589125 0.00215843) '(0 0 0) '(0.0108401 -0.0781398 0.000503689) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00651078 -0.000564057 0.00415319) '(0 0 0) '(-0.007339 -0.302129 -0.0298471) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0128463 0.00110545 -0.00669014) '(0 0 0) '(0.00794786 0.28409 0.0316953) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00231697 0.000155568 -9.54544e-05) '(0 0 0) '(0.00355333 -0.057236 -0.00197554) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00755995 -0.00124876 -0.00222191) '(0 0 0) '(-0.0446744 0.26443 0.00207651) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0240131 0.00443359 0.00695762) '(0 0 0) '(0.0416045 -0.228843 0.001654) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00394059 4.20101e-05 0.000945107) '(0 0 0) '(0.00192595 -0.0931254 -0.00378934) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0026547 -3.9544e-05 -0.00148389) '(0 0 0) '(-0.00332063 0.121802 0.00270411) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00387476 6.88396e-05 0.0011642) '(0 0 0) '(0.00211596 -0.121857 -0.000378996) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0115425 -0.000821095 -0.00357733) '(0 0 0) '(-0.0154378 0.221374 -0.00115597) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.000165153 -4.57112e-05 -0.00115904) '(0 0 0) '(3.40343e-05 0.01602 -0.0064722) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00168314 -0.000386048 0.00824964) '(0 0 0) '(0.0116414 -0.0486476 -0.00473243) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0162 -0.0065368 -0.0645094) '(0 0 0) '(-0.0393212 0.184359 -0.021) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0571063 0.145677 0.0412578) '(0 0 0) '(0.0812113 0.0172273 -0.262366) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0114534 -0.0123378 -0.0407786) '(0 0 0) '(-0.057975 0.13591 -0.0261889) 0 0)
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Pathlines|pathlines-1"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Pathlines|pathlines-1"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Pathlines|pathlines-1"))
+(cx-gui-do cx-activate-item "Pathlines*PanelButtons*PushButton1(OK)")
+
+number tracked = 849, incomplete = 849
+(cx-use-window-id 51)
+(cx-gui-do cx-activate-item "Pathlines*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00975133 0.0055259 0.000248121) '(0 0 0) '(-0.125024 0.185507 -0.0487622) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00228782 0.00219174 0.00217083) '(0 0 0) '(0.0836216 -0.110562 0.0188109) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0132532 0.000754558 -0.000393581) '(0 0 0) '(0.15382 -0.375292 -0.0120107) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00695454 0.000496253 0.000649011) '(0 0 0) '(0.0126669 -0.21274 0.026856) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00116344 -7.90153e-05 5.87292e-05) '(0 0 0) '(-0.00367326 -0.0497544 0.00567983) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0251493 -0.0192081 -0.02091) '(0 0 0) '(-0.216595 0.672747 -0.368999) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00953024 0.0014025 0.0164052) '(0 0 0) '(-0.209276 0.192235 -0.0307544) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0271441 0.0229547 0.00247125) '(0 0 0) '(0.372814 -0.454852 0.132926) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0211371 0.00486513 0.0181399) '(0 0 0) '(0.0591733 -0.299782 0.034149) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.000463888 -0.000488712 0.00324205) '(0 0 0) '(5.07236e-05 -0.0035673 -0.000372358) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00613464 0.000289623 -0.00381153) '(0 0 0) '(-0.00605702 0.102402 0.01684) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00295963 0.00024445 -9.53022e-06) '(0 0 0) '(0.0052619 -0.0637978 -0.00834228) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00219439 0.000278786 -0.00839759) '(0 0 0) '(0.00210732 -0.0750219 0.00290255) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0186625 -0.000400368 0.00251716) '(0 0 0) '(-0.119808 0.481691 -0.0236452) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0582104 0.0127965 0.000468598) '(0 0 0) '(0.0640036 -0.792313 0.00722895) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0309027 0.00943423 0.00334928) '(0 0 0) '(0.0380563 0.505884 0.00586335) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0636287 -0.0347097 0.0100329) '(0 0 0) '(-0.284852 0.537326 0.0549414) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0119915 0.0127316 -0.0113826) '(0 0 0) '(0.0588447 -0.0623465 -0.00748387) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0151858 0.0111065 -0.00156255) '(0 0 0) '(0.102828 -0.14195 -0.0095626) 0 0)
+/exit y
+(cx-gui-do cx-activate-item "Question*OK")
+Auto-Transcript Stop Time:  00:17:59, 20 Dec 2023 中国标准时间 
+Total Transcript Time: 31 Minute 2 Second.

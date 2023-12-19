@@ -1,0 +1,1726 @@
+Auto-Transcript Start Time:  12:58:06, 18 Dec 2023 中国标准时间 
+Current Directory: "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent"
+
+              Welcome to ANSYS Fluent 2022 R1
+
+              Copyright 1987-2022 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Nov 29 2021 12:14:46 EST  Build Id: 10213  
+ 
+Connected License Server List:	
+Host spawning Node 0 on machine "DESKTOP-6MJKVPJ" (win64).
+
+------------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                                  
+------------------------------------------------------------------------------------------
+n7    DESKTOP-6MJKVPJ  8/20  Windows-x64  21432  12th Gen Intel(R) Core(TM) i7-12700H    
+n6    DESKTOP-6MJKVPJ  7/20  Windows-x64  10324  12th Gen Intel(R) Core(TM) i7-12700H    
+n5    DESKTOP-6MJKVPJ  6/20  Windows-x64  16184  12th Gen Intel(R) Core(TM) i7-12700H    
+n4    DESKTOP-6MJKVPJ  5/20  Windows-x64  2560   12th Gen Intel(R) Core(TM) i7-12700H    
+n3    DESKTOP-6MJKVPJ  4/20  Windows-x64  10244  12th Gen Intel(R) Core(TM) i7-12700H    
+n2    DESKTOP-6MJKVPJ  3/20  Windows-x64  15676  12th Gen Intel(R) Core(TM) i7-12700H    
+n1    DESKTOP-6MJKVPJ  2/20  Windows-x64  20576  12th Gen Intel(R) Core(TM) i7-12700H    
+n0*   DESKTOP-6MJKVPJ  1/20  Windows-x64  8956   12th Gen Intel(R) Core(TM) i7-12700H    
+host  DESKTOP-6MJKVPJ        Windows-x64  23496  12th Gen Intel(R) Core(TM) i7-12700H    
+
+MPI Option Selected: intel
+Selected system interconnect: default
+------------------------------------------------------------------------------------------
+
+Cleanup script file is D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\cleanup-fluent-DESKTOP-6MJKVPJ-23496.bat
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+
+Meshing> 
+Importing one geom object per program-controlled and one zone per body ...
+    E:\\Ansys\\Ansys.Products.2022.R1.Win64\\Program Files\\ANSYS Inc\\v221\\commonfiles\\CPython\\3_7\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by MelonJam on DESKTOP-6MJKVPJ winx64 on Mon Dec 18 12:58:59 2023
+    using Python 3.7.11 (remotes/origin/b0b4eda9448d622fbb214539623a7f129f39e1f4-dirty:b0b4eda, Oct 18 20) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build Nov 30 2021 12:29:41 including TGLib build Nov 12 2019 13:13:16
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_4892/out17028755384892.tgf'
+    converting file 'anode.scdoc' (1 of 1) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_4892'
+    importing data ...
+    importing meshing model from PartMgr from file 'D:/Objects3D/fluent/fuelCell/H2BIKE/fluent/anode.scdoc' ...
+    setting enclosure and symmetry processing to False
+    setting transfer named selections to True
+    setting named selection prefixes to ''
+    setting mixed import resolution type to 'SolidAndSurface'
+    setting target application to 'FluentMeshing'
+    attaching to assembly ...
+    attaching to assembly done in 3.097 [s]
+    Warning: ?????????
+    processing assembly 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\anode.scdoc' with ID 1 and reference key '<?xml version="1.0" encoding="utf-16"?>
+    <IdTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Table>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="7682bd9b-a830-48c0-9553-1f1ee0f80937:5" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="7682bd9b-a830-48c0-9553-1f1ee0f80937:1" /&gt;&lt;/SnippetV1&gt;</Text>
+          <Id>10000</Id>
+          <IsExploded>false</IsExploded>
+        </Entry>
+      </Table>
+    </IdTable>'
+    length unit = [m]
+    processing part 'fluent' with ID 3
+    processing named selection 'outlet'
+    processing named selection 'inlet'
+    processing named selection 'boi'
+    processing named selection 'wall'
+    processing data ...
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+    detecting feature edges, feature angle = 40 [deg] ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Collection: 4
+                    Component : 2
+                    Body      : 1
+                    Shell     : 1
+                    Face      : 201
+                    Loop      : 231
+                    Edge      : 687
+                    Vertex    : 458
+                    Surface   : 201
+                    Curve     : 687
+                Tessellation summary:
+                    Face facets  : 1064
+                    Edge segments: 703
+                Bounding box:
+                    (-75.75, 0, -23.25) x (75.75000000000009, 1, 23.25)
+                Assembly component hierarchy:
+                    'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\anode.scdoc'
+                      'fluent'
+                NamedCollections:
+                    'outlet'
+                    'inlet'
+                    'boi'
+                    'wall'
+    
+    
+    exporting FLTG data to file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_4892\\out17028755384892.tgf' ...
+    writing face-based mesh file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_4892\\out17028755384892.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 1
+        Object region: 5
+        Zone         : 11
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 3.464 [s]
+
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_4892/out17028755384892.tgf"...
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_4892/out17028755384892.tgf"...
+nodes: 948
+edges: 701
+faces: 1064
+cells: 0
+reading 948 storage data (id 1, type 41, double precision binary).
+generating pointers...done.
+extracting boundary entities...
+ 948 boundary nodes.
+ 1064 boundary faces.
+ 4 boundary face zones.
+done.
+analyzing boundary connectivity...done.
+
+---------------- Import of anode, consisting of one single part/object , complete. 
+ 
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-5.79103 -17.015 22.1494) '(0 0 0) '(0.241662 0.130105 0.0179804) 0 0)
+
+---------------- A local size of 0.08 was added to facesize_1
+---- Warning--- The string 'boi' was detected in one of the selected zone names ( origin-boi ). Did you intend to create a Body Of Influence?
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_4892\TaskObject3.msh.h5" ...
+writing 1 node zones
+writing 7 edge zones 
+writing 4 face zones 
+done.    processing size functions/scoped sizing to create Size Field...
+
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_4892\anode.sf"...
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_4892\anode.sf"...
+Done.
+
+
+Importing one mesh object per program-controlled and one zone per body ...
+    E:\\Ansys\\Ansys.Products.2022.R1.Win64\\Program Files\\ANSYS Inc\\v221\\commonfiles\\CPython\\3_7\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by MelonJam on DESKTOP-6MJKVPJ winx64 on Mon Dec 18 13:00:00 2023
+    using Python 3.7.11 (remotes/origin/b0b4eda9448d622fbb214539623a7f129f39e1f4-dirty:b0b4eda, Oct 18 20) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build Nov 30 2021 12:29:41 including TGLib build Nov 12 2019 13:13:16
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_4892/out17028755994892.tgf'
+    converting file 'anode.scdoc.pmdb' (1 of 1) from Workbench to FLTG using output path 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_4892'
+    importing data ...
+    importing meshing model from PartMgr from file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_4892\\\\anode.scdoc.pmdb' ...
+    setting enclosure and symmetry processing to False
+    setting transfer named selections to True
+    setting named selection prefixes to ''
+    setting mixed import resolution type to 'SolidAndSurface'
+    setting target application to 'FluentMeshing'
+    initializing part manager from file ...
+    processing assembly 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\anode.scdoc' with ID 1 and reference key '<?xml version="1.0" encoding="utf-16"?>
+    <IdTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Table>
+        <Entry>
+          <Text>&lt;SnippetV1 sctype="SpaceClaim.OccurrenceMoniker`1[[SpaceClaim.IEvaluation, Core]], Core"&gt;&lt;instanceMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IInstance, Core]], Core" refId="7682bd9b-a830-48c0-9553-1f1ee0f80937:5" /&gt;&lt;originalMoniker sctype="SpaceClaim.BasicMoniker`1[[SpaceClaim.IEvaluation, Core]], Core" refId="7682bd9b-a830-48c0-9553-1f1ee0f80937:1" /&gt;&lt;/SnippetV1&gt;</Text>
+          <Id>10000</Id>
+          <IsExploded>false</IsExploded>
+        </Entry>
+      </Table>
+    </IdTable>'
+    length unit = [m]
+    processing part 'fluent' with ID 3
+    processing named selection 'outlet'
+    processing named selection 'inlet'
+    processing named selection 'boi'
+    processing named selection 'wall'
+    processing data ...
+    loading size function background grid from file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_4892\\\\anode.sf' ...
+    reading size function background grid file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_4892\\\\anode.sf' ...
+     Read 99287 vertices
+    initializing size function background grid done in 0.054 [s]
+    tessellating 201 faces done in 1.456 [s]
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+    detecting feature edges, feature angle = 40 [deg] ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Collection: 4
+                    Component : 2
+                    Body      : 1
+                    Shell     : 1
+                    Face      : 201
+                    Loop      : 231
+                    Edge      : 687
+                    Vertex    : 458
+                    Surface   : 201
+                    Curve     : 687
+                Tessellation summary:
+                    Face facets  : 159110
+                    Edge segments: 32848
+                Bounding box:
+                    (-75.75, 0, -23.25) x (75.75, 1, 23.25)
+                Assembly component hierarchy:
+                    'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\anode.scdoc'
+                      'fluent'
+                NamedCollections:
+                    'outlet'
+                    'inlet'
+                    'boi'
+                    'wall'
+    
+    
+    exporting FLTG data to file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_4892\\out17028755994892.tgf' ...
+    writing face-based mesh file 'D:\\Objects3D\\fluent\\fuelCell\\H2BIKE\\fluent\\FM_DESKTOP-6MJKVPJ_4892\\out17028755994892.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 1
+        Object region: 5
+        Zone         : 11
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 1.837 [s]
+
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_4892/out17028755994892.tgf"...
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_4892/out17028755994892.tgf"...
+nodes: 112112
+edges: 32842
+faces: 159110
+cells: 0
+reading 112112 storage data (id 1, type 41, double precision binary).
+appending mesh...
+done.
+generating pointers...done.
+extracting boundary entities...
+ 113060 boundary nodes.
+ 160174 boundary faces.
+ 8 boundary face zones.
+done.
+
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_4892\\anode.sf"...
+Reading "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_4892\\anode.sf"...
+ Read 99287 vertices
+0 faces marked.
+
+    computing regions...done
+Deleting import_curvature_0
+Deleting import_proximity_0
+    processing size functions/scoped sizing to create Size Field...
+
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_4892\anode.sf"...
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_4892\anode.sf"...
+Done.
+
+
+remeshing...
+
+
+------------------------- --------------------- -------------------- ---------------- ----------
+                     name skewed-cells (> 0.80)    averaged-skewness maximum-skewness face count
+------------------------- --------------------- -------------------- ---------------- ----------
+     fluent-fluent_region                     0          0.077105692       0.57752533     158276
+
+------------------------- --------------------- -------------------- ---------------- ----------
+                     name skewed-cells (> 0.80)    averaged-skewness maximum-skewness face count
+------------------------- --------------------- -------------------- ---------------- ----------
+     fluent-fluent_region                     0          0.077105692       0.57752533     158276
+
+
+---------------- After Surface mesh, the model consists of 1 fluid/solid regions and 0 voids.
+
+---------------- Surface Meshing of anode complete in  0.20 minutes, with a maximum skewness of  0.58. 
+
+(cx-use-window-id 51)
+(cx-set-camera-relative '(4.92439 -10.8307 1.97808) '(0 0 0) '(0.185797 0.140378 0.284375) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-3.56256 5.12058 -1.04749) '(0 0 0) '(-0.221591 -0.25824 -0.431671) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.240265 -0.0268035 -0.103065) '(0 0 0) '(0.00395665 0.0131294 0.0134507) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-4.37954 1.58402 0.427813) '(0 0 0) '(-0.0130441 -0.083987 -0.0823718) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-46.9065 -9.0796 5.76808) '(0 0 0) '(0.0688106 -0.00622225 -0.0315325) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(66.0867 64.1785 -74.5484) '(0 0 0) '(0.115789 -0.277858 -0.193896) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(4.62787 -8.44199 13.461) '(0 0 0) '(0.00392586 0.305647 0.190253) 0 0)
+
+---------------- Velocity-inlet zone type was automatically assigned to zones containing the string 'inlet'.
+
+---------------- Pressure-outlet zone type was automatically assigned to zones containing the string 'outlet'.
+
+---------------- Boundary Conditions Updated
+
+---------------- Regions Updated
+
+Created Scoped Prism: smooth-transition_1
+
+---------------- Inflation control added to fluent-fluent_region
+Deleting smooth-transition_1(cx-use-window-id 51)
+(cx-set-camera-relative '(5.22014 -0.204279 -1.44162) '(0 0 0) '(-0.0314734 -0.0076974 -0.00139546) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-38.9552 21.5021 -10.2981) '(0 0 0) '(-0.0259871 -0.0756648 -0.0565087) 0 0)
+
+Created Scoped Prism: smooth-transition_1
+
+---------------- Inflation control added to fluent-fluent_region
+Writing "D:\Objects3D\fluent\fuelCell\H2BIKE\fluent\FM_DESKTOP-6MJKVPJ_4892\TaskObject11.msh.h5" ...
+writing 3 node zones
+writing 14 edge zones 
+writing 8 face zones 
+done.
+    updating regions...
+    done.
+checking object "fluent-fluent_region"...
+    skipping validating regions of mesh object "fluent-fluent_region"...done.
+auto meshing object fluent-fluent_region...
+
+processing scoped prisms...
+    starting orientation...done.
+    setting prism growth...done.
+done.
+Identifying Topology...
+
+Generating Prisms...
+
+Generating initial mesh...
+.
+
+
+Refining mesh...
+
+Create polyhedra ...
+.
+
+.
+
+.
+
+.
+
+.
+
+
+Merging Domains...
+done.
+
+Quality Measure has been changed to Orthogonal Quality.
+                     name       id cells (quality < 0.10)  minimum quality cell count
+------------------------- -------- ---------------------- ---------------- ----------
+     fluent-fluent_region     7451                     41      0.075065364     459446
+
+                     name       id cells (quality < 0.10)  minimum quality cell count
+------------------------- -------- ---------------------- ---------------- ----------
+          Overall Summary     none                     41      0.075065364     459446
+
+[Quality Measure : Orthogonal Quality]
+
+---------------- 459446 cells were created in :  1.37 minutes
+
+---------------- The mesh has a minimum Orthogonal Quality of:  0.08 
+
+---------------- The volume meshing of fluent-fluent_region is complete.
+
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.733967 -11.531 12.0366) '(0 0 0) '(0.0644325 0.211273 0.198295) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-2.72452 7.02271 -10.7743) '(0 0 0) '(-0.108489 -0.598704 -0.362792) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(2.01656 -6.20033 9.37887) '(0 0 0) '(0.095972 0.612524 0.384344) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.84576 2.54562 -3.27104) '(0 0 0) '(-0.0828891 -0.474713 -0.347854) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(4.24277 -24.777 23.7827) '(0 0 0) '(0.123341 0.612679 0.616611) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-1.85107 3.6587 -1.47114) '(0 0 0) '(-0.0336449 -0.105999 -0.221927) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.429939 54.0146 -57.0898) '(0 0 0) '(-0.212463 -0.362458 -0.289114) 0 0)
+(cx-gui-do cx-activate-item "Ribbon*Frame1*Frame2(Task Page)*Table1*Table3(Solution)*PushButton1(Switch to Solution)")
+(cx-gui-do cx-activate-item "Question*OK")
+
+unused zone boundary-node-15 removed
+unused zone boundary-node-7425 removed
+Note: Rank = 0: Process affinity not being set (6).
+Note: Rank = 1: Process affinity not being set (6).
+Note: Rank = 2: Process affinity not being set (6).
+Note: Rank = 3: Process affinity not being set (6).
+Note: Rank = 4: Process affinity not being set (6).
+Note: Rank = 5: Process affinity not being set (6).
+Note: Rank = 6: Process affinity not being set (6).
+Note: Rank = 7: Process affinity not being set (6).
+
+Transferring mesh
+	creating threads... done
+	transferring nodes... done
+	transferring cells... done
+	transferring faces... done
+	post mesh transfer operations... done
+done
+
+Building...
+     mesh
+	auto partitioning mesh by Metis (fast),
+	distributing mesh
+		parts........,
+		faces........,
+		nodes........,
+		cells........,
+        bandwidth reduction using Reverse Cuthill-McKee: 61578/2606 = 23.6293
+     materials,
+     interface,
+     domains,
+     zones,
+	interior--fluent-fluent_region
+	boi
+	outlet
+	inlet
+	wall
+	fluent-fluent_region
+     surfaces,
+     parallel,
+Done.
+Mesh is now scaled to meters.
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 1)
+(newline)
+
+
+> (cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Viscous (SST k-omega)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Viscous (SST k-omega)"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Viscous (SST k-omega)"))
+(cx-gui-do cx-set-toggle-button2 "Viscous Model*Table1*ToggleBox1(Model)*Laminar" #t)
+(cx-gui-do cx-activate-item "Viscous Model*Table1*ToggleBox1(Model)*Laminar")
+(cx-gui-do cx-activate-item "Viscous Model*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Models|Viscous (Laminar)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Cell Zone Conditions|Fluid"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions|Inlet"))
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 1)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 2)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 3)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 4)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 5)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 6)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 7)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 8)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-enable-apply-button "Velocity Inlet")
+(cx-gui-do cx-set-expression-entry "Velocity Inlet*Frame2*Frame2*Frame1(Momentum)*Table1*Table8*ExpressionEntry1(Velocity Magnitude)" '("10" . 0))
+(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Reference Values"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Named Expressions"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Named Expressions"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Named Expressions"))
+(cx-gui-do cx-activate-item "Expression Manager*PanelButtons*PushButton1(Close)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Methods"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Methods"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Methods"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Controls"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Controls"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Controls"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions"))
+(cx-gui-do cx-activate-item "Report Definitions*Table1*ButtonBox3*PushButton1(New)")
+(cx-gui-do cx-activate-item "MenuBar*Surface ReportSubMenu*Area-Weighted Average...")
+(cx-gui-do cx-set-list-selections "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)" '( 3))
+(cx-gui-do cx-activate-item "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)" '( 0 3))
+(cx-gui-do cx-activate-item "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)")
+(cx-gui-do cx-activate-item "Surface Report Definition*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Report Definitions*Table1*ButtonBox3*PushButton1(New)")
+(cx-gui-do cx-activate-item "MenuBar*Surface ReportSubMenu*Area-Weighted Average...")
+(cx-gui-do cx-set-list-selections "Surface Report Definition*Table1*Table2*DropDownList3(Field Variable)" '( 4))
+(cx-gui-do cx-activate-item "Surface Report Definition*Table1*Table2*DropDownList3(Field Variable)")
+(cx-gui-do cx-set-list-selections "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)" '( 3))
+(cx-gui-do cx-activate-item "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)" '( 0 3))
+(cx-gui-do cx-activate-item "Surface Report Definition*Table1*Table2*Table6*List1(Surfaces)")
+(cx-gui-do cx-activate-item "Surface Report Definition*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Report Definitions*PanelButtons*PushButton1(Close)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Initialization"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Initialization"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Initialization"))
+(cx-gui-do cx-activate-item "Solution Initialization*Table1*Frame12*PushButton2(Initialize)")
+
+Initialize using the hybrid initialization method.
+
+Checking case topology... 
+-This case has both inlets & outlets 
+-Pressure information is not available at the boundaries.
+ Case will be initialized with constant pressure
+
+	iter		scalar-0
+
+	1		1.000000e+00
+	2		7.615626e-05
+	3		1.869813e-05
+	4		1.126366e-05
+	5		5.323741e-06
+	6		4.993350e-06
+	7		3.540661e-06
+	8		3.390111e-06
+	9		2.827504e-06
+	10		2.690999e-06
+
+Hybrid initialization is done.
+
+Warning: convergence tolerance of 1.000000e-06 not reached
+during Hybrid Initialization.
+
+Note: Settings to improve the robustness of pathline and
+      particle tracking have been automatically enabled.
+
+(cx-gui-do cx-activate-item "ToolBar*Mesh Display*fl_mesh_svg_graphics_toolbar")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0266866 0.18171 -0.0451395) '(0 0 0) '(0.0138442 -0.11157 -0.458806) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.000123188 0.0251389 -0.019855) '(0 0 0) '(0.0248399 -0.233589 -0.295972) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00058211 0.00230021 -0.00334659) '(0 0 0) '(0.016058 -0.157471 -0.111034) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0273079 -0.0170289 0.0245166) '(0 0 0) '(-0.0818612 0.345668 0.328631) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00851562 -0.00496623 -0.00198) '(0 0 0) '(0.0321031 0.0538638 0.0949629) 0 0)
+(cx-use-window-id 51)
+(cxg-clear-all-selections (cx-active-window))
+(cxg-add-surfaces-to-selection '(boi) (cx-active-window))
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00454766 0.00491862 0.00818038) '(0 0 0) '(-0.00392425 -0.00266057 -0.00538224) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0150234 0.00265506 0.00566979) '(0 0 0) '(0.000822478 0.00155586 0.00312468) 0 0)
+(cx-use-window-id 51)
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Run Calculation"))
+(cx-gui-do cx-set-integer-entry "Run Calculation*Table1*Table3(Parameters)*Table1*Table1*IntegerEntry1(Number of Iterations)" 300)
+(cx-gui-do cx-activate-item "Run Calculation*Table1*Table3(Parameters)*Table1*Table1*IntegerEntry1(Number of Iterations)")
+(cx-gui-do cx-activate-item "Run Calculation*Table1*Table6(Solution Advancement)*Table1*PushButton1(Calculate)")
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+
+ Reversed flow on 23 faces (3.6% area) of pressure-outlet 23.
+     1  1.0000e+00  2.8929e-03  2.5106e-03  2.1179e-03  0:04:59  299
+
+ Reversed flow on 85 faces (10.2% area) of pressure-outlet 23.
+     2  7.2988e-01  2.3951e-03  1.5603e-03  1.4162e-03  0:06:57  298
+
+ Reversed flow on 610 faces (3.0% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+     3  5.6881e-01  2.5865e-03  1.2772e-03  1.2649e-03  0:09:30  297
+
+ Reversed flow on 887 faces (6.7% area) of pressure-outlet 23.
+     4  5.2655e-01  2.4903e-03  7.1691e-04  7.7550e-04  0:08:34  296
+
+ Reversed flow on 1016 faces (10.4% area) of pressure-outlet 23.
+     5  4.9209e-01  2.4060e-03  5.2151e-04  6.1435e-04  0:08:48  295
+
+ Reversed flow on 1073 faces (13.6% area) of pressure-outlet 23.
+     6  4.4611e-01  2.1681e-03  3.8593e-04  4.8872e-04  0:08:00  294
+
+ Reversed flow on 1111 faces (17.0% area) of pressure-outlet 23.
+     7  4.2838e-01  1.9905e-03  3.1419e-04  4.2176e-04  0:07:21  293
+
+ Reversed flow on 1139 faces (20.8% area) of pressure-outlet 23.
+     8  4.0406e-01  1.7791e-03  2.7115e-04  3.7570e-04  0:06:50  292
+
+ Reversed flow on 1162 faces (25.4% area) of pressure-outlet 23.
+     9  3.8775e-01  1.6063e-03  2.3900e-04  3.3966e-04  0:06:25  291
+
+ Reversed flow on 1176 faces (28.7% area) of pressure-outlet 23.
+    10  3.7696e-01  1.4650e-03  2.1655e-04  3.1040e-04  0:07:03  290
+
+ Reversed flow on 1188 faces (32.4% area) of pressure-outlet 23.
+    11  3.7237e-01  1.3672e-03  2.0142e-04  2.9071e-04  0:06:35  289
+
+ Reversed flow on 1196 faces (35.4% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+    12  3.6235e-01  1.2546e-03  1.8521e-04  2.6726e-04  0:06:13  288
+
+ Reversed flow on 1198 faces (37.1% area) of pressure-outlet 23.
+    13  3.5854e-01  1.1739e-03  1.7398e-04  2.5362e-04  0:05:54  287
+
+ Reversed flow on 1201 faces (39.7% area) of pressure-outlet 23.
+    14  3.5206e-01  1.1025e-03  1.6499e-04  2.4046e-04  0:05:40  286
+
+ Reversed flow on 1204 faces (42.0% area) of pressure-outlet 23.
+    15  3.4886e-01  1.0402e-03  1.5602e-04  2.2999e-04  0:05:28  285
+
+ Reversed flow on 1207 faces (43.0% area) of pressure-outlet 23.
+    16  3.4975e-01  9.8183e-04  1.4669e-04  2.1843e-04  0:05:18  284
+
+ Reversed flow on 1211 faces (46.2% area) of pressure-outlet 23.
+    17  3.4403e-01  9.2968e-04  1.3877e-04  2.0940e-04  0:06:07  283
+
+ Reversed flow on 1214 faces (47.5% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    18  3.4716e-01  8.8970e-04  1.3230e-04  2.0318e-04  0:07:42  282
+
+ Reversed flow on 1218 faces (49.9% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    19  3.4323e-01  8.4169e-04  1.2473e-04  1.9392e-04  0:10:49  281
+
+ Reversed flow on 1220 faces (49.8% area) of pressure-outlet 23.
+    20  3.4934e-01  8.2361e-04  1.2141e-04  1.9193e-04  0:09:33  280
+
+ Reversed flow on 1229 faces (55.9% area) of pressure-outlet 23.
+    21  3.3436e-01  7.7368e-04  1.1552e-04  1.8184e-04  0:08:33  279
+
+ Reversed flow on 1229 faces (56.3% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    22  3.2925e-01  7.3729e-04  1.1181e-04  1.7578e-04  0:10:31  278
+
+ Reversed flow on 1229 faces (54.9% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+    23  3.3750e-01  7.0385e-04  1.0848e-04  1.7064e-04  0:11:09  277
+
+ Reversed flow on 1237 faces (58.1% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    24  3.2286e-01  6.6357e-04  1.0393e-04  1.6358e-04  0:12:34  276
+
+ Reversed flow on 1237 faces (58.9% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    25  3.2723e-01  6.3746e-04  1.0080e-04  1.6038e-04  0:12:46  275
+
+ Reversed flow on 1236 faces (58.0% area) of pressure-outlet 23.
+    26  3.1774e-01  6.1062e-04  9.7524e-05  1.5632e-04  0:11:06  274
+
+ Reversed flow on 1237 faces (57.9% area) of pressure-outlet 23.
+    27  3.2640e-01  5.9409e-04  9.7374e-05  1.5513e-04  0:09:45  273
+
+ Reversed flow on 1239 faces (59.3% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    28  3.1244e-01  5.6712e-04  9.4761e-05  1.5180e-04  0:11:24  272
+
+ Reversed flow on 1236 faces (58.0% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    29  3.1362e-01  5.4210e-04  9.2550e-05  1.4653e-04  0:12:42  271
+
+ Reversed flow on 1241 faces (60.9% area) of pressure-outlet 23.
+    30  3.0298e-01  5.1469e-04  8.9188e-05  1.4227e-04  0:11:01  270
+
+ Reversed flow on 1237 faces (57.7% area) of pressure-outlet 23.
+    31  2.9943e-01  5.0320e-04  8.9045e-05  1.4175e-04  0:09:41  269
+
+ Reversed flow on 1240 faces (60.5% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    32  2.9520e-01  4.8106e-04  8.6431e-05  1.3839e-04  0:11:17  268
+
+ Reversed flow on 1238 faces (59.0% area) of pressure-outlet 23.
+    33  2.7595e-01  4.6002e-04  8.2729e-05  1.3382e-04  0:10:47  267
+
+ Reversed flow on 1245 faces (61.9% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+    34  2.7913e-01  4.4954e-04  8.2083e-05  1.3360e-04  0:09:29  266
+
+ Reversed flow on 1243 faces (61.0% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    35  2.7226e-01  4.3822e-04  8.1043e-05  1.3232e-04  0:11:05  265
+
+ Reversed flow on 1245 faces (63.1% area) of pressure-outlet 23.
+    36  2.6555e-01  4.2178e-04  7.9346e-05  1.2933e-04  0:09:43  264
+
+ Reversed flow on 1248 faces (64.6% area) of pressure-outlet 23.
+    37  2.6177e-01  4.1537e-04  7.9463e-05  1.2950e-04  0:08:37  263
+
+ Reversed flow on 1247 faces (64.7% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    38  2.5533e-01  4.0573e-04  7.9161e-05  1.2830e-04  0:10:22  262
+
+ Reversed flow on 1245 faces (62.1% area) of pressure-outlet 23.
+    39  2.5057e-01  3.9093e-04  7.7845e-05  1.2512e-04  0:09:08  261
+
+ Reversed flow on 1247 faces (63.6% area) of pressure-outlet 23.
+    40  2.4868e-01  3.8619e-04  7.8053e-05  1.2494e-04  0:08:08  260
+
+ Reversed flow on 1244 faces (62.5% area) of pressure-outlet 23.
+    41  2.4935e-01  3.7950e-04  7.8044e-05  1.2383e-04  0:07:21  259
+
+ Reversed flow on 1248 faces (64.2% area) of pressure-outlet 23.
+    42  2.4723e-01  3.7295e-04  7.8093e-05  1.2362e-04  0:06:43  258
+
+ Reversed flow on 1247 faces (63.8% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    43  2.4071e-01  3.6624e-04  7.7692e-05  1.2210e-04  0:08:47  257
+
+ Reversed flow on 1247 faces (64.4% area) of pressure-outlet 23.
+    44  2.3572e-01  3.5652e-04  7.6746e-05  1.1955e-04  0:07:51  256
+
+ Reversed flow on 1248 faces (65.6% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+    45  2.3460e-01  3.5323e-04  7.6964e-05  1.1930e-04  0:07:06  255
+
+ Reversed flow on 1247 faces (64.3% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    46  2.3196e-01  3.4819e-04  7.6711e-05  1.1822e-04  0:09:03  254
+
+ Reversed flow on 1252 faces (68.2% area) of pressure-outlet 23.
+    47  2.2506e-01  3.3845e-04  7.5530e-05  1.1549e-04  0:08:03  253
+
+ Reversed flow on 1248 faces (65.4% area) of pressure-outlet 23.
+    48  2.3000e-01  3.3549e-04  7.5796e-05  1.1564e-04  0:08:06  252
+
+ Reversed flow on 1249 faces (66.0% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    49  2.2728e-01  3.2991e-04  7.5202e-05  1.1533e-04  0:09:48  251
+
+ Reversed flow on 1253 faces (68.1% area) of pressure-outlet 23.
+    50  2.2020e-01  3.2187e-04  7.4096e-05  1.1382e-04  0:08:38  250
+
+ Reversed flow on 1254 faces (69.1% area) of pressure-outlet 23.
+    51  2.1940e-01  3.1870e-04  7.4023e-05  1.1406e-04  0:07:43  249
+
+ Reversed flow on 1253 faces (67.9% area) of pressure-outlet 23.
+    52  2.1680e-01  3.1573e-04  7.3984e-05  1.1344e-04  0:06:58  248
+
+ Reversed flow on 1256 faces (70.9% area) of pressure-outlet 23.
+    53  2.1422e-01  3.1262e-04  7.4130e-05  1.1318e-04  0:06:23  247
+
+ Reversed flow on 1255 faces (70.3% area) of pressure-outlet 23.
+    54  2.1329e-01  3.1148e-04  7.3841e-05  1.1294e-04  0:05:54  246
+
+ Reversed flow on 1251 faces (66.8% area) of pressure-outlet 23.
+    55  2.1567e-01  3.1115e-04  7.4041e-05  1.1286e-04  0:05:31  245
+
+ Reversed flow on 1253 faces (67.7% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+    56  2.1198e-01  3.0840e-04  7.3719e-05  1.1261e-04  0:05:13  244
+
+ Reversed flow on 1253 faces (68.6% area) of pressure-outlet 23.
+    57  2.1223e-01  3.0652e-04  7.3677e-05  1.1239e-04  0:05:46  243
+
+ Reversed flow on 1254 faces (70.6% area) of pressure-outlet 23.
+    58  2.1071e-01  3.0244e-04  7.2968e-05  1.1169e-04  0:05:24  242
+
+ Reversed flow on 1253 faces (70.5% area) of pressure-outlet 23.
+    59  2.0779e-01  2.9749e-04  7.2072e-05  1.1015e-04  0:05:07  241
+
+ Reversed flow on 1256 faces (72.5% area) of pressure-outlet 23.
+    60  2.0514e-01  2.9247e-04  7.1270e-05  1.0867e-04  0:04:52  240
+
+ Reversed flow on 1257 faces (72.8% area) of pressure-outlet 23.
+    61  2.0168e-01  2.8737e-04  7.0407e-05  1.0735e-04  0:04:41  239
+
+ Reversed flow on 1256 faces (72.9% area) of pressure-outlet 23.
+    62  2.0292e-01  2.8332e-04  6.9627e-05  1.0634e-04  0:04:31  238
+
+ Reversed flow on 1254 faces (71.9% area) of pressure-outlet 23.
+    63  1.9984e-01  2.7935e-04  6.9084e-05  1.0547e-04  0:04:23  237
+
+ Reversed flow on 1253 faces (71.2% area) of pressure-outlet 23.
+    64  1.9399e-01  2.7604e-04  6.8326e-05  1.0416e-04  0:04:17  236
+
+ Reversed flow on 1251 faces (70.5% area) of pressure-outlet 23.
+    65  1.9336e-01  2.7376e-04  6.7733e-05  1.0236e-04  0:04:59  235
+
+ Reversed flow on 1252 faces (72.1% area) of pressure-outlet 23.
+    66  1.9103e-01  2.7184e-04  6.7312e-05  1.0081e-04  0:04:45  234
+
+ Reversed flow on 1249 faces (69.5% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+    67  1.8888e-01  2.7070e-04  6.7060e-05  1.0010e-04  0:04:33  233
+
+ Reversed flow on 1248 faces (68.9% area) of pressure-outlet 23.
+    68  1.8442e-01  2.6987e-04  6.7329e-05  1.0001e-04  0:04:24  232
+
+ Reversed flow on 1245 faces (70.1% area) of pressure-outlet 23.
+    69  1.8197e-01  2.6939e-04  6.7550e-05  1.0061e-04  0:04:17  231
+
+ Reversed flow on 1246 faces (69.2% area) of pressure-outlet 23.
+    70  1.8228e-01  2.6896e-04  6.8046e-05  1.0187e-04  0:04:10  230
+
+ Reversed flow on 1240 faces (66.5% area) of pressure-outlet 23.
+    71  1.8251e-01  2.6764e-04  6.8688e-05  1.0260e-04  0:04:05  229
+
+ Reversed flow on 1244 faces (68.6% area) of pressure-outlet 23.
+    72  1.8141e-01  2.6587e-04  6.8931e-05  1.0245e-04  0:04:01  228
+
+ Reversed flow on 1246 faces (69.4% area) of pressure-outlet 23.
+    73  1.8420e-01  2.6549e-04  6.9005e-05  1.0230e-04  0:04:43  227
+
+ Reversed flow on 1249 faces (70.2% area) of pressure-outlet 23.
+    74  1.8204e-01  2.6405e-04  6.8637e-05  1.0160e-04  0:04:30  226
+
+ Reversed flow on 1247 faces (69.7% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    75  1.8049e-01  2.6241e-04  6.8253e-05  1.0083e-04  0:06:35  225
+
+ Reversed flow on 1247 faces (70.8% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    76  1.7925e-01  2.5848e-04  6.7437e-05  9.9425e-05  0:08:14  224
+
+ Reversed flow on 1248 faces (71.5% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    77  1.7761e-01  2.5616e-04  6.6907e-05  9.8627e-05  0:09:32  223
+
+ Reversed flow on 1242 faces (69.6% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+    78  1.7663e-01  2.5546e-04  6.6882e-05  9.7696e-05  0:10:33  222
+
+ Reversed flow on 1240 faces (70.1% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+    79  1.7659e-01  2.5537e-04  6.7390e-05  9.7274e-05  0:11:21  221
+
+ Reversed flow on 1233 faces (68.8% area) of pressure-outlet 23.
+    80  1.7667e-01  2.5636e-04  6.7866e-05  9.7284e-05  0:09:46  220
+
+ Reversed flow on 1233 faces (69.1% area) of pressure-outlet 23.
+    81  1.7598e-01  2.6539e-04  6.9099e-05  9.8728e-05  0:08:31  219
+
+ Reversed flow on 1237 faces (71.4% area) of pressure-outlet 23.
+    82  1.7340e-01  2.6303e-04  6.9390e-05  9.8323e-05  0:08:14  218
+
+ Reversed flow on 1232 faces (68.1% area) of pressure-outlet 23.
+    83  1.7166e-01  2.6334e-04  6.8930e-05  9.7936e-05  0:07:17  217
+
+ Reversed flow on 1231 faces (67.9% area) of pressure-outlet 23.
+    84  1.7212e-01  2.6348e-04  6.8258e-05  9.7179e-05  0:06:31  216
+
+ Reversed flow on 1229 faces (67.9% area) of pressure-outlet 23.
+    85  1.7045e-01  2.6360e-04  6.7151e-05  9.6604e-05  0:05:54  215
+
+ Reversed flow on 1228 faces (68.2% area) of pressure-outlet 23.
+    86  1.6921e-01  2.6325e-04  6.6381e-05  9.5567e-05  0:05:25  214
+
+ Reversed flow on 1229 faces (71.1% area) of pressure-outlet 23.
+    87  1.6913e-01  2.6158e-04  6.5450e-05  9.4769e-05  0:05:01  213
+
+ Reversed flow on 1227 faces (70.6% area) of pressure-outlet 23.
+    88  1.6966e-01  2.6074e-04  6.4736e-05  9.4007e-05  0:05:25  212
+
+ Reversed flow on 1223 faces (70.2% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+    89  1.6769e-01  2.5893e-04  6.4134e-05  9.3415e-05  0:05:01  211
+
+ Reversed flow on 1223 faces (71.0% area) of pressure-outlet 23.
+    90  1.6669e-01  2.5709e-04  6.3889e-05  9.3177e-05  0:04:41  210
+
+ Reversed flow on 1219 faces (70.3% area) of pressure-outlet 23.
+    91  1.6666e-01  2.5582e-04  6.3633e-05  9.3119e-05  0:04:26  209
+
+ Reversed flow on 1218 faces (71.0% area) of pressure-outlet 23.
+    92  1.6621e-01  2.5544e-04  6.3608e-05  9.3884e-05  0:04:55  208
+
+ Reversed flow on 1211 faces (69.4% area) of pressure-outlet 23.
+    93  1.6782e-01  2.5594e-04  6.3731e-05  9.4938e-05  0:04:36  207
+
+ Reversed flow on 1210 faces (69.7% area) of pressure-outlet 23.
+    94  1.6676e-01  2.5748e-04  6.3616e-05  9.5802e-05  0:04:21  206
+
+ Reversed flow on 1209 faces (70.4% area) of pressure-outlet 23.
+    95  1.6910e-01  2.5902e-04  6.3649e-05  9.5989e-05  0:04:09  205
+
+ Reversed flow on 1209 faces (70.6% area) of pressure-outlet 23.
+    96  1.6637e-01  2.5939e-04  6.3516e-05  9.5615e-05  0:03:59  204
+
+ Reversed flow on 1204 faces (71.3% area) of pressure-outlet 23.
+    97  1.6516e-01  2.5896e-04  6.3380e-05  9.5217e-05  0:03:51  203
+
+ Reversed flow on 1202 faces (70.8% area) of pressure-outlet 23.
+    98  1.6578e-01  2.5720e-04  6.2877e-05  9.4921e-05  0:03:44  202
+
+ Reversed flow on 1201 faces (70.6% area) of pressure-outlet 23.
+    99  1.6472e-01  2.5416e-04  6.2508e-05  9.4365e-05  0:04:19  201
+
+ Reversed flow on 1202 faces (72.1% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   100  1.6195e-01  2.5021e-04  6.2017e-05  9.3420e-05  0:04:06  200
+
+ Reversed flow on 1198 faces (71.7% area) of pressure-outlet 23.
+   101  1.5549e-01  2.5122e-04  6.2025e-05  9.2745e-05  0:03:56  199
+
+ Reversed flow on 1196 faces (71.4% area) of pressure-outlet 23.
+   102  1.5304e-01  2.4325e-04  6.2200e-05  9.1479e-05  0:03:47  198
+
+ Reversed flow on 1196 faces (72.4% area) of pressure-outlet 23.
+   103  1.5138e-01  2.4112e-04  6.1822e-05  9.0658e-05  0:03:40  197
+
+ Reversed flow on 1195 faces (72.7% area) of pressure-outlet 23.
+   104  1.5114e-01  2.4036e-04  6.1587e-05  9.0247e-05  0:04:14  196
+
+ Reversed flow on 1194 faces (72.2% area) of pressure-outlet 23.
+   105  1.5152e-01  2.4001e-04  6.1259e-05  8.9838e-05  0:04:01  195
+
+ Reversed flow on 1187 faces (69.8% area) of pressure-outlet 23.
+   106  1.5114e-01  2.3834e-04  6.0442e-05  8.9044e-05  0:03:51  194
+
+ Reversed flow on 1188 faces (71.5% area) of pressure-outlet 23.
+   107  1.5049e-01  2.3580e-04  5.9550e-05  8.8430e-05  0:03:42  193
+
+ Reversed flow on 1183 faces (70.1% area) of pressure-outlet 23.
+   108  1.4878e-01  2.3416e-04  5.8876e-05  8.7676e-05  0:03:35  192
+
+ Reversed flow on 1178 faces (69.2% area) of pressure-outlet 23.
+   109  1.4550e-01  2.3340e-04  5.8258e-05  8.6978e-05  0:03:29  191
+
+ Reversed flow on 1174 faces (65.8% area) of pressure-outlet 23.
+   110  1.4870e-01  2.3289e-04  5.7758e-05  8.6522e-05  0:04:03  190
+
+ Reversed flow on 1177 faces (67.3% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   111  1.4714e-01  2.3209e-04  5.7342e-05  8.6683e-05  0:03:51  189
+
+ Reversed flow on 1177 faces (67.0% area) of pressure-outlet 23.
+   112  1.4747e-01  2.3122e-04  5.7455e-05  8.6920e-05  0:03:41  188
+
+ Reversed flow on 1175 faces (66.7% area) of pressure-outlet 23.
+   113  1.4751e-01  2.2995e-04  5.7952e-05  8.6856e-05  0:03:34  187
+
+ Reversed flow on 1173 faces (68.0% area) of pressure-outlet 23.
+   114  1.4733e-01  2.2796e-04  5.8647e-05  8.6467e-05  0:03:27  186
+
+ Reversed flow on 1171 faces (66.4% area) of pressure-outlet 23.
+   115  1.4569e-01  2.2642e-04  5.8783e-05  8.5679e-05  0:03:22  185
+
+ Reversed flow on 1168 faces (64.0% area) of pressure-outlet 23.
+   116  1.4634e-01  2.2525e-04  5.8611e-05  8.4504e-05  0:03:17  184
+
+ Reversed flow on 1169 faces (66.6% area) of pressure-outlet 23.
+   117  1.4270e-01  2.2378e-04  5.8511e-05  8.3176e-05  0:03:14  183
+
+ Reversed flow on 1174 faces (70.1% area) of pressure-outlet 23.
+   118  1.4232e-01  2.2446e-04  5.8338e-05  8.2552e-05  0:03:47  182
+
+ Reversed flow on 1170 faces (67.6% area) of pressure-outlet 23.
+   119  1.4181e-01  2.2503e-04  5.8484e-05  8.2212e-05  0:03:37  181
+
+ Reversed flow on 1167 faces (67.8% area) of pressure-outlet 23.
+   120  1.4327e-01  2.2503e-04  5.8657e-05  8.2397e-05  0:03:28  180
+
+ Reversed flow on 1167 faces (69.0% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   121  1.4277e-01  2.2367e-04  5.8759e-05  8.2511e-05  0:05:09  179
+
+ Reversed flow on 1165 faces (69.1% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   122  1.4183e-01  2.2022e-04  5.8371e-05  8.1815e-05  0:06:28  178
+
+ Reversed flow on 1166 faces (69.8% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   123  1.4306e-01  2.1691e-04  5.8073e-05  8.1401e-05  0:07:30  177
+
+ Reversed flow on 1158 faces (64.9% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   124  1.4289e-01  2.1543e-04  5.7876e-05  8.1256e-05  0:08:19  176
+
+ Reversed flow on 1161 faces (67.1% area) of pressure-outlet 23.
+   125  1.4181e-01  2.1490e-04  5.8117e-05  8.1601e-05  0:07:12  175
+
+ Reversed flow on 1158 faces (65.8% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   126  1.4570e-01  2.2072e-04  5.9175e-05  8.2904e-05  0:08:03  174
+
+ Reversed flow on 1156 faces (65.7% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   127  1.4469e-01  2.2061e-04  5.8985e-05  8.2438e-05  0:08:42  173
+
+ Reversed flow on 1159 faces (66.3% area) of pressure-outlet 23.
+   128  1.4517e-01  2.2194e-04  5.9345e-05  8.2360e-05  0:07:30  172
+
+ Reversed flow on 1160 faces (67.7% area) of pressure-outlet 23.
+   129  1.4498e-01  2.2464e-04  5.9748e-05  8.3148e-05  0:06:32  171
+
+ Reversed flow on 1165 faces (71.5% area) of pressure-outlet 23.
+   130  1.4025e-01  2.2967e-04  6.0409e-05  8.4089e-05  0:05:46  170
+
+ Reversed flow on 1160 faces (67.7% area) of pressure-outlet 23.
+   131  1.4174e-01  2.2703e-04  6.0860e-05  8.4175e-05  0:05:43  169
+
+ Reversed flow on 1158 faces (65.5% area) of pressure-outlet 23.
+   132  1.4205e-01  2.2698e-04  6.1130e-05  8.4244e-05  0:05:06  168
+
+ Reversed flow on 1164 faces (68.5% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   133  1.4320e-01  2.2594e-04  6.1286e-05  8.4146e-05  0:04:37  167
+
+ Reversed flow on 1163 faces (68.9% area) of pressure-outlet 23.
+   134  1.4726e-01  2.2651e-04  6.1218e-05  8.4138e-05  0:04:13  166
+
+ Reversed flow on 1157 faces (65.9% area) of pressure-outlet 23.
+   135  1.4778e-01  2.2747e-04  6.0898e-05  8.4090e-05  0:03:54  165
+
+ Reversed flow on 1156 faces (63.7% area) of pressure-outlet 23.
+   136  1.4732e-01  2.2919e-04  6.0656e-05  8.4249e-05  0:03:39  164
+
+ Reversed flow on 1156 faces (65.2% area) of pressure-outlet 23.
+   137  1.4854e-01  2.3060e-04  6.0740e-05  8.4291e-05  0:03:27  163
+
+ Reversed flow on 1160 faces (68.7% area) of pressure-outlet 23.
+   138  1.4766e-01  2.3241e-04  6.0548e-05  8.3935e-05  0:03:49  162
+
+ Reversed flow on 1159 faces (68.2% area) of pressure-outlet 23.
+   139  1.4954e-01  2.3419e-04  6.0491e-05  8.3411e-05  0:03:35  161
+
+ Reversed flow on 1159 faces (65.1% area) of pressure-outlet 23.
+   140  1.5144e-01  2.3443e-04  6.0759e-05  8.3118e-05  0:03:23  160
+
+ Reversed flow on 1155 faces (64.5% area) of pressure-outlet 23.
+   141  1.4974e-01  2.3398e-04  6.0909e-05  8.2855e-05  0:03:13  159
+
+ Reversed flow on 1162 faces (68.9% area) of pressure-outlet 23.
+   142  1.4577e-01  2.3687e-04  6.1170e-05  8.2865e-05  0:03:05  158
+
+ Reversed flow on 1162 faces (68.2% area) of pressure-outlet 23.
+   143  1.4796e-01  2.3159e-04  6.0997e-05  8.2473e-05  0:02:58  157
+
+ Reversed flow on 1163 faces (65.9% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   144  1.4834e-01  2.3105e-04  6.0784e-05  8.2301e-05  0:03:24  156
+
+ Reversed flow on 1163 faces (67.1% area) of pressure-outlet 23.
+   145  1.4528e-01  2.3095e-04  6.0434e-05  8.2421e-05  0:03:13  155
+
+ Reversed flow on 1168 faces (71.7% area) of pressure-outlet 23.
+   146  1.4554e-01  2.3273e-04  6.0279e-05  8.2696e-05  0:03:04  154
+
+ Reversed flow on 1163 faces (66.8% area) of pressure-outlet 23.
+   147  1.4712e-01  2.3408e-04  6.0083e-05  8.3034e-05  0:02:57  153
+
+ Reversed flow on 1160 faces (64.7% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   148  1.4675e-01  2.3603e-04  5.9908e-05  8.3291e-05  0:04:22  152
+
+ Reversed flow on 1163 faces (66.7% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   149  1.4662e-01  2.3566e-04  5.9516e-05  8.3199e-05  0:06:00  151
+
+ Reversed flow on 1161 faces (67.3% area) of pressure-outlet 23.
+   150  1.4422e-01  2.3833e-04  5.9767e-05  8.3456e-05  0:05:16  150
+
+ Reversed flow on 1166 faces (67.6% area) of pressure-outlet 23.
+   151  1.4563e-01  2.3620e-04  5.9626e-05  8.2739e-05  0:04:41  149
+
+ Reversed flow on 1163 faces (64.8% area) of pressure-outlet 23.
+   152  1.4557e-01  2.3454e-04  5.9456e-05  8.1928e-05  0:04:13  148
+
+ Reversed flow on 1166 faces (67.8% area) of pressure-outlet 23.
+   153  1.4698e-01  2.3314e-04  5.9297e-05  8.1448e-05  0:04:20  147
+
+ Reversed flow on 1164 faces (67.5% area) of pressure-outlet 23.
+   154  1.4465e-01  2.3679e-04  5.9740e-05  8.1770e-05  0:03:55  146
+
+ Reversed flow on 1167 faces (68.5% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   155  1.4465e-01  2.3166e-04  6.0009e-05  8.2000e-05  0:03:36  145
+
+ Reversed flow on 1162 faces (65.4% area) of pressure-outlet 23.
+   156  1.4291e-01  2.3034e-04  5.9951e-05  8.2499e-05  0:03:20  144
+
+ Reversed flow on 1168 faces (68.7% area) of pressure-outlet 23.
+   157  1.4167e-01  2.2965e-04  5.9993e-05  8.2934e-05  0:03:36  143
+
+ Reversed flow on 1170 faces (70.5% area) of pressure-outlet 23.
+   158  1.4387e-01  2.2887e-04  6.0212e-05  8.3214e-05  0:03:20  142
+
+ Reversed flow on 1168 faces (70.4% area) of pressure-outlet 23.
+   159  1.4561e-01  2.2802e-04  5.9849e-05  8.3082e-05  0:03:07  141
+
+ Reversed flow on 1171 faces (71.3% area) of pressure-outlet 23.
+   160  1.4326e-01  2.2604e-04  5.9203e-05  8.2703e-05  0:02:57  140
+
+ Reversed flow on 1173 faces (72.0% area) of pressure-outlet 23.
+   161  1.4157e-01  2.2434e-04  5.8698e-05  8.2413e-05  0:02:48  139
+
+ Reversed flow on 1171 faces (70.4% area) of pressure-outlet 23.
+   162  1.4364e-01  2.2365e-04  5.8515e-05  8.2555e-05  0:02:41  138
+
+ Reversed flow on 1171 faces (69.4% area) of pressure-outlet 23.
+   163  1.4163e-01  2.2241e-04  5.7848e-05  8.2716e-05  0:03:03  137
+
+ Reversed flow on 1171 faces (69.2% area) of pressure-outlet 23.
+   164  1.4303e-01  2.2136e-04  5.7477e-05  8.2736e-05  0:02:52  136
+
+ Reversed flow on 1178 faces (72.8% area) of pressure-outlet 23.
+   165  1.4172e-01  2.2110e-04  5.7292e-05  8.2948e-05  0:02:44  135
+
+ Reversed flow on 1180 faces (74.6% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   166  1.4086e-01  2.2159e-04  5.7533e-05  8.3619e-05  0:02:37  134
+
+ Reversed flow on 1175 faces (72.7% area) of pressure-outlet 23.
+   167  1.4240e-01  2.2220e-04  5.8052e-05  8.4286e-05  0:02:31  133
+
+ Reversed flow on 1175 faces (73.1% area) of pressure-outlet 23.
+   168  1.4225e-01  2.2228e-04  5.8475e-05  8.4796e-05  0:02:26  132
+
+ Reversed flow on 1176 faces (72.9% area) of pressure-outlet 23.
+   169  1.4323e-01  2.2251e-04  5.8584e-05  8.4860e-05  0:02:22  131
+
+ Reversed flow on 1177 faces (72.7% area) of pressure-outlet 23.
+   170  1.4206e-01  2.2315e-04  5.8365e-05  8.4612e-05  0:02:45  130
+
+ Reversed flow on 1173 faces (71.5% area) of pressure-outlet 23.
+   171  1.4365e-01  2.2381e-04  5.8157e-05  8.4271e-05  0:02:37  129
+
+ Reversed flow on 1171 faces (70.4% area) of pressure-outlet 23.
+   172  1.4333e-01  2.2428e-04  5.7907e-05  8.3769e-05  0:02:30  128
+
+ Reversed flow on 1171 faces (70.7% area) of pressure-outlet 23.
+   173  1.4155e-01  2.2457e-04  5.7812e-05  8.3117e-05  0:02:25  127
+
+ Reversed flow on 1168 faces (68.1% area) of pressure-outlet 23.
+   174  1.4213e-01  2.2460e-04  5.7841e-05  8.2523e-05  0:02:20  126
+
+ Reversed flow on 1169 faces (68.6% area) of pressure-outlet 23.
+   175  1.4088e-01  2.2427e-04  5.7919e-05  8.2341e-05  0:02:41  125
+
+ Reversed flow on 1171 faces (69.9% area) of pressure-outlet 23.
+   176  1.4030e-01  2.2405e-04  5.8114e-05  8.2331e-05  0:02:33  124
+
+ Reversed flow on 1170 faces (69.7% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   177  1.4110e-01  2.2481e-04  5.8558e-05  8.2602e-05  0:02:26  123
+
+ Reversed flow on 1169 faces (68.0% area) of pressure-outlet 23.
+   178  1.4117e-01  2.2534e-04  5.8925e-05  8.3011e-05  0:02:20  122
+
+ Reversed flow on 1166 faces (65.9% area) of pressure-outlet 23.
+   179  1.4488e-01  2.2513e-04  5.9178e-05  8.3201e-05  0:02:40  121
+
+ Reversed flow on 1165 faces (64.5% area) of pressure-outlet 23.
+   180  1.4227e-01  2.2369e-04  5.9240e-05  8.3013e-05  0:02:31  120
+
+ Reversed flow on 1161 faces (63.8% area) of pressure-outlet 23.
+   181  1.4117e-01  2.2193e-04  5.9385e-05  8.2318e-05  0:02:23  119
+
+ Reversed flow on 1164 faces (66.4% area) of pressure-outlet 23.
+   182  1.4168e-01  2.1972e-04  5.9215e-05  8.1364e-05  0:02:17  118
+
+ Reversed flow on 1167 faces (67.1% area) of pressure-outlet 23.
+   183  1.3919e-01  2.1744e-04  5.8435e-05  8.0291e-05  0:02:12  117
+
+ Reversed flow on 1167 faces (67.1% area) of pressure-outlet 23.
+   184  1.3723e-01  2.1526e-04  5.7596e-05  7.9689e-05  0:02:08  116
+
+ Reversed flow on 1163 faces (64.9% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   185  1.3674e-01  2.1362e-04  5.6630e-05  7.9087e-05  0:03:14  115
+
+ Reversed flow on 1167 faces (67.4% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   186  1.3506e-01  2.1028e-04  5.5473e-05  7.7871e-05  0:04:05  114
+
+ Reversed flow on 1170 faces (69.3% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   187  1.3190e-01  2.0816e-04  5.4404e-05  7.6911e-05  0:04:44  113
+
+ Reversed flow on 1172 faces (70.8% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   188  1.3075e-01  2.0698e-04  5.3603e-05  7.5963e-05  0:04:30  112
+
+ Reversed flow on 1170 faces (69.4% area) of pressure-outlet 23.
+   189  1.2832e-01  2.1203e-04  5.3880e-05  7.5823e-05  0:03:57  111
+
+ Reversed flow on 1170 faces (71.0% area) of pressure-outlet 23.
+   190  1.2631e-01  2.0823e-04  5.3914e-05  7.4558e-05  0:03:30  110
+
+ Reversed flow on 1167 faces (69.3% area) of pressure-outlet 23.
+   191  1.2537e-01  2.0565e-04  5.3538e-05  7.3136e-05  0:03:08  109
+
+ Reversed flow on 1167 faces (69.2% area) of pressure-outlet 23.
+   192  1.2533e-01  2.0472e-04  5.3405e-05  7.2289e-05  0:03:12  108
+
+ Reversed flow on 1168 faces (70.0% area) of pressure-outlet 23.
+   193  1.2540e-01  2.0445e-04  5.3105e-05  7.2050e-05  0:02:54  107
+
+ Reversed flow on 1167 faces (69.7% area) of pressure-outlet 23.
+   194  1.2559e-01  2.0523e-04  5.3034e-05  7.2040e-05  0:02:39  106
+
+ Reversed flow on 1167 faces (70.5% area) of pressure-outlet 23.
+   195  1.2607e-01  2.0701e-04  5.2918e-05  7.2101e-05  0:02:27  105
+
+ Reversed flow on 1168 faces (70.8% area) of pressure-outlet 23.
+   196  1.2734e-01  2.0830e-04  5.3064e-05  7.2338e-05  0:02:17  104
+
+ Reversed flow on 1165 faces (69.8% area) of pressure-outlet 23.
+   197  1.2902e-01  2.0861e-04  5.3257e-05  7.2431e-05  0:02:09  103
+
+ Reversed flow on 1162 faces (68.2% area) of pressure-outlet 23.
+   198  1.3115e-01  2.0863e-04  5.3275e-05  7.2729e-05  0:02:03  102
+
+ Reversed flow on 1164 faces (69.4% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   199  1.3093e-01  2.0823e-04  5.2888e-05  7.2722e-05  0:02:18  101
+
+ Reversed flow on 1165 faces (69.6% area) of pressure-outlet 23.
+   200  1.3137e-01  2.0817e-04  5.2377e-05  7.2476e-05  0:02:09  100
+
+ Reversed flow on 1165 faces (69.6% area) of pressure-outlet 23.
+   201  1.3336e-01  2.0785e-04  5.2025e-05  7.2122e-05  0:02:02   99
+
+ Reversed flow on 1167 faces (70.9% area) of pressure-outlet 23.
+   202  1.2569e-01  2.1004e-04  5.1793e-05  7.2083e-05  0:02:16   98
+
+ Reversed flow on 1167 faces (71.2% area) of pressure-outlet 23.
+   203  1.2510e-01  2.0396e-04  5.1501e-05  7.1916e-05  0:02:07   97
+
+ Reversed flow on 1166 faces (70.5% area) of pressure-outlet 23.
+   204  1.2500e-01  2.0069e-04  5.0765e-05  7.1233e-05  0:02:00   96
+
+ Reversed flow on 1168 faces (71.4% area) of pressure-outlet 23.
+   205  1.2465e-01  1.9802e-04  5.0450e-05  7.0834e-05  0:01:54   95
+
+ Reversed flow on 1163 faces (68.9% area) of pressure-outlet 23.
+   206  1.2446e-01  1.9651e-04  5.0481e-05  7.0610e-05  0:01:49   94
+
+ Reversed flow on 1160 faces (69.7% area) of pressure-outlet 23.
+   207  1.2310e-01  1.9530e-04  5.0723e-05  7.0571e-05  0:01:45   93
+
+ Reversed flow on 1160 faces (71.4% area) of pressure-outlet 23.
+   208  1.2223e-01  1.9465e-04  5.1059e-05  7.0481e-05  0:02:00   92
+
+ Reversed flow on 1157 faces (69.5% area) of pressure-outlet 23.
+   209  1.2186e-01  1.9522e-04  5.1385e-05  7.0580e-05  0:01:53   91
+
+ Reversed flow on 1156 faces (68.9% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   210  1.2383e-01  1.9573e-04  5.1608e-05  7.0779e-05  0:02:41   90
+
+ Reversed flow on 1157 faces (69.9% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   211  1.2319e-01  1.9452e-04  5.1231e-05  7.0393e-05  0:03:19   89
+
+ Reversed flow on 1160 faces (70.7% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   212  1.2196e-01  1.9417e-04  5.1019e-05  7.0319e-05  0:03:48   88
+
+ Reversed flow on 1161 faces (70.6% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   213  1.2285e-01  1.9485e-04  5.0997e-05  7.0619e-05  0:04:10   87
+
+ Reversed flow on 1160 faces (70.1% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   214  1.2270e-01  1.9609e-04  5.1020e-05  7.1225e-05  0:04:09   86
+
+ Reversed flow on 1162 faces (71.3% area) of pressure-outlet 23.
+   215  1.2332e-01  1.9795e-04  5.1169e-05  7.1617e-05  0:03:34   85
+
+ Reversed flow on 1163 faces (71.7% area) of pressure-outlet 23.
+   216  1.2531e-01  2.0234e-04  5.1912e-05  7.2514e-05  0:03:23   84
+
+ Reversed flow on 1165 faces (73.0% area) of pressure-outlet 23.
+   217  1.2242e-01  2.0851e-04  5.2933e-05  7.3824e-05  0:02:57   83
+
+ Reversed flow on 1168 faces (74.5% area) of pressure-outlet 23.
+   218  1.2326e-01  2.0671e-04  5.3698e-05  7.4307e-05  0:02:53   82
+
+ Reversed flow on 1170 faces (76.4% area) of pressure-outlet 23.
+   219  1.2370e-01  2.0813e-04  5.3995e-05  7.5151e-05  0:02:33   81
+
+ Reversed flow on 1164 faces (73.1% area) of pressure-outlet 23.
+   220  1.2467e-01  2.0914e-04  5.4388e-05  7.6426e-05  0:02:17   80
+
+ Reversed flow on 1167 faces (74.4% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   221  1.2658e-01  2.1015e-04  5.5026e-05  7.8130e-05  0:02:04   79
+
+ Reversed flow on 1165 faces (73.0% area) of pressure-outlet 23.
+   222  1.2744e-01  2.1199e-04  5.5652e-05  7.9716e-05  0:01:53   78
+
+ Reversed flow on 1166 faces (73.9% area) of pressure-outlet 23.
+   223  1.2874e-01  2.1415e-04  5.6574e-05  8.0786e-05  0:01:45   77
+
+ Reversed flow on 1164 faces (73.4% area) of pressure-outlet 23.
+   224  1.3086e-01  2.1685e-04  5.7640e-05  8.1515e-05  0:01:53   76
+
+ Reversed flow on 1162 faces (72.2% area) of pressure-outlet 23.
+   225  1.3552e-01  2.1927e-04  5.8748e-05  8.1749e-05  0:01:44   75
+
+ Reversed flow on 1164 faces (73.1% area) of pressure-outlet 23.
+   226  1.3558e-01  2.2016e-04  5.9011e-05  8.1698e-05  0:01:37   74
+
+ Reversed flow on 1164 faces (72.5% area) of pressure-outlet 23.
+   227  1.3693e-01  2.1961e-04  5.8885e-05  8.1274e-05  0:01:31   73
+
+ Reversed flow on 1163 faces (69.8% area) of pressure-outlet 23.
+   228  1.3795e-01  2.1752e-04  5.8320e-05  8.0559e-05  0:01:26   72
+
+ Reversed flow on 1160 faces (67.8% area) of pressure-outlet 23.
+   229  1.3773e-01  2.1446e-04  5.7508e-05  7.9665e-05  0:01:37   71
+
+ Reversed flow on 1160 faces (69.4% area) of pressure-outlet 23.
+   230  1.3791e-01  2.1224e-04  5.6826e-05  7.8775e-05  0:01:30   70
+
+ Reversed flow on 1160 faces (69.4% area) of pressure-outlet 23.
+   231  1.3658e-01  2.1110e-04  5.6575e-05  7.8038e-05  0:01:25   69
+
+ Reversed flow on 1159 faces (66.9% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   232  1.3563e-01  2.1092e-04  5.6773e-05  7.7455e-05  0:01:21   68
+
+ Reversed flow on 1160 faces (68.6% area) of pressure-outlet 23.
+   233  1.3420e-01  2.1049e-04  5.6903e-05  7.7282e-05  0:01:17   67
+
+ Reversed flow on 1158 faces (67.0% area) of pressure-outlet 23.
+   234  1.3278e-01  2.1016e-04  5.6941e-05  7.7340e-05  0:01:14   66
+
+ Reversed flow on 1158 faces (67.5% area) of pressure-outlet 23.
+   235  1.3298e-01  2.0930e-04  5.6828e-05  7.7602e-05  0:01:11   65
+
+ Reversed flow on 1156 faces (67.0% area) of pressure-outlet 23.
+   236  1.3202e-01  2.0837e-04  5.6323e-05  7.7770e-05  0:01:22   64
+
+ Reversed flow on 1160 faces (69.0% area) of pressure-outlet 23.
+   237  1.3181e-01  2.0801e-04  5.6091e-05  7.7678e-05  0:01:17   63
+
+ Reversed flow on 1159 faces (69.4% area) of pressure-outlet 23.
+   238  1.3065e-01  2.0866e-04  5.5983e-05  7.7682e-05  0:01:13   62
+
+ Reversed flow on 1160 faces (70.3% area) of pressure-outlet 23.
+   239  1.3124e-01  2.0985e-04  5.5967e-05  7.7737e-05  0:01:10   61
+
+ Reversed flow on 1162 faces (71.6% area) of pressure-outlet 23.
+   240  1.3159e-01  2.1140e-04  5.5869e-05  7.7828e-05  0:01:07   60
+
+ Reversed flow on 1163 faces (72.2% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   241  1.3400e-01  2.1372e-04  5.6072e-05  7.7843e-05  0:01:52   59
+
+ Reversed flow on 1165 faces (73.7% area) of pressure-outlet 23.
+   242  1.3234e-01  2.1540e-04  5.6472e-05  7.7668e-05  0:01:39   58
+
+ Reversed flow on 1165 faces (73.9% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   243  1.3343e-01  2.1517e-04  5.6502e-05  7.7185e-05  0:01:29   57
+
+ Reversed flow on 1166 faces (74.5% area) of pressure-outlet 23.
+   244  1.3503e-01  2.1618e-04  5.6499e-05  7.7181e-05  0:01:33   56
+
+ Reversed flow on 1167 faces (75.4% area) of pressure-outlet 23.
+   245  1.3439e-01  2.1720e-04  5.6391e-05  7.7329e-05  0:01:24   55
+
+ Reversed flow on 1164 faces (74.0% area) of pressure-outlet 23.
+   246  1.3175e-01  2.2027e-04  5.6492e-05  7.7353e-05  0:01:17   54
+
+ Reversed flow on 1161 faces (72.9% area) of pressure-outlet 23.
+   247  1.3159e-01  2.1478e-04  5.6404e-05  7.6578e-05  0:01:11   53
+
+ Reversed flow on 1161 faces (71.7% area) of pressure-outlet 23.
+   248  1.3016e-01  2.1269e-04  5.5783e-05  7.5861e-05  0:01:06   52
+
+ Reversed flow on 1158 faces (70.4% area) of pressure-outlet 23.
+   249  1.2914e-01  2.1127e-04  5.5383e-05  7.5897e-05  0:01:12   51
+
+ Reversed flow on 1156 faces (68.6% area) of pressure-outlet 23.
+   250  1.2984e-01  2.1131e-04  5.5442e-05  7.6377e-05  0:01:07   50
+
+ Reversed flow on 1159 faces (71.5% area) of pressure-outlet 23.
+   251  1.3010e-01  2.1172e-04  5.5414e-05  7.6870e-05  0:01:02   49
+
+ Reversed flow on 1159 faces (72.0% area) of pressure-outlet 23.
+   252  1.3169e-01  2.1237e-04  5.5413e-05  7.7423e-05  0:00:58   48
+
+ Reversed flow on 1155 faces (69.2% area) of pressure-outlet 23.
+   253  1.3122e-01  2.1316e-04  5.5475e-05  7.7765e-05  0:00:55   47
+
+ Reversed flow on 1155 faces (69.8% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   254  1.3319e-01  2.1416e-04  5.5758e-05  7.8200e-05  0:01:01   46
+
+ Reversed flow on 1156 faces (70.5% area) of pressure-outlet 23.
+   255  1.3269e-01  2.1481e-04  5.6056e-05  7.8528e-05  0:00:57   45
+
+ Reversed flow on 1153 faces (70.4% area) of pressure-outlet 23.
+   256  1.3367e-01  2.1451e-04  5.6336e-05  7.8389e-05  0:00:53   44
+
+ Reversed flow on 1154 faces (71.0% area) of pressure-outlet 23.
+   257  1.3354e-01  2.1320e-04  5.6406e-05  7.7961e-05  0:00:50   43
+
+ Reversed flow on 1153 faces (70.5% area) of pressure-outlet 23.
+   258  1.3464e-01  2.1152e-04  5.5881e-05  7.7532e-05  0:00:48   42
+
+ Reversed flow on 1151 faces (68.4% area) of pressure-outlet 23.
+   259  1.3471e-01  2.1051e-04  5.5063e-05  7.7155e-05  0:00:46   41
+
+ Reversed flow on 1153 faces (69.0% area) of pressure-outlet 23.
+   260  1.3498e-01  2.1044e-04  5.4462e-05  7.6756e-05  0:00:52   40
+
+ Reversed flow on 1152 faces (68.5% area) of pressure-outlet 23.
+   261  1.3205e-01  2.1037e-04  5.3914e-05  7.6868e-05  0:00:48   39
+
+ Reversed flow on 1152 faces (67.8% area) of pressure-outlet 23.
+   262  1.3044e-01  2.1047e-04  5.3793e-05  7.6542e-05  0:00:45   38
+
+ Reversed flow on 1157 faces (69.5% area) of pressure-outlet 23.
+   263  1.3210e-01  2.1054e-04  5.3896e-05  7.5805e-05  0:00:42   37
+
+ Reversed flow on 1159 faces (71.7% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   264  1.3195e-01  2.0963e-04  5.4115e-05  7.5076e-05  0:01:02   36
+
+ Reversed flow on 1161 faces (71.9% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   265  1.3169e-01  2.0610e-04  5.3956e-05  7.3688e-05  0:01:23   35
+
+ Reversed flow on 1163 faces (71.2% area) of pressure-outlet 23.
+   266  1.3004e-01  2.0490e-04  5.4010e-05  7.2772e-05  0:01:11   34
+
+ Reversed flow on 1164 faces (72.4% area) of pressure-outlet 23.
+   267  1.3002e-01  2.0176e-04  5.3359e-05  7.1729e-05  0:01:02   33
+
+ Reversed flow on 1163 faces (71.4% area) of pressure-outlet 23.
+   268  1.3172e-01  2.0089e-04  5.2715e-05  7.1441e-05  0:00:55   32
+
+ Reversed flow on 1158 faces (68.3% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   269  1.3246e-01  2.0085e-04  5.2274e-05  7.1399e-05  0:01:07   31
+
+ Reversed flow on 1161 faces (69.8% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   270  1.3128e-01  1.9705e-04  5.1387e-05  7.0412e-05  0:01:16   30
+
+ Reversed flow on 1159 faces (68.2% area) of pressure-outlet 23.
+   271  1.2974e-01  1.9475e-04  5.0755e-05  6.9336e-05  0:01:05   29
+
+ Reversed flow on 1162 faces (71.0% area) of pressure-outlet 23.
+   272  1.2927e-01  1.9476e-04  5.0727e-05  6.9465e-05  0:00:55   28
+
+ Reversed flow on 1164 faces (70.6% area) of pressure-outlet 23.
+   273  1.2357e-01  1.9660e-04  5.0692e-05  6.9814e-05  0:00:54   27
+
+ Reversed flow on 1163 faces (71.1% area) of pressure-outlet 23.
+   274  1.2277e-01  1.9093e-04  5.0591e-05  6.9201e-05  0:00:46   26
+
+ Reversed flow on 1165 faces (72.1% area) of pressure-outlet 23.
+   275  1.2131e-01  1.8806e-04  4.9922e-05  6.8210e-05  0:00:41   25
+
+ Reversed flow on 1167 faces (73.6% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   276  1.2009e-01  1.8595e-04  4.9167e-05  6.7434e-05  0:00:36   24
+
+ Reversed flow on 1170 faces (74.8% area) of pressure-outlet 23.
+   277  1.1803e-01  1.8418e-04  4.8307e-05  6.6788e-05  0:00:32   23
+
+ Reversed flow on 1167 faces (74.4% area) of pressure-outlet 23.
+   278  1.1947e-01  1.8264e-04  4.7578e-05  6.5966e-05  0:00:29   22
+
+ Reversed flow on 1163 faces (72.2% area) of pressure-outlet 23.
+   279  1.1732e-01  1.8260e-04  4.7045e-05  6.5275e-05  0:00:26   21
+
+ Reversed flow on 1168 faces (74.4% area) of pressure-outlet 23.
+   280  1.1688e-01  1.8280e-04  4.6898e-05  6.4994e-05  0:00:24   20
+
+ Reversed flow on 1164 faces (71.8% area) of pressure-outlet 23.
+   281  1.1733e-01  1.8356e-04  4.7448e-05  6.5011e-05  0:00:26   19
+
+ Reversed flow on 1157 faces (68.5% area) of pressure-outlet 23.
+   282  1.1872e-01  1.8498e-04  4.8301e-05  6.5243e-05  0:00:23   18
+
+ Reversed flow on 1163 faces (72.3% area) of pressure-outlet 23.
+   283  1.1806e-01  1.8746e-04  4.9293e-05  6.5616e-05  0:00:21   17
+
+ Reversed flow on 1160 faces (72.0% area) of pressure-outlet 23.
+   284  1.1895e-01  1.9034e-04  5.0355e-05  6.6143e-05  0:00:19   16
+
+ Reversed flow on 1159 faces (70.8% area) of pressure-outlet 23.
+   285  1.2043e-01  1.9267e-04  5.1229e-05  6.7042e-05  0:00:17   15
+
+ Reversed flow on 1157 faces (69.3% area) of pressure-outlet 23.
+   286  1.2220e-01  1.9365e-04  5.1735e-05  6.7802e-05  0:00:16   14
+
+ Reversed flow on 1158 faces (69.4% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   287  1.2355e-01  1.9364e-04  5.1779e-05  6.8493e-05  0:00:17   13
+
+ Reversed flow on 1161 faces (71.9% area) of pressure-outlet 23.
+   288  1.2169e-01  1.9642e-04  5.1728e-05  6.9328e-05  0:00:15   12
+
+ Reversed flow on 1164 faces (74.2% area) of pressure-outlet 23.
+   289  1.2141e-01  1.9167e-04  5.1382e-05  6.9309e-05  0:00:13   11
+
+ Reversed flow on 1160 faces (71.4% area) of pressure-outlet 23.
+   290  1.2113e-01  1.8918e-04  5.0463e-05  6.8586e-05  0:00:12   10
+
+ Reversed flow on 1162 faces (73.0% area) of pressure-outlet 23.
+   291  1.2041e-01  1.8756e-04  4.9965e-05  6.7774e-05  0:00:10    9
+
+ Reversed flow on 1162 faces (73.3% area) of pressure-outlet 23.
+   292  1.2000e-01  1.8758e-04  4.9903e-05  6.7306e-05  0:00:10    8
+
+ Reversed flow on 1161 faces (72.9% area) of pressure-outlet 23.
+   293  1.1812e-01  1.8945e-04  4.9975e-05  6.7459e-05  0:00:09    7
+
+ Reversed flow on 1160 faces (70.9% area) of pressure-outlet 23.
+   294  1.1920e-01  1.9253e-04  5.0311e-05  6.8059e-05  0:00:07    6
+
+ Reversed flow on 1160 faces (71.5% area) of pressure-outlet 23.
+   295  1.2065e-01  1.9620e-04  5.0698e-05  6.8865e-05  0:00:06    5
+
+ Reversed flow on 1162 faces (72.9% area) of pressure-outlet 23.
+        Stabilizing pressure coupled to enhance linear solver robustness.
+   296  1.2209e-01  1.9895e-04  5.1172e-05  6.9419e-05  0:00:07    4
+
+ Reversed flow on 1163 faces (74.0% area) of pressure-outlet 23.
+   297  1.2030e-01  2.0056e-04  5.1609e-05  6.9611e-05  0:00:05    3
+
+ Reversed flow on 1165 faces (74.6% area) of pressure-outlet 23.
+
+  iter  continuity  x-velocity  y-velocity  z-velocity     time/iter
+   298  1.2204e-01  1.9960e-04  5.1936e-05  6.9703e-05  0:00:03    2
+
+ Reversed flow on 1161 faces (72.0% area) of pressure-outlet 23.
+   299  1.2290e-01  1.9899e-04  5.2392e-05  6.9815e-05  0:00:01    1
+
+ Reversed flow on 1160 faces (71.0% area) of pressure-outlet 23.
+   300  1.2534e-01  1.9949e-04  5.2686e-05  7.0049e-05  0:00:00    0
+
+Calculation complete.
+(cx-gui-do cx-activate-item "Information*OK")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Contours"))
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0 3))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0 1 3))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-set-list-selections "Contours*Table1*Frame3*Frame2*List2(Surfaces)" '( 0 1 2 3))
+(cx-gui-do cx-activate-item "Contours*Table1*Frame3*Frame2*List2(Surfaces)")
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton1(OK)")
+(cxg-clear-all-selections (cx-active-window))
+(cxg-add-surfaces-to-selection '() (cx-active-window))
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0028924 0.0709937 -0.0689049) '(0 0 0) '(-0.139179 -0.414442 -0.421239) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00361467 -0.00113052 0.000247739) '(0 0 0) '(-0.0487062 0.0243014 0.0232589) 0 0)
+(cx-gui-do cx-activate-item "Contours*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00812392 -0.171322 0.181022) '(0 0 0) '(0.131259 0.347933 0.324376) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0193674 0.0221116 -0.0156195) '(0 0 0) '(-0.0588215 -0.233229 -0.257985) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00875559 -0.00696339 0.00545378) '(0 0 0) '(-0.0550676 0.158395 0.171806) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0711019 0.0364612 -0.0062266) '(0 0 0) '(-0.00545084 -0.0767868 -0.0863683) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00210129 -0.0201007 0.0153957) '(0 0 0) '(0.0663792 0.197593 0.267284) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00403753 -0.00435812 0.000355851) '(0 0 0) '(-0.00291646 0.0745406 0.226059) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.000232518 0.00177763 -0.00058377) '(0 0 0) '(-0.0804681 -0.075083 -0.196776) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00327395 -0.00780865 0.00186755) '(0 0 0) '(0.136751 0.0807502 0.586762) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00911802 0.00766039 -0.00239446) '(0 0 0) '(0.138624 -0.0239506 -0.474384) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.000969417 0.0143592 -0.0100859) '(0 0 0) '(0.256077 -0.277114 -0.369128) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0049645 0.00595765 -0.00806587) '(0 0 0) '(0.14065 -0.317862 -0.148228) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00249296 0.000901116 -0.00558066) '(0 0 0) '(0.0986483 -0.389859 -0.0153301) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00424679 -0.00972666 0.014707) '(0 0 0) '(-0.389703 0.966369 0.522255) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00467233 0.0177455 -0.0104216) '(0 0 0) '(0.157795 -0.235007 -0.329034) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00098059 -0.00272081 0.00128066) '(0 0 0) '(-0.211618 0.262717 0.39717) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00272936 0.0085522 -0.00472779) '(0 0 0) '(0.241224 -0.321086 -0.44156) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0058898 0.00347284 -0.0130413) '(0 0 0) '(0.103574 -0.860501 -0.18409) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.179692 -0.215835 0.467549) '(0 0 0) '(-0.387755 1.07285 0.341613) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00951174 0.0199612 -0.00953704) '(0 0 0) '(0.033762 -0.0246509 -0.0325956) 0 0)
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Vectors"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Vectors"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Vectors"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Graphics|Vectors"))
+(cx-gui-do cx-set-real-entry-list "Vectors*Table1*Frame2*Frame3*RealEntry1(Scale)" '( 2))
+(cx-gui-do cx-activate-item "Vectors*PanelButtons*PushButton1(OK)")
+Creating zone surface for fluent-fluent_region zone
+(cx-gui-do cx-set-real-entry-list "Vectors*Table1*Frame2*Frame3*RealEntry1(Scale)" '( 3))
+(cx-gui-do cx-set-integer-entry "Vectors*Table1*Frame2*Frame3*IntegerEntry2(Skip)" 5)
+(cx-gui-do cx-activate-item "Vectors*Table1*Frame2*Frame3*IntegerEntry2(Skip)")
+(cx-gui-do cx-activate-item "Vectors*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+(cx-gui-do cx-activate-item "Vectors*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.000762798 -0.025625 0.00726347) '(0 0 0) '(-0.215376 0.162869 0.596468) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00171652 0.00915603 -0.00161505) '(0 0 0) '(0.139093 -0.0365055 -0.338092) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00286102 0.0227215 -0.012786) '(0 0 0) '(0.157069 -0.226072 -0.366715) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00822625 -0.0167189 0.0055769) '(0 0 0) '(-0.312797 0.204452 0.314054) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.000478484 0.00422893 -0.00195359) '(0 0 0) '(0.193718 -0.148452 -0.274471) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00573787 -0.00485214 -0.00806009) '(0 0 0) '(0.060132 0.107079 0.188843) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.008925 -0.00399859 -0.0180598) '(0 0 0) '(0.154682 0.022112 0.162035) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0148863 0.00220717 -0.0050077) '(0 0 0) '(0.0454604 0.0173129 0.329926) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.000801284 0.00140396 0.000164488) '(0 0 0) '(-0.0126789 -0.00284249 0.0667516) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00354602 0.00216836 0.000662321) '(0 0 0) '(8.69334e-05 -0.00947517 0.0531319) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.000883251 -0.00220232 -0.000205843) '(0 0 0) '(-0.0385656 0.0324988 -0.182569) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00160713 0.00203971 0.000256735) '(0 0 0) '(-0.0506476 -0.0478238 0.332863) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.000143845 0.00419145 0.00309146) '(0 0 0) '(0.0236525 -0.312634 0.415828) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00121528 0.00311406 0.00869942) '(0 0 0) '(-0.0375019 -0.580706 0.214928) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.000420418 -0.000510119 0.00512377) '(0 0 0) '(-0.0143515 -0.259091 -0.0279896) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.000546597 -0.00268499 0.00629788) '(0 0 0) '(-0.0134918 -0.2883 -0.124107) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.000362169 0.00489695 -0.0108033) '(0 0 0) '(0.0147884 0.253947 0.114196) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.000170939 0.00114711 -0.0128981) '(0 0 0) '(-0.00437219 0.37196 0.0376713) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0062321 -0.00654689 -0.0161969) '(0 0 0) '(-0.0249363 0.508443 -0.195524) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.00417765 0.00540287 0.00983586) '(0 0 0) '(0.0230717 -0.294652 0.151185) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.000386868 0.000589199 0.00565618) '(0 0 0) '(0.00463136 -0.410745 0.0424082) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00285437 -0.00496942 -0.0132289) '(0 0 0) '(-0.103491 0.827942 -0.288923) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.000125982 -0.00877981 -0.00438805) '(0 0 0) '(-0.104141 0.26525 -0.52837) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.000661694 0.00670533 0.00256727) '(0 0 0) '(0.0677938 -0.161816 0.404702) 0 0)
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Case & Data...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "anode.cas.h5") "CFF Case/Data Files (*.cas.h5 *.dat.h5 )")
+Fast-loading "E:\Ansys\Ansys.Products.2022.R1.Win64\Program Files\ANSYS Inc\v221\fluent\fluent22.1.0\\addons\afd\lib\hdfio.bin"
+Done.
+(cx-gui-do cx-activate-item "Question*OK")
+
+Writing to DESKTOP-6MJKVPJ:"D:/Objects3D/fluent/fuelCell/H2BIKE/fluent/anode.cas.h5" in NODE0 mode and compression level 1 ...
+  Writing mesh ...
+      459446 cells,     1 zone  ...
+     1879528 faces,     5 zones ...
+      996244 nodes,     1 zone  ...
+  Done.
+Done.
+
+Writing to DESKTOP-6MJKVPJ:"D:/Objects3D/fluent/fuelCell/H2BIKE/fluent/anode.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.010886 0.0314448 0.0397275) '(0 0 0) '(0.0343507 -0.491383 0.377832) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.00079149 0.000350124 0.00124515) '(0 0 0) '(0.0218238 -0.082771 0.0228132) 0 0)
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list ))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list ))
+/exit y
+Auto-Transcript Stop Time:  13:35:27, 18 Dec 2023 中国标准时间 
+Total Transcript Time: 37 Minute 21 Second.
